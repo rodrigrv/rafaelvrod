@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:30px 0;
+	background-color:#e6e6dc;
+	font-family:Cambria,Baskerville,serif;
+}
+#wrapper {
+	width:80%;
+	margin:0 auto;
+	border-left:5px solid #81a594;
+	border-right:5px solid #81a594;
+	border-bottom:5px solid #81a594;
+}
+
+h1 {
+	color:#000;
+	font-size:1.5em;
+	font-style:italic;
+	text-align:center;
+	text-decoration:underline;	
+}
+
+#nav {
+	font-size:1.7em;
+	font-weight:bold;
+	padding-top:20px;
+	text-align:center;
+	background-color:#336699;
+	border-bottom:5px solid #81a594;
+}
+
+ul#head li {
+	margin:0 30px;
+	display:inline;
+	position:relative;
+	list-style-type:none;
+}
+
+#nav a:link {
+	color:#e6e6dc;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+
+#nav a:visited {
+	color:#e6e6dc;
+}
+
+#nav a:hover{
+	color:#000;
+}
+
+#prices {
+	width:25%;
+	float:right;
+	height:652px;
+	color:#e6e6dc;
+	text-align:left;
+	background-color:#222;
+	border-left:5px solid #81a594;
+}
+
+#buying {
+	margin-top:30px;
+	margin-left:20px;
+}
+
+h3 	{
+	color:#000;
+	margin:30px 40px 30px 20px;
+	text-align:center;
+	background-color:#999;
+	border:5px solid #335599;	
+}
+
+#selling {
+	margin-left:20px;
+}
+
+h4 {
+	margin-bottom:-10px;
+}
+
+#movies {
+	height:580px;
+}
+
+h2 {
+	text-align:center;
+}
+
+#missing {
+	margin-top:200px;
+	text-align:center;
+}
+
+#footer {
+	padding:7px;
+	color:#e6e6dc;	
+	font-size:0.7em;
+	line-height:100%;
+	text-align:center;	
+	background-color:#222;
+	border-top:5px solid #81a594;
+}

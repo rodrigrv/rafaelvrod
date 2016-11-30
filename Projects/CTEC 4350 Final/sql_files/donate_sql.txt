@@ -1,0 +1,48 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: omega.uta.edu
+-- Generation Time: May 03, 2016 at 01:23 PM
+-- Server version: 5.0.95
+-- PHP Version: 5.1.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `rvr9109`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Donate`
+--
+
+CREATE TABLE `Donate` (
+  `donate_id` int(11) NOT NULL auto_increment,
+  `user_donate_id` varchar(60) NOT NULL,
+  `donate_fname` varchar(50) NOT NULL,
+  `donate_lname` varchar(50) NOT NULL,
+  `donate_address` varchar(60) NOT NULL,
+  `donate_city` varchar(50) NOT NULL,
+  `donate_state` varchar(50) NOT NULL,
+  `donate_zip` varchar(20) NOT NULL,
+  `donate_type` varchar(25) NOT NULL,
+  `donate_amount` varchar(10) NOT NULL,
+  `donate_duration` varchar(15) NOT NULL,
+  `donate_method` varchar(25) NOT NULL,
+  `donate_card` varchar(30) NOT NULL,
+  `donate_exp_month` varchar(15) NOT NULL,
+  `donate_exp_year` varchar(6) NOT NULL,
+  PRIMARY KEY  (`donate_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `Donate`
+--
+
+INSERT INTO `Donate` VALUES(8, '6', 'Sam', 'Witwicky', '123 Address Ln', 'Arlington', 'TX', '78945', 'From An Individual', '$15.00', 'One Time', 'None', '1111 2222 3333 4444', 'aug', '2018');
+INSERT INTO `Donate` VALUES(7, '6', 'Sam', 'Witwicky', '123 Address Ln', 'Arlington', 'TX', '78945', 'From An Individual', '$2.50', 'One Time', 'None', '1111 2222 3333 4444', 'jun', '2018');
+INSERT INTO `Donate` VALUES(5, '', 'Aaron', 'Crumsworth', '1010 E Arkansas Ln 146', 'Arlington', 'TX', '76014', 'From A Corporation', '$10.00', 'Recurring', 'Monthly', '1111 2222 3333 4444', 'may', '2016');
+INSERT INTO `Donate` VALUES(6, '2', 'Ralph', 'Rodriguez', '1010 E Arkansas Ln 146', 'Arlington', 'TX', '76014', 'From An Individual', '$5.00', 'Recurring', '6 Months', '1111 2222 3333 4444', 'sep', '2018');

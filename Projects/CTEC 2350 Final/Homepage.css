@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:30px 0;
+	background-color:#e6e6dc;
+	font-family:Cambria,Baskerville,serif;
+}
+#wrapper {
+	width:80%;
+	margin:0 auto;
+	border-left:5px solid #81a594;
+	border-right:5px solid #81a594;
+	border-bottom:5px solid #81a594;
+}
+
+h1 {
+	color:#000;
+	font-size:1.5em;
+	font-style:italic;
+	text-align:center;
+	text-decoration:underline;	
+}
+
+#nav {
+	font-size:1.7em;
+	font-weight:bold;
+	padding-top:20px;
+	text-align:center;
+	background-color:#336699;
+	border-bottom:5px solid #81a594;
+}
+
+ul#head li {
+	margin:0 30px;
+	display:inline;
+	position:relative;
+	list-style-type:none;
+}
+
+#nav a:link {
+	color:#e6e6dc;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+
+#nav a:visited {
+	color:#e6e6dc;
+}
+
+#nav a:hover{
+	color:#000;
+}
+
+#company {
+	width:25%;
+	float:left;	
+	height:600px;
+	color:#e6e6dc;
+	text-align:justify;
+	background-color:#222;
+	border-right:5px solid #81a594;
+}
+
+#hours {
+	margin-left:20px;
+	margin-right:20px;
+	text-align:center;
+}
+
+#img1 {
+	margin-top:100px;
+}
+
+#img2 {
+	float:right;
+	margin-left:10px;
+	margin-right:10px;
+}
+#img3 {
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+#underimg {
+	margin-top:50px;
+}
+
+#policy {
+	width:25%;
+	float:right;
+	height:600px;
+	color:#e6e6dc;
+	text-align:left;
+	background-color:#222;
+	border-left:5px solid #81a594;
+}
+
+#content {
+	height:575px;
+	font-size:1.1em;
+	margin-left:350px;
+	margin-right:350px;
+	text-align:justify;
+}
+
+#whatwedo {
+	margin-top:60px;
+}
+
+h2 {
+	font-size:1.7em;
+	text-align:center;
+}	
+
+h3 {
+	color:#000;
+	margin:30px 0;
+	text-align:center;
+	background-color:#999;
+	border:5px solid #335599;	
+}
+
+#top {
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+#bottom {
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+#clear {
+	clear:both;
+}
+
+#footer {
+	padding:7px;
+	color:#e6e6dc;
+	font-size:0.7em;
+	line-height:100%;
+	text-align:center;	
+	background-color:#222;
+	border-top:5px solid #81a594;
+}

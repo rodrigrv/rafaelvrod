@@ -1,0 +1,32 @@
+* {
+  margin:0;
+  padding:0;
+  font-family:'Open Sans';
+}
+
+main {
+  width:95%;
+  margin:0 auto;
+}
+
+header {
+  margin:5%;
+  text-align: center;
+}
+
+nav {margin:5% 0;}
+
+#navigation {
+  list-style-type: none;
+  display:block;
+}
+
+#navigation li {
+  width:100%;
+  text-align:center;
+  margin:2% 0;
+}
+
+#navigation li a {
+  text-decoration: none;
+}
