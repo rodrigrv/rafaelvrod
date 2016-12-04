@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Design Journal | Morningside CDA</title>
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+<script src="includes/javascript/jquery-2.2.3.min.js"></script>
+<script src="includes/javascript/jquery.cycle2.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="includes/javascript/main.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="images/morningside_small.png"/>
+<meta name="viewport" content="width=device-width initial-scale=1.0"/>
+</head>
+
+<body>
+<!-- ==================== HEADER LOGO, LOGIN ==================== -->
+<div class="make_fixed">
+<header class="above_nav">
+        <div class="header_img"><a href="index.php"><img src="images/hands_logo.png" alt="" class="image1" /></a>
+        </div>
+
+        <h1 class="header_title">Morningside Community<br> Development Association</h1>
+
+        <div class="user">
+       	<!--<?php 
+		
+		if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
+			
+            echo '<a href="login.php" class="login_user">Login</a> | <a href="register.php" class="reg_user">Register</a>';
+		
+		} else {
+			if ($_SESSION['admin'] == 1) { 
+				$secondLink = "<a href='admin.php'>Admin Profile</a>";
+			} else {
+				$secondLink = "<a href='new_user.php'>My Profile</a>";
+			}
+			echo "<a href='logout.php'>Logout</a> | $secondLink";
+			
+			$fname = $_SESSION['fname'];
+			$fname_disabled = 'disabled';
+			
+			$lname = $_SESSION['lname'];
+			$lname_disabled = 'disabled';
+			
+			$email = $_SESSION['email'];
+			$email_disabled = 'disabled';
+			
+		}
+			
+		?>-->
+        </div>
+
+        <div class="clear_float"></div>
+</header>
+
+<!-- ==================== NAVIGATION ==================== -->
+	<div class="menu_bar">
+    	<a href="#" class="btn_menu"><span class="h_icon">☰</span>Morningside Community<br>Development Association</a>
+    </div>
+	<nav>
+		<ul>
+        	
+			<li><a href="index.php" class="nav_item">Home</a></li>
+            
+            <li class="submenu" id="account"><a href="#" class="nav_item">Account<span class="arrow"><img src="images/arrow_down.png" alt="" /></span></a>
+				<ul class="children">
+                <!--<?php
+				if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
+                	echo '<li><a href="login.php">Sign in</a></li><li><a href="register.php">Register</a></li>';
+				
+				} else {
+					if ($_SESSION['admin'] == 1) {
+						$secondLink = "<a class='mobile_login' href='admin.php'>Admin Profile</a>";
+					
+					} else {
+						$secondLink = "<a class='mobile_login' href='new_user.php'>My Profile</a>";
+					}
+					echo "<a class='mobile_login' href='logout.php'>Logout</a> $secondLink";	
+				}
+					
+				?>-->
+                </ul>       
+            </li>
+        
+			<li class="submenu"><a href="#" class="nav_item">About Us<span class="arrow"><img src="images/arrow_down.png" alt=""/></span></a>
+                <ul class="children">
+                    <li><a href="about_org.php">Our Organization</a></li>
+                    <li><a href="about_member.php">Our Board Members</a></li>
+                </ul>
+            </li>
+            
+            <li class="submenu"><a href="#" class="nav_item">Get Involved<span class="arrow"><img src="images/arrow_down.png" alt=""/></span></a>
+                <ul class="children">
+                    <li><a href="sponsor.php">Sponsorships</a></li>
+                    <li><a href="volunteer.php">Volunteer</a></li>
+                    <li><a href="events.php">Events</a></li>
+                </ul>
+            </li>
+            
+			<li class="submenu"><a href="#" class="nav_item">FAQ's<span class="arrow"><img src="images/arrow_down.png" alt=""/></span></a>
+                <ul class="children">
+                    <li><a href="faq.php">Resource Links</a></li>
+                </ul>
+            </li>
+            	
+			<li><a href="contact.php" class="nav_item">Contact Us</a></li>
+            
+            <li><a href="donate.php" class="nav_item" id="donation">Donate</a></li>
+		</ul>
+	</nav>	
+    <div class="clear_float"></div>
+</div>
+
+<!-- ==================== DESIGN JOURNAL SECTION ==================== -->
+<section class="journal_section">
+	<h2 class="page_title">Design Journal</h2>
+    	<div class="journal_wrapper">
+        	<div class="journal_dhtml">
+                <h3 class="journal_title">DHTML effect(s)</h3>
+                	<h4 class="journal_subtitle">Navigation</h4>
+                        <p class="journal_text">I used a couple of different DHTML effects in this project. The most prominent one is probably the navigation bar. When it is full screen, it applies a hover effect. I added a CSS transition as well to the hover effect. To me, I think this gives the user a clear understanding of what they are hovering over. This also fulfills the clients goal of wanting a simple, yet functional navigation bar with all the pages readily available.
+                        </p>
+                        
+                    <h4 class="journal_subtitle">Events Page</h4>
+                        <p class="journal_text">In the events page, the client asked for a page where they can readily view past, present, and future events. A calendar option came to mind at first but if the month was over, the user would have to click to find the month. I then decided to have links displaying as "Past, Present, Future, and Show All" so that when the user clicks these links, it shows what corresponding events are from that particular link.
+                        </p>
+                    
+                    <h4 class="journal_subtitle">Form Validation</h4>
+                    	<p class="journal_text">In previous projects, I've done only server-side validation. With this project, the client asked that users fill out certain forms for items such as volunteering and donations. I used JavaScript to successfully validate any common errors that were present in all 6 forms. For example: when the user fills out the 'zip code' label, they need to match a regular expression for U.S. zip codes. If it doesn't match, it sends an error when the user tries to submit that information.
+                        </p>
+            </div>
+            
+            <div class="journal_ajax">
+            	<h3 class="journal_subtitle">XML/AJAX Feature</h3>
+                	<p class="journal_text">One of the clients biggest concerns was how to display information to the users. One way I thought would help convey that is by using XML/AJAX on the volunteer page. In that page, the checkboxes asking what events you can help with displays additional information about that event when you click the checkbox. I believe this met the criteria for the client wanting to display information to the user and for this project in using this dynamic feature.
+                    </p>
+            </div>
+            <div class="journal_database">
+            	<h3 class="journal_subtitle">Database-supported Feature</h3>
+            	<p class="journal_text">When I thought about how to implement a database-supported feature, it seemed like a no-brainer since I had over 5 forms that had to process user generated content. In this project, I used a combination of PHP and MySQL to submit user information into a database. Once the information is sent to the database, I can pull the information and display it on the admin page.
+                </p>
+            </div>
+            
+            <div class="journal_feature">
+            	<h3 class="journal_subtitle">Mock-up Feature</h3>
+                	<p class="journal_text">The admin page and the user profile page on my site are very similar. The client stressed that they at least wanted an admin account to see all the information. I couldn't get the user profile to fully work. So the mock-up page is what the user profile would look like for one user. It would show their previous donations (if any), and their volunteer information. Additionally, they would have the option to edit or cancel their volunteer information. This is where the mock-up feature comes into place. At the moment, I only have it displayed without it working.</p>
+            </div>
+        </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+	<div class="clear_float"></div>
+	<div class="footer_wrapper">
+    	<div class="footer_links">
+            <h4>Quick Links</h4>
+                <ul class="quick_links">
+                    <li><a href="index.php">Home Page</a></li>
+                    <li><a href="about_org.php">About Us</a></li>
+                    <li><a href="volunteer.php">Volunteer</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="design_journal.html">Design Journal</a></li>
+                </ul>
+        </div> 
+        
+        <div class="footer_media"> 
+        	<h4>Follow Us</h4>
+            	<a href="https://www.facebook.com/morningsidecda/" target="_blank">
+                	<img src="images/facebook.png" class="social_media" alt="" />
+                </a>
+        </div> 
+        
+        <div class="footer_donate"> 
+        	<h4>Donate</h4>
+            	<p class="donate_info">Each donation you<br> make will help
+                						fight<br> these terrible diseases.<br>
+                                        </p>
+                <a href="donate.php"><input type="submit" value="Donate Today" class="footer_submit"></a>
+        </div>
+        
+        <div class="clear_float"></div>
+        
+        <div class="footer_text">
+            <p class="copy_info">Created by Rafael Rodriguez &copy; 2016.
+            All information presented is meant for class purposes only.
+            </p> 
+        </div>   
+    </div>
+</footer>
+</body>
+</html>

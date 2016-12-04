@@ -1,0 +1,44 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: omega.uta.edu
+-- Generation Time: May 03, 2016 at 01:25 PM
+-- Server version: 5.0.95
+-- PHP Version: 5.1.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `rvr9109`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Volunteer`
+--
+
+CREATE TABLE `Volunteer` (
+  `vol_id` int(11) NOT NULL auto_increment,
+  `user_vol_id` varchar(60) NOT NULL,
+  `vol_fname` varchar(50) NOT NULL,
+  `vol_lname` varchar(50) NOT NULL,
+  `vol_phone` varchar(20) NOT NULL,
+  `vol_email` varchar(60) NOT NULL,
+  `day` varchar(200) NOT NULL,
+  `event` varchar(200) NOT NULL,
+  PRIMARY KEY  (`vol_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+
+--
+-- Dumping data for table `Volunteer`
+--
+
+INSERT INTO `Volunteer` VALUES(1, '', 'Rafael', 'Rodriguez', '456-789-1230', 'rodrigrv87@gmail.com', 'Thursday', 'HIV Awareness');
+INSERT INTO `Volunteer` VALUES(30, '6', 'Sam', 'Witwicky', '987-123-1234', 'sam@email.com', 'Tuesday, Wednesday', 'Gritz & Gogo, AT&T Meet N Greet');
+INSERT INTO `Volunteer` VALUES(31, '12', 'jimmy', 'neutron', '615-745-3201', 'jim@myemail.com', 'Wednesday, Thursday', 'Donation Drive');
+INSERT INTO `Volunteer` VALUES(18, '', 'Steve', 'Scubadoo', '817-933-5354', 'rafaelvrodriguez@mavs.uta.edu', 'Wednesday', 'Gritz & Gogo');
+INSERT INTO `Volunteer` VALUES(27, '', 'Bobby', 'Hill', '456-785-0321', 'rodrigrv87@gmail.com', 'Tuesday, Wednesday, Thursday', 'Donation Drive, Gritz & Gogo');
+INSERT INTO `Volunteer` VALUES(32, '6', 'Sam', 'Witwicky', '994-184-1814', 'sam@email.com', 'Sunday', 'Donation Drive');
+INSERT INTO `Volunteer` VALUES(29, '2', 'Susie', 'Braken', '987-123-1234', 'rafael@gmail.com', 'Sunday, Friday', 'Donation Drive, HIV Awareness Rally');

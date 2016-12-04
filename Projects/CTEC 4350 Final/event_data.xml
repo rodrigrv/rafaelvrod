@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<McdaEvents>
+	<eventType>
+		<event>Donation Drive</event>
+			<desc>Networking opportunities</desc>
+			<desc>Learn about HIV / AIDS</desc>
+			<desc>Donate to the cause</desc>
+	</eventType>		
+	
+	<eventType>
+		<event>Gritz &amp; Gogo</event>
+			<desc>Great vibes and music</desc>
+			<desc>Drink specials and BBQ</desc>
+			<desc>Outside projector available</desc>
+	</eventType>
+
+	<eventType>
+		<event>HIV Awareness Rally</event>
+			<desc>Raise awareness for HIV/AIDS</desc>
+			<desc>Rally around MLK Boulevard</desc>
+			<desc>Complete with signs and pamphlets</desc>
+	</eventType>
+	
+	<eventType>
+		<event>AT&amp;T Meet N Greet</event>
+			<desc>Help raise money for a good cause</desc>
+			<desc>Meet new people</desc>
+			<desc>Chance to network and expand</desc>
+	</eventType>
+
+</McdaEvents>
