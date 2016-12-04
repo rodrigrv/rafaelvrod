@@ -1,403 +1,246 @@
 <!doctype html>
 <html>
+
 <head>
 <meta charset="utf-8">
 <title>Rafael Rodriguez</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="icon" type="image/png" href="images/favicon/html.png"/>
-<meta name="viewport" content="width=device-width initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="icon" type="image/png" href="images/favicon/html.png" />
+<meta name="viewport" content="width=device-width initial-scale=1.0" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
 <script>
-	var defaultBgColor = '#558b98';
+  var defaultBgColor = '#558b98';
 
-	function init() {
-		document.getElementById('nav1').onclick = function(){keepColor(this.id, '#77c1d3');}
-		document.getElementById('nav2').onclick = function(){keepColor(this.id, '#77c1d3');}
-		document.getElementById('nav3').onclick = function(){keepColor(this.id, '#77c1d3');}
-		document.getElementById('nav4').onclick = function(){keepColor(this.id, '#77c1d3');}
-		document.getElementById('nav5').onclick = function(){keepColor(this.id, '#77c1d3');}
-	}
-	
-	function keepColor(navId, sameColor) {
-		for (i = 1; i <= 5; i++) {
-			id = 'nav' + i;
-			document.getElementById(id).style.backgroundColor = defaultBgColor;
-		}
-		
-		document.getElementById(navId).style.backgroundColor = sameColor;
-	}
-	
+  function init() {
+    document.getElementById('nav1').onclick = function() {keepColor(this.id, '#77c1d3');}
+    document.getElementById('nav2').onclick = function() {keepColor(this.id, '#77c1d3');}
+    document.getElementById('nav3').onclick = function() {keepColor(this.id, '#77c1d3');}
+    document.getElementById('nav4').onclick = function() {keepColor(this.id, '#77c1d3');}
+    document.getElementById('nav5').onclick = function() {keepColor(this.id, '#77c1d3');}
+  }
+
+  function keepColor(navId, sameColor) {
+    for (i = 1; i <= 5; i++) {
+      id = 'nav' + i;
+      document.getElementById(id).style.backgroundColor = defaultBgColor;
+    }
+			document.getElementById(navId).style.backgroundColor = sameColor;
+  }
 	window.onload = init;
 </script>
 </head>
 
 <body>
-<!-- ******************** NAV ******************** -->
-<nav> 
-	<div class="name"><a href="#rafael">Rafael Rodriguez</a>
-    	<div class="ham_icon">☰</div>
+  <!-- ******************** NAV ******************** -->
+  <nav>
+  	<div class="name"><a href="#rafael">Rafael Rodriguez</a>
+      <div class="ham_icon">☰</div>
     </div>
-    <ul>
-    	<a href="#rafael"><li class="nav_name">Rafael Rodriguez</li></a>
-		<a href="#about" id="nav1"><li>About Me</li></a>
+      <ul>
+        <a href="#rafael"><li class="nav_name">Rafael Rodriguez</li></a>
+        <a href="#about" id="nav1"><li>About Me</li></a>
         <a href="#whatido" id="nav2"><li>What I Do</li></a>
-		<a href="#work" id="nav3"><li>My Work</li></a>
-		<a href="images/resume_rafael.pdf" target="_blank" id="nav4"><li>My Resume</li></a>
-		<a href="#contact" id="nav5"><li>Contact Me</li></a>
+        <a href="#work" id="nav3"><li>My Work</li></a>
+        <a href="images/resume_rafael.pdf" target="_blank" id="nav4"><li>My Resume</li></a>
+        <a href="#contact" id="nav5"><li>Contact Me</li></a>
         <li id="fill"></li>
-	</ul>
-</nav>
+      </ul>
+  </nav>
+  <!-- ******************** END OF NAV ******************** -->
 
-<!-- ******************** END OF NAV ******************** -->
+  <!-- ******************** HEADER ******************** -->
+  <header>
+    <a id="rafael"></a>
+      <iframe class="banner_video" src="https://www.youtube.com/embed/-a7de6hBwsw?rel=0&autoplay=1&loop=1&controls=0&playlist=-a7de6hBwsw" frameborder="0">
+      </iframe>
+    </header>
+  <!-- ******************** END OF HEADER ******************** -->
 
-
-<!-- ******************** HEADER ******************** -->
-<header>
-	<a id="rafael"></a>
-	<iframe class="banner_video"
-    src="https://www.youtube.com/embed/-a7de6hBwsw?rel=0&autoplay=1&loop=1&controls=0&playlist=-a7de6hBwsw"
-    frameborder="0">
-    </iframe>
-</header>
-<!-- ******************** END OF HEADER ******************** -->
-
-
-<!-- ******************** SECTION ******************** -->
-<section>
-
-
-<!-- ******************** BIO SECTION ******************** -->
-
-<div id="about" class="bio">
-	<h2 class="bio_title">About Me</h2>
-    	<div class="img_wrapper">
-            <img src="images/about_pics/pic1.jpg" alt="" class="bio_images"/>
-            <img src="images/about_pics/pic2.jpg" alt="" class="bio_images"/>
-            <img src="images/about_pics/pic3.jpg" alt="" class="bio_images"/>
-        </div>
-        	<p class="bio_text">Welcome to my portfolio site. My name is Rafael
-            Rodriguez. I attend the University of Texas at 
-            Arlington. I'm studying Communication Technology
-            right now and I'm expecting to graduate in Summer 2016.
-            My specialty is in web development /  web design. I 
-            have 3 solid years of academic experience creating 
-            websites.
-            <br><br>
-            One thing I love to do (besides creating websites) is 
-            watch movies. One of my favorite genres is action/sci-fi. 
-            Another hobby of mine is online gaming with League 
-            of Legends being my go-to game right now. 
-            <br><br>
-            I consider myself a master of useless skills like my 
-            ability to amaze people with my card tricks, solve 
-            Rubik's cubes, and do some skateboarding tricks. 
-            <br><br>
-            I have a really outgoing personality and I can get 
-            along with just about anyone. If I seem like your 
-            type of person, scroll down and see what I can offer.                   	
-            </p>
-                <h2 id="soc_title">Social Media</h2>
-                    <p class="soc_text">
-                    Below are the quickest and easiest way to contact
-                    and view my social media channels.
-                    </p>
- 
- <!-- ******************** SOCIAL MEDIA ******************** -->           
-            <div id="icon_wrapper">
-                <a href="mailto:rodrigrv87@gmail.com" target="_blank">
-                <img src="images/social_media_pics/soc_mail.png" alt="" class="soc_images"/>
-                </a>
-                <a href="https://www.facebook.com/rodrigrv" target="_blank">
-                <img src="images/social_media_pics/soc_facebook.png" alt="" class="soc_images"/>
-                </a>
-                <a href="https://www.instagram.com/rodrigrv" target="_blank">
-                <img src="images/social_media_pics/soc_instagram.png" alt="" class="soc_images"/>
-                </a>
-                <a href="https://www.twitter.com/rodrigrv87" target="_blank">
-                <img src="images/social_media_pics/soc_twitter.png" alt="" class="soc_images"/>
-                </a>
-                <a href="https://www.youtube.com/channel/UCz7QQ5Xn2EH0-jpBtin_V5A" target="_blank">
-                <img src="images/social_media_pics/soc_youtube.png" alt="" class="soc_images"/>
-                </a>
-                <a href="https://www.linkedin.com/in/rafaelvrodriguez" target="_blank">
-                <img src="images/social_media_pics/soc_linkedin.png" alt="" class="soc_images"/>
-                </a>
-            </div>     
-</div>
-<!-- ******************** END OF SOCIAL MEDIA ******************** -->
-
-<!-- ******************** END OF BIO ******************** -->
-
-
-<!-- ******************** WHAT I DO ******************** -->
-<div id="whatido" class="specialty">
-	<h2>What I Do</h2>
-    	<p>As stated above, my field of study is web development 
-        / web design. I work really well with the Adobe suite 
-        including Illustrator, Premiere Pro, and Dreamweaver. I also
-        have experience in SEO, multi-media production and social
-        media strategy. 
-        <br><br>
-        Some additional skills I'm beginning to become familiar
-        with are XML, AJAX, DHTML, and MySQL. Take a look at some 
-        of the skills I know best below.
+  <!-- ******************** SECTION ******************** -->
+  <section>
+		<!-- ******************** BIO SECTION ******************** -->
+		<div id="about" class="bio">
+      <h2 class="bio_title">About Me</h2>
+        <div class="img_wrapper">
+          <img src="images/about_pics/pic1.jpg" alt="" class="bio_images" />
+          <img src="images/about_pics/pic2.jpg" alt="" class="bio_images" />
+          <img src="images/about_pics/pic3.jpg" alt="" class="bio_images" />
+      	</div>
+        <p class="bio_text">Welcome to my portfolio site. My name is Rafael Rodriguez. I attend the University of Texas at Arlington. I'm studying Communication Technology right now and I'm expecting to graduate in Summer 2016. My specialty is in web development / web design. I have 3 solid years of academic experience creating websites.<br><br> One thing I love to do (besides creating websites) is watch movies. One of my favorite genres is action/sci-fi. Another hobby of mine is online gaming with League of Legends being my go-to game right now.<br><br> I consider myself a master of useless skills like my ability to amaze people with my card tricks, solve Rubik's cubes, and do some skateboarding tricks.<br><br> I have a really outgoing personality and I can get along with just about anyone. If I seem like your type of person, scroll down and see what I can offer.
         </p>
-        <div id="skill_wrapper">
-        	<img src="images/skill_pics/html5logo.png" alt="" class="skill_images">
-            <img src="images/skill_pics/css3logo.png" alt="" class="skill_images">
-            <img src="images/skill_pics/jslogo.png" alt="" class="skill_images">
-            <img src="images/skill_pics/phplogo.png" alt="" class="skill_images">
+
+		<!-- ******************** SOCIAL MEDIA ******************** -->
+		<h2 id="soc_title">Social Media</h2>
+      <p class="soc_text">Below are the quickest and easiest way to contact and view my social media channels.</p>
+        <div id="icon_wrapper">
+          <a href="mailto:rodrigrv87@gmail.com" target="_blank"><img src="images/social_media_pics/soc_mail.png" alt="" class="soc_images" /></a>
+          <a href="https://www.facebook.com/rodrigrv" target="_blank"><img src="images/social_media_pics/soc_facebook.png" alt="" class="soc_images" /></a>
+          <a href="https://www.instagram.com/rodrigrv" target="_blank"><img src="images/social_media_pics/soc_instagram.png" alt="" class="soc_images" /></a>
+          <a href="https://www.twitter.com/rodrigrv87" target="_blank"><img src="images/social_media_pics/soc_twitter.png" alt="" class="soc_images" /></a>
+          <a href="https://www.youtube.com/channel/UCz7QQ5Xn2EH0-jpBtin_V5A" target="_blank"><img src="images/social_media_pics/soc_youtube.png" alt="" class="soc_images" /></a>
+          <a href="https://www.linkedin.com/in/rafaelvrodriguez" target="_blank"><img src="images/social_media_pics/soc_linkedin.png" alt="" class="soc_images" /></a>
         </div>
-</div>
-<!-- ******************** END OF WHAT I DO ******************** -->
+    </div>
+    <!-- ******************** END OF SOCIAL MEDIA ******************** -->
+  	<!-- ******************** END OF BIO ******************** -->
 
-
-<!-- ******************** WORK SECTION ******************** -->
-<div id="work" class="portfolio">
-	<h2 class="color_change">My Work</h2>
-    	<p id="work_intro">Below you can view some of my 
-        academic works I've created since 
-        I've started. More to follow soon.
+    <!-- ******************** WHAT I DO ******************** -->
+    <div id="whatido" class="specialty">
+      <h2>What I Do</h2>
+        <p>As stated above, my field of study is web development / web design. I work really well with the Adobe suite including Illustrator, Premiere Pro, and Dreamweaver. I also have experience in SEO, multi-media production and social media strategy.<br><br> Some additional skills I'm beginning to become familiar with are XML, AJAX, DHTML, and MySQL. Take a look at some of the skills I know best below.
         </p>
-        <div class="work_wrapper">
-        	<div class="work_container_tablet1">
-                <div class="work_pairs">
-                	<div class="work_single">
-                    	<h3>Old West Animal Clinic</h3>
-                			<a href="http://omega.uta.edu/~rvr9109/courses/ctec4321/final/home.php" target="_blank">
-                    			<img src="images/work_pics/old_west.jpg" alt="" class="work_images"/>
-                			</a>
-                                <p class="work_text">
-                                This is currently my favorite website.
-                                It was my final project for my Digital
-                                Communication Management class. The
-                                primary use of this website was to 
-                                exhibit our ability to understand back-end
-                                development using PHP and MySQL. It has
-                                a working log-in / log-out system for new
-                                and existing users to schedule an appointment.
-                                </p>
-                                <hr>
-                    </div>
-                </div>
-                    
-                <div class="work_pairs">
-                    <div class="work_single">
-                    	<h3>Sam's All Pet's Animal Clinic</h3>
-                			<a href="http://omega.uta.edu/~rvr9109/courses/ctec4309/term/final/index.html" target="_blank">
-                    			<img src="images/work_pics/sams_clinic.jpg" alt="" class="work_images"/>
-                			</a>
-                				<p class="work_text">
-                                Working with a partner on this
-                                project, we showed what kind of 
-                                website the client could have.
-                                We optimized it for SEO and went
-                                for a clean and minimal approach. 
-                                It's complete with reviews and an 
-                                admin dashboard.
-                                </p>
-                				<hr>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="work_container_tablet2">
-            	<div class="work_pairs">
-                	<div class="work_single">
-            			<h3>A Day in the Life</h3>
-                			<iframe class="work_images" id="work_video2"
-                			src="https://www.youtube.com/embed/rrAGZ91bfSw?rel=0" 
-                			frameborder="0" allowfullscreen>
-                			</iframe>
-                				<p class="work_text">
-                                This was my final project for my 
-                                multimedia production class. The goal
-                                was to incorporate various film techniques
-                                as well as execute proper editing procedures
-                                to produce a short clip about anything
-                                the student wanted. I chose to do a "day
-                                in the life" type of video.
-                                </p>
-               					<hr>
-					</div>
-                </div>
-                
-                <div class="work_pairs">
-                	<div class="work_single">
-            			<h3>How To Impress Your Friends</h3>
-                            <iframe class="work_images" id="work_video1"
-                            src="https://www.youtube.com/embed/t3omW43JVOQ?rel=0" 
-                            frameborder="0" allowfullscreen>
-                            </iframe>
-                                <p class="work_text">
-                                I was tasked with making any kind of
-                                "How To" video. It had to be short
-                                and sweet, no longer than 20 seconds.
-                                If you want to know the secret to the 
-                                trick, ask me.
-                                </p>
-                            	<hr>
-            		</div>
-                </div>
-            </div>
-            
-            <div class="work_container_tablet3">
-            	<div class="work_pairs">
-                	<div class="work_single">
-                    	<h3>JavaJam Redesign</h3>
-                			<a href="http://omega.uta.edu/~rvr9109/courses/ctec3350/client/" target="_blank">
-                    			<img src="images/work_pics/javajam.jpg" alt="" class="work_images"/>
-                			</a>
-                				<p class="work_text">
-                                One of my projects during design & 
-                                development II, I needed to redesign
-                                this website with the goal of using 
-                                frameworks and making it responsive
-                                with media queries.
-                                </p>
-                				<hr>
-            		</div>
-                </div>
-                
-                <div class="work_pairs">
-                	<div class="work_single">
-            			<h3>That Movie Place</h3>
-                            <a href="http://students.uta.edu/rv/rvr9109/final/homepage.html" target="_blank">
-                                <img src="images/work_pics/movie_place.jpg" alt="" class="work_images"/>
-                            </a>
-                                <p class="work_text">
-                                This was my very first website. It 
-                                was also my final project for design
-                                & development I. This was a fabricated 
-                                movie company designed to fulfill the 
-                                basic needs of understanding HTML 
-                                and CSS.
-                                </p>
-                	</div>
-                </div>				
-            </div>
-            
-            <div class="clear"></div>
-        </div>
-        
-</div>
-<!-- ******************** END OF WORK ******************** -->
+      <div id="skill_wrapper">
+        <img src="images/skill_pics/html5logo.png" alt="" class="skill_images">
+        <img src="images/skill_pics/css3logo.png" alt="" class="skill_images">
+        <img src="images/skill_pics/jslogo.png" alt="" class="skill_images">
+        <img src="images/skill_pics/phplogo.png" alt="" class="skill_images">
+      </div>
+    </div>
+    <!-- ******************** END OF WHAT I DO ******************** -->
 
-<!-- ******************** CONTACT SECTION ******************** -->
-<div id="contact" class="contact_sec">
-	<h2 class="color_change">Contact Me</h2>
-        <p id="contact_text">
-        If you like what you've seen so far,
-        don't hesitate to use the form below
-        to get in contact with me. Additionally,
-        below are my resume, email, and phone if
-        you need another way to get a hold of me.
-        </p>
-        <div class="contact_wrapper">
-        	<div class="contact_icons">
-        	<image src="images/contact_pics/resume.png" alt=""
-            id="resume_icon"/>
-            </div>
-            <div class="contact_info">
-        	<a href="images/resume_rafael.pdf" target="_blank"
-            class="cta_resume">Click for CV
+    <!-- ******************** WORK SECTION ******************** -->
+    <div id="work" class="portfolio">
+    	<h2 class="color_change">My Work</h2>
+      	<p id="work_intro">Below you can view some of my academic works I've created since I've started. More to follow soon.</p>
+      	<div class="work_wrapper">
+          <div class="work_single">
+            <h3>Morningside Project</h3>
+              <a href="http://omega.uta.edu/~rvr9109/courses/ctec4350/term_project/index.php" target="_blank">
+                <img src="images/work_pics/morningside.jpg" alt="" class="work_images" />
+              </a>
+                <p class="work_text">My last project in my college career, I was tasked with making a fully functional website for a real client or organization. It had to have all elements previously learned from other projects like responsiveness, structure, and usability. It also had to include new elements like Dynamic HTML and AJAX.</p><hr>
+          </div>
+
+        	<div class="work_single">
+          	<h3>Old West Animal Clinic</h3>
+            	<a href="http://omega.uta.edu/~rvr9109/courses/ctec4321/final/home.php" target="_blank">
+            		<img src="images/work_pics/old_west.jpg" alt="" class="work_images" />
+            	</a>
+              	<p class="work_text">This is currently my favorite website. It was my final project for my Digital Communication Management class. The primary use of this website was to exhibit our ability to understand back-end development using PHP and MySQL. It has a working log-in / log-out system for new and existing users to schedule an appointment.</p><hr>
+        	</div>
+
+        <div class="work_single">
+          <h3>Sam's All Pet's Animal Clinic</h3>
+            <a href="http://omega.uta.edu/~rvr9109/courses/ctec4309/term/final/index.html" target="_blank">
+              <img src="images/work_pics/sams_clinic.jpg" alt="" class="work_images" />
             </a>
-            </div>
-       </div> 
-       
-       <div class="contact_wrapper">   
-            <div class="contact_icons">
-            <img src="images/contact_pics/mail.png" alt=""
-            class="email_icon">
-            </div>
-            <div class="contact_info">
+              <p class="work_text">Working with a partner on this project, we showed what kind of website the client could have. We optimized it for SEO and went for a clean and minimal approach. It's complete with reviews and an admin dashboard.</p><hr>
+        </div>
+
+        <div class="work_single">
+          <h3>A Day in the Life</h3>
+            <iframe class="work_images" id="work_video2" src="https://www.youtube.com/embed/rrAGZ91bfSw?rel=0" frameborder="0" allowfullscreen></iframe>
+              <p class="work_text">This was my final project for my multimedia production class. The goal was to incorporate various film techniques as well as execute proper editing procedures to produce a short clip about anything the student wanted. I chose to do a "day in the life" type of video.</p><hr>
+        </div>
+
+        <div class="work_single">
+          <h3>How To Impress Your Friends</h3>
+            <iframe class="work_images" id="work_video1" src="https://www.youtube.com/embed/t3omW43JVOQ?rel=0" frameborder="0" allowfullscreen></iframe>
+              <p class="work_text">I was tasked with making any kind of "How To" video. It had to be short and sweet, no longer than 20 seconds. If you want to know the secret to the trick, ask me.</p><hr>
+        </div>
+
+        <div class="work_single">
+          <h3>JavaJam Redesign</h3>
+            <a href="http://omega.uta.edu/~rvr9109/courses/ctec3350/client/" target="_blank">
+              <img src="images/work_pics/javajam.jpg" alt="" class="work_images" />
+            </a>
+              <p class="work_text">One of my projects during design & development II, I needed to redesign this website with the goal of using frameworks and making it responsive with media queries.</p><hr>
+        </div>
+
+      	<div class="work_single">
+          <h3>That Movie Place</h3>
+            <a href="http://students.uta.edu/rv/rvr9109/final/homepage.html" target="_blank">
+              <img src="images/work_pics/movie_place.jpg" alt="" class="work_images" />
+            </a>
+              <p class="work_text">This was my very first website. It was also my final project for design & development I. This was a fabricated movie company designed to fulfill the basic needs of understanding HTML and CSS.</p>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- ******************** END OF WORK ******************** -->
+
+    <!-- ******************** CONTACT SECTION ******************** -->
+    <div id="contact" class="contact_sec">
+      <h2 class="color_change">Contact Me</h2>
+        <p id="contact_text">If you like what you've seen so far, don't hesitate to use the form below to get in contact with me. Additionally, below are my resume, email, and phone if you need another way to get a hold of me.</p>
+        <div class="contact_wrapper">
+          <div class="contact_icons">
+            <image src="images/contact_pics/resume.png" alt="" id="resume_icon" />
+          </div>
+          <div class="contact_info">
+            <a href="images/resume_rafael.pdf" target="_blank" class="cta_resume">Click for CV</a>
+          </div>
+        </div>
+
+        <div class="contact_wrapper">
+          <div class="contact_icons">
+            <img src="images/contact_pics/mail.png" alt="" class="email_icon">
+          </div>
+        	<div class="contact_info">
             <p id="email_text">
-                <a href="mailto:rodrigrv87@gmail.com" target="_blank"
-                class="cta_email">
-                rodrigrv87@gmail.com</a>
+              <a href="mailto:rodrigrv87@gmail.com" target="_blank" class="cta_email">rodrigrv87@gmail.com</a>
             </p>
-            </div>
-       </div> 
-       
-       <div class="contact_wrapper">    
-            <div class="contact_icons">
-        	<img src="images/contact_pics/phone2.png" alt="" id="phone_icon">
-            </div>
-            <div class="contact_info">
-            <p id="contact_number">
-            (817) 933-5354
-            </p>
-            </div>
-        </div>   
-        <div class="clear"></div> 
-            <h3 id="contact_header">Contact Form</h3>
-            <div class="form_style">
-                <form action="" method="post">
-                    <label>
-                    	<input type="text" placeholder="Name" required>
-                    </label>
-                    
-                    <label>
-                    	<input type="email" placeholder="Email" required>
-                    </label>
-                    
-                    <label>
-                    	<textarea placeholder="Message" 
-                        rows="4" cols="22" required></textarea> 
-                    </label>
-                    
-                    	<input type="submit" value="Send Message">
-                
-                </form>
-            </div>
+          </div>
+        </div>
 
-</div>
-<!-- ******************** END OF CONTACT ******************** -->
+        <div class="contact_wrapper">
+          <div class="contact_icons">
+            <img src="images/contact_pics/phone2.png" alt="" id="phone_icon">
+          </div>
+          <div class="contact_info">
+            <p id="contact_number">(817) 933-5354</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <h3 id="contact_header">Contact Form</h3>
+				<!-- ********** FORM ********** -->
+				<div class="form_style">
+          <form action="" method="post">
+            <label><input type="text" placeholder="Name" required></label>
+            <label><input type="email" placeholder="Email" required></label>
+            <label><textarea placeholder="Message" rows="4" cols="22" required></textarea></label>
+						<input type="submit" value="Send Message">
+					</form>
+        </div>
 
+    </div>
+    <!-- ******************** END OF CONTACT ******************** -->
+  </section>
+    <!-- ******************** END OF SECTION ******************** -->
 
-</section>
-<!-- ******************** END OF SECTION ******************** -->
+    <!-- ******************** FOOTER ******************** -->
+    <footer>
+      <p id="footer_info">&copy; Rafael Rodriguez 2016<br> Last Update: December 2016</p>
+    </footer>
+    <!-- ******************** END OF FOOTER ******************** -->
 
+    <!-- SHORT JQUERY SCRIPT FOR NAV ANIMATION -->
+    <script>
+      $('.ham_icon').on('click', function() {
+        $('nav ul').toggleClass('showing');
+      });
 
-<!-- ******************** FOOTER ******************** -->
-<footer>
-	<p id="footer_info">
-    	&copy Rafael Rodriguez 2016<br>
-        Last Update: March 2016
-    </p>
-</footer>
-<!-- ******************** END OF FOOTER ******************** -->
+      $('nav ul li').on('click', function() {
+        $('nav ul').toggleClass('showing');
+      });
 
-
-
-
-<!-- SHORT JQUERY SCRIPT FOR NAV ANIMATION -->
-<script>
-	$('.ham_icon').on('click', function(){
-		$('nav ul').toggleClass('showing');
-	});
-	
-	$('nav ul li').on('click', function(){
-		$('nav ul').toggleClass('showing');
-	});
-	
-	$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1500);
-        return false;
-      }
-    }
-  });
-});
-</script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1500);
+                return false;
+            }
+          }
+        });
+      });
+    </script>
 </body>
 </html>

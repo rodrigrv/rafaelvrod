@@ -1,37 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
-
-/* 	
-
+/*
 Author: Rafael Rodriguez
-
-Last Updated: March 31, 2016
-	
-*/	
+Last Updated: December 4, 2016
+*/
 
 /* =========================================================== */
 /* ========================= BASE CSS ======================== */
 /* =========================================================== */
 
 /* ########## ALL ELEMENTS ########## */
-
-* {
-	margin:0;
-	padding:0;
-	font-family:Merriweather;	
-}
+* {margin:0; padding:0; font-family:Merriweather;}
 
 /* ########## NAVIGATION ########## */
-
-	.nav_name {
-		float:left;
-		cursor:pointer;	
-	}
-	
-	.nav_name:hover {
-		background:#77C1D3;	
-	}
-	
+	.nav_name {float:left; cursor:pointer;}
+	.nav_name:hover {background:#77C1D3;}
 	nav {
 		clear:both;
 		width:100%;
@@ -40,181 +23,102 @@ Last Updated: March 31, 2016
 		background-color:#558b98;
 		border-bottom:1px solid #000;
 	}
-	
-	a {
-		background:#558b98;
-		text-decoration:none;
-	}
-	
+
+	a {background:#558b98; text-decoration:none;}
 	nav ul {
 		margin: 0;
 		padding: 0;
 		color:white;
 		overflow:hidden;
-		text-align:right;	
+		text-align:right;
 		background-color:#558b98;
 		transition:max-height 0.5s;
 	}
-	
+
 	nav ul li {
 		padding:20px;
 		background:#558b98;
 		display:inline-block;
 	}
-	
-	nav ul a:link {
-		color:#f9f8f0;	
-	}
-	
-	nav ul a:visited {
-		color:#f9f8f0;	
-	}
-	
-	nav ul li:hover {
-		transition:.5s;
-		background-color:#77C1D3;
-	}
-	
+
+	nav ul a:link {color:#f9f8f0;}
+	nav ul a:visited {color:#f9f8f0;}
+	nav ul li:hover {transition:.5s; background-color:#77C1D3;}
 	.name {
 		width:100%;
 		color:white;
 		display:none;
-		cursor:pointer;	
+		cursor:pointer;
 		text-align:left;
 		padding:15px 10px;
 		background: #558b98;
 		box-sizing: border-box;
 	}
-	
-	.name a:link {
-		color:#f9f8f0;	
-	}
-	
-	.name a:visited {
-		color:#f9f8f0;	
-	}
-	
-	.name a:hover {
-		transition:.5s;
-		background:#77C1D3;
-	}
-	
-	.ham_icon {	
-		float:right;
-		display:none;
-		padding-right:10px;
-	}
-	
+
+	.name a:link {color:#f9f8f0;}
+	.name a:visited {color:#f9f8f0;}
+	.name a:hover {transition:.5s; background:#77C1D3;}
+	.ham_icon {float:right; display:none; padding-right:10px;}
+
 /* ########## HEADER ########## */
-
-	header {
-		background:#222;	
-	}
-
+	header {background:#222;}
 	.banner_video {
 		width:100%;
 		height:540px;
 		margin:0 auto;
-		display:block;	
+		display:block;
 		text-align:center;
 		background:#222;
 	}
 
 /* ########## SECTION ########## */
-
-	h2 {
-		color:#e9c352;
-		text-align:center;	
-	}
+	h2 {color:#e9c352; text-align:center;}
 
 /* ########## BIO SECTION ########## */
-
-	.bio {
-		background:#558b98;
-	}
-	
+	.bio {background:#558b98;}
 	.img_wrapper {
 		margin:0 auto;
 		display:block;
 		padding-top:10%;
-		text-align:center;	
+		text-align:center;
 	}
-	
-	p {
-		font-family: Open Sans;		
-	}
-	
+
+	p {font-family: Open Sans;}
 	.bio_images {
 		width:100%;
 		margin:0 2%;
 		display:inline;
-		border-radius:200px;	
+		border-radius:200px;
 		-webkit-filter:drop-shadow(5px 5px 5px #444);
 	}
-	
-/* ########## SOCIAL MEDIA SECTION ########## */
 
-	.soc_images {
-		border-radius:50px;
-		-webkit-filter:brightness(50%);	
-	}
-	
-	.soc_images:hover {
-		transition:.7s;
-		-webkit-filter:brightness(100%);	
-	}
-	
+/* ########## SOCIAL MEDIA SECTION ########## */
+	.soc_images {border-radius:50px; -webkit-filter:brightness(50%);}
+	.soc_images:hover {transition:.7s; -webkit-filter:brightness(100%);}
+
 /* ########## WHAT I DO SECTION ########## */
-	
-	.specialty {
-		padding:20% 10%;
-		background:#f9f8f0;
-	}
-	
+	.specialty {padding:20% 10%; background:#f9f8f0;}
 	#skill_wrapper {
 		margin:0 auto;
 		display:block;
 		text-align:center;
 	}
-	
-	.skill_images {
-		margin:5% 10%;
-		-webkit-filter:drop-shadow(5px 5px 5px #444);
-	}
-	
-/* ########## MY WORK SECTION ########## */
 
-	h3 {
-		color:#558b98;	
-	}
-	
+	.skill_images {margin:5% 10%; -webkit-filter:drop-shadow(5px 5px 5px #444);}
+
+/* ########## MY WORK SECTION ########## */
+	h3 {color:#558b98;}
 	.work_wrapper {
 		margin:0 auto;
 		display:block;
-		text-align:center;	
+		text-align:center;
 	}
-	
-	.work_images {
-		width:100%;	
-	}
-	
-	hr {
-		display:none;	
-	}
-	
-	.portfolio {
-		padding:20% 10%;
-		background:#e9c352;	
-	}
-	
-	.color_change {
-		color:#588d98;	
-	}
-	
-	.work_wrapper a {
-		background:#e9c352;	
-	}
-	
+
+	.work_images {width:100%;}
+	hr {display:none;}
+	.portfolio {padding:20% 10%;background:#e9c352;}
+	.color_change {color:#588d98;}
+	.work_wrapper a {background:#e9c352;}
 	.work_images {
 		width:100%;
 		margin:10% 0;
@@ -222,15 +126,14 @@ Last Updated: March 31, 2016
 		transform:scale(.9,.9);
 		-webkit-filter:brightness(50%);
 	}
-	
+
 	.work_images:hover {
 		transition:1s;
 		transform:scale(1,1);
-		-webkit-filter:brightness(100%);	
+		-webkit-filter:brightness(100%);
 	}
-	
-/* ########## CONTACT SECTION ########## */
 
+/* ########## CONTACT SECTION ########## */
 	.cta_resume {
 		width:100px;
 		height:30px;
@@ -241,47 +144,40 @@ Last Updated: March 31, 2016
 		border:2px solid #000;
 		font-family:Merriweather;
 	}
-	
+
 	a.cta_resume {
 		color:#000;
 		border-radius:5px;
-		background:#f9f8f0;	
+		background:#f9f8f0;
 	}
-	
+
 	a.cta_resume:hover {
 		color:#f9f8f0;
 		transition:.7s;
-		background:#000;	
+		background:#000;
 	}
-	
-	a.cta_email {
-		color:#558b98;
-		background:#f9f8f0;	
-	}
-	
-	#contact_number {
-		font-family:Merriweather;	
-	}
-	
+
+	a.cta_email {color:#558b98;background:#f9f8f0;}
+	#contact_number {font-family:Merriweather;}
 	.form_style {
 		padding:0;
 		margin:10%;
 		display:block;
 		text-align:center;
 	}
-	
+
 	.form_style input[type="text"],
 	.form_style input[type="email"],
 	.form_style textarea {
 		width:80%;
 		color:#000;
 		margin:2% 0;
-		padding:3% 5%;	
+		padding:3% 5%;
 		font-size:1.125em;
 		border-radius:10px;
 		font-family:Open Sans;
 	}
-	
+
 	.form_style input[type="submit"] {
 		width:43%;
 		padding:0;
@@ -297,60 +193,33 @@ Last Updated: March 31, 2016
 		background:#558b98;
 		font-family:Open Sans;
 	}
-	
+
 	.form_style input[type="submit"]:hover {
 		color:#f9f8f0;
-		transition:.7s;	
+		transition:.7s;
 		background:#000;
 	}
-	
 
-/* ########## FOOTER SECTION ########## */
-
-footer {
-		background:#558b98;	
-	}
-	
-	#footer_info {
-		color:#f9f8f0;
-		text-align:center;	
-	}
+	/* ########## FOOTER SECTION ########## */
+		footer {background:#558b98;}
+		#footer_info {color:#f9f8f0; text-align:center;}
 
 
 /* =========================================================== */
 /* ======================== MOBILE CSS ======================= */
 /* =========================================================== */
 
-@media screen 
+@media screen
 	and (max-width:500px){
 
 /* ########## ALL ELEMENTS ########## */
-
-	* {
-		margin:0;
-		padding:0;
-	}
-	
+	* {margin:0;padding:0;}
 
 /* ########## NAVIGATION ########## */
-	
-	.nav_name {
-		display:none;	
-	}
-	
-	nav {
-		width:100%;
-	}
-	
-	nav ul {
-		max-height:0;
-		display:block;
-	}
-	
-	.showing {
-		max-height:25em;	
-	}
-	
+	.nav_name {display:none;}
+	nav {width:100%;}
+	nav ul {max-height:0;display:block;}
+	.showing {max-height:25em;}
 	nav ul li {
 		width:100%;
 		text-align:left;
@@ -358,146 +227,84 @@ footer {
 		box-sizing: border-box;
 		padding:15px 0 15px 40px;
 	}
-	
-	.name {
-		color:#f9f8f0;
-		display:block;	
-		padding-left:20px;
-	}
-	
-	.name a:link {
-		color:#f9f8f0;	
-	}
-	
-	.name a:visited {
-		color:#f9f8f0;	
-	}
-		
-	.ham_icon {
-		display:block;
-		background:#558b98;	
-	}
-	
-	#fill {
-		margin:0;
-		padding:0;	
-	}
-	
+
+	.name {color:#f9f8f0; display:block; padding-left:20px;}
+	.name a:link {color:#f9f8f0;}
+	.name a:visited {color:#f9f8f0;}
+	.ham_icon {display:block; background:#558b98;}
+	#fill {margin:0;padding:0;}
+
 /* ########## HEADER ########## */
-	
-	header {
-		background:#222;	
-	}
-	
+	header {background:#222;}
 	.banner_video {
 		width:100%;
 		height:220px;
 		margin:0 auto;
-		display:block;	
+		display:block;
 		text-align:center;
 		background:#222;
 	}
 
 /* ########## SECTION ########## */
-	
-	section {	
-	}
 
 /* ########## BIO SECTION ########## */
-	
-	.bio {
-		padding:20% 10%;	
-	}
-	
-	h2 {
-		color:#e9c352;
-		text-align:center;	
-	}
-	
+	.bio {padding:20% 10%;}
+	h2 {color:#e9c352;text-align:center;}
 	.img_wrapper {
 		margin:0 auto;
 		display:block;
 		padding-top:10%;
-		text-align:center;	
+		text-align:center;
 	}
-	
+
 	.bio_images {
 		width:27%;
 		margin:0 2%;
 		display:inline;
-		border-radius:200px;	
+		border-radius:200px;
 		-webkit-filter:drop-shadow(5px 5px 5px #444);
 	}
-	
-	.bio_text {
-		color:#f9f8f0;	
-	}
-	
+
+	.bio_text {color:#f9f8f0;}
 	p {
 		padding:20% 0;
 		margin:0 auto;
 		font-size:1.2em;
 		line-height:1.25em;
-		font-family: Open Sans;	
+		font-family: Open Sans;
 	}
-	
+
 	#icon_wrapper {
 		margin:0 auto;
 		display:block;
 		text-align:center;
 	}
-	
+
 /* ########## SOCIAL MEDIA SECTION ########## */
-	
-	#soc_title {
-		padding:0;
-		color:#e9c352;	
-	}
-	
+	#soc_title {padding:0;color:#e9c352;}
 	.soc_text {
 		padding:0;
 		color:#f9f8f0;
-		margin:10% 0 15% 0;	
+		margin:10% 0 15% 0;
 	}
-	
-	.soc_images {
-		margin:3%;	
-	}
-	
+
+	.soc_images {margin:3%;}
 
 /* ########## WHAT I DO SECTION ########## */
+	.specialty {padding:20% 10%; background:#f9f8f0;}
 
-	.specialty {
-		padding:20% 10%;
-		background:#f9f8f0;
-	}
-	
 	#skill_wrapper {
 		margin:0 auto;
 		display:block;
 		text-align:center;
 	}
-	
-	.skill_images {
-		margin:5% 10%;
-		-webkit-filter:drop-shadow(5px 5px 5px #444);
-	}
-	
-/* ########## MY WORK SECTION ########## */
 
-	.portfolio {
-		padding:20% 10%;
-		background:#e9c352;	
-	}
-	
-	.color_change {
-		color:#588d98;	
-	}
-	
-	.work_wrapper a {
-		background:#e9c352;	
-	}
-	
+	.skill_images {margin:5% 10%; -webkit-filter:drop-shadow(5px 5px 5px #444);}
+
+/* ########## MY WORK SECTION ########## */
+	.portfolio {padding:20% 10%; background:#e9c352;}
+	.color_change {color:#588d98;}
+	.work_wrapper a {background:#e9c352;}
 	.work_images {
 		width:100%;
 		margin:10% 0;
@@ -505,47 +312,32 @@ footer {
 		transform:scale(.9,.9);
 		-webkit-filter:brightness(50%);
 	}
-	
+
 	.work_images:hover {
 		transition:1s;
 		transform:scale(1,1);
-		-webkit-filter:brightness(100%);	
+		-webkit-filter:brightness(100%);
 	}
-	
-	#work_video1 {
-		height:170px;	
-	}
-	
-	#work_video2 {
-		height:170px;	
-	}
-	
-	.work_text {
-		padding:0;
-		text-align:left;
-		margin:0 0 10% 0;	
-	}
-	
+
+	#work_video1 {height:170px;}
+	#work_video2 {height:170px;}
+	.work_text {padding:0; text-align:left; margin:0 0 10% 0;}
+
 	hr {
 		margin:10% 0;
 		display:inherit;
-		border:dashed #f9f8f0 2px;	
+		border:dashed #f9f8f0 2px;
 	}
-	
-/* ########## CONTACT SECTION ########## */
 
-	.contact_sec {
-		padding:20% 10%;
-		background:#f9f8f0;
-	}
-	
+/* ########## CONTACT SECTION ########## */
+	.contact_sec {padding:20% 10%; background:#f9f8f0;}
 	#resume_icon {
 		display:block;
 		margin:10% auto;
 		padding-bottom:5%;
-		text-align:center;	
+		text-align:center;
 	}
-	
+
 	.cta_resume {
 		width:100px;
 		height:30px;
@@ -555,72 +347,41 @@ footer {
 		padding:4% 2% 2% 2%;
 		border:2px solid #000;
 	}
-	
-	a.cta_resume {
-		color:#000;
-		border-radius:5px;
-		background:#f9f8f0;	
-	}
-	
-	a.cta_resume:hover {
-		color:#f9f8f0;
-		transition:.7s;
-		background:#000;	
-	}
-	
+
+	a.cta_resume {color:#000; border-radius:5px; background:#f9f8f0;}
+	a.cta_resume:hover {color:#f9f8f0; transition:.7s; background:#000;}
 	.email_icon {
 		display:block;
 		padding-top:10%;
 		margin:10% auto 0;
-		text-align:center;	
+		text-align:center;
 	}
-	
-	#email_text {
-		padding:0;
-		margin:0 0 20% 0;
-		text-align:center;	
-	}
-	
-	a.cta_email {
-		color:#558b98;
-		background:#f9f8f0;	
-	}
-	
-	#phone_icon {
-		display:block;
-		margin:0 auto 0;
-		text-align:center;	
-	}
-	
+
+	#email_text {padding:0; margin:0 0 20% 0; text-align:center;}
+	a.cta_email {color:#558b98;background:#f9f8f0;}
+	#phone_icon {display:block; margin:0 auto 0; text-align:center;}
 	#contact_number {
 		padding:0;
 		margin:10% 0 30% 0;
-		text-align:center;	
+		text-align:center;
 		font-family:Merriweather;
 	}
-	
-	#contact_header {
-		color:#558b98;
-		text-align:center;	
-	}
-	
-	.form_style {
-		padding:0;
-		margin:10% auto;
-	}
-	
+
+	#contact_header {color:#558b98; text-align:center;}
+	.form_style {padding:0; margin:10% auto;}
+
 	.form_style input[type="text"],
 	.form_style input[type="email"],
 	.form_style textarea {
 		width:90%;
 		color:#000;
 		margin:2% 0;
-		padding:3% 5%;	
+		padding:3% 5%;
 		font-size:1.125em;
 		border-radius:10px;
 		font-family:Open Sans;
 	}
-	
+
 	.form_style input[type="submit"] {
 		width:50%;
 		padding:0;
@@ -636,23 +397,16 @@ footer {
 		background:#558b98;
 		font-family:Open Sans;
 	}
-	
+
 	.form_style input[type="submit"]:hover {
 		color:#f9f8f0;
-		transition:.7s;	
+		transition:.7s;
 		background:#000;
 	}
-	
+
 /* ########## FOOTER SECTION ########## */
-	
-	footer {
-		background:#558b98;	
-	}
-	
-	#footer_info {
-		color:#f9f8f0;
-		text-align:center;	
-	}
+	footer {background:#558b98;}
+	#footer_info {color:#f9f8f0; text-align:center;}
 }
 
 /* =========================================================== */
@@ -662,26 +416,12 @@ footer {
 @media screen and
 	(min-width:501px) and
 	(max-width:767px) {
-	
+
 /* ########## NAVIGATION ########## */
-	
-	.nav_name {
-		display:none;	
-	}
-	
-	nav {
-		width:100%;
-	}
-	
-	nav ul {
-		max-height:0;
-		display:block;
-	}
-	
-	.showing {
-		max-height:25em;	
-	}
-	
+	.nav_name {display:none;}
+	nav {width:100%;}
+	nav ul {max-height:0; display:block;}
+	.showing {max-height:25em;}
 	nav ul li {
 		width:100%;
 		text-align:left;
@@ -689,148 +429,59 @@ footer {
 		box-sizing: border-box;
 		padding:15px 0 15px 40px;
 	}
-	
-	.name {
-		display:block;	
-		padding-left:20px;
-	}		
-		
-	.ham_icon {
-		display:block;
-		background:#558b98;	
-	}
-	
-	#fill {
-		margin:0;
-		padding:0;	
-	}
-	
+
+	.name {display:block; padding-left:20px;}
+	.ham_icon {display:block; background:#558b98;}
+	#fill {margin:0; padding:0;}
 
 /* ########## HEADER SECTION ########## */
-
-	header {
-		background:#222;	
-	}
-	
+	header {background:#222;}
 	.banner_video {
 		width:100%;
 		height:290px;
 		margin:0 auto;
-		display:block;	
+		display:block;
 		text-align:center;
-		background:#222;		
+		background:#222;
 	}
 
 /* ########## SECTION SECTION ########## */
 
 /* ########## BIO SECTION ########## */
-
-	.bio {
-		padding:20% 10%;	
-	}
-	
-	.img_wrapper {
-		display:block;
-		margin:0 auto;
-		text-align:center;	
-	}
-	
-	.bio_images {
-		width:27%;	
-		display:inline;
-		border-radius:200px;
-	}
-	
-	.bio_text {
-		color:#f9f8f0;
-		padding:10% 0;
-		font-size:1.1em;	
-	}
+	.bio {padding:20% 10%;}
+	.img_wrapper {display:block; margin:0 auto; text-align:center;}
+	.bio_images {width:27%; display:inline; border-radius:200px;}
+	.bio_text {color:#f9f8f0; padding:10% 0; font-size:1.1em;}
 
 /* ########## SOCIAL MEDIA SECTION ########## */
-
-	.soc_text {
-		color:#f9f8f0;
-		padding:10% 0;	
-		font-size:1.1em;
-	}
-	
-	#icon_wrapper {
-		display:block;
-		margin:0 auto;
-		text-align:center;	
-	}
-	
-	.soc_images {
-		width:15%;
-		margin:5%;
-	}
+	.soc_text {color:#f9f8f0; padding:10% 0; font-size:1.1em;}
+	#icon_wrapper {display:block; margin:0 auto; text-align:center;}
+	.soc_images {width:15%; margin:5%;}
 
 /* ########## WHAT I DO SECTION ########## */
-
-	.specialty {
-		padding:20% 10%;	
-	}
-	
-	p {
-		padding:10%;
-		font-size:1.1em;	
-	}
-	
-	.skill_images {
-		margin:11%;	
-	}
+	.specialty {padding:20% 10%;}
+	p {padding:10%; font-size:1.1em;}
+	.skill_images {margin:11%;}
 
 /* ########## MY WORK SECTION ########## */
-
-	h3 {
-		margin:10%;	
-	}
-	
-	#work_intro {
-		padding:10% 0;	
-	}
-	
-	.work_text {
-		padding:10% 0;
-		text-align:left;	
-	}
-	
-	.work_images {
-		margin:0;	
-	}
-	
-	#work_video1 {
-		height:275px;	
-	}
-	
-	#work_video2 {
-		height:275px;	
-	}
-	
-	hr {
-		display:inherit;
-		border:dashed #f9f8f0 2px;	
-	}
+	h3 {margin:10%;}
+	#work_intro {padding:10% 0;}
+	.work_text {padding:10% 0; text-align:left;}
+	.work_images {margin:0;}
+	#work_video1 {height:275px;}
+	#work_video2 {height:275px;}
+	hr {display:inherit;border:dashed #f9f8f0 2px;}
 
 /* ########## CONTACT SECTION ########## */
-
-	.contact_sec {
-		padding:20% 10%;	
-		background:#f9f8f0;
-	}
-	
-	#contact_text {
-		padding:10% 0;	
-	}
-	
+	.contact_sec {padding:20% 10%; background:#f9f8f0;}
+	#contact_text {padding:10% 0;}
 	#resume_icon {
 		display:block;
 		margin:10% auto;
 		padding-bottom:5%;
-		text-align:center;	
+		text-align:center;
 	}
-	
+
 	.cta_resume {
 		width:100px;
 		height:30px;
@@ -840,74 +491,46 @@ footer {
 		padding:4% 2% 2% 2%;
 		border:2px solid #000;
 	}
-	
-	a.cta_resume {
-		color:#000;
-		border-radius:5px;
-		background:#f9f8f0;	
-	}
-	
-	a.cta_resume:hover {
-		color:#f9f8f0;
-		transition:.7s;
-		background:#000;	
-	}
-	
+
+	a.cta_resume {color:#000; border-radius:5px; background:#f9f8f0;}
+	a.cta_resume:hover {color:#f9f8f0; transition:.7s; background:#000;}
 	.email_icon {
 		display:block;
 		padding-top:10%;
 		margin:10% auto 0;
-		text-align:center;	
+		text-align:center;
 	}
-	
-	#email_text {
-		padding:0;
-		margin:0 0 20% 0;
-		text-align:center;	
-	}
-	
-	a.cta_email {
-		color:#558b98;
-		background:#f9f8f0;	
-	}
-	
-	#phone_icon {
-		display:block;
-		margin:0 auto 0;
-		text-align:center;	
-	}
-	
+
+	#email_text {padding:0; margin:0 0 20% 0; text-align:center;}
+	a.cta_email {color:#558b98; background:#f9f8f0;}
+	#phone_icon {display:block; margin:0 auto 0; text-align:center;}
 	#contact_number {
 		padding:0;
 		margin:10% 0 30% 0;
-		text-align:center;	
+		text-align:center;
 		font-family:Merriweather;
 	}
-	
-	#contact_header {
-		color:#558b98;
-		text-align:center;	
-	}
-	
+
+	#contact_header {color:#558b98; text-align:center;}
 	.form_style {
 		padding:0;
 		margin:10%;
 		display:block;
 		text-align:center;
 	}
-	
+
 	.form_style input[type="text"],
 	.form_style input[type="email"],
 	.form_style textarea {
 		width:80%;
 		color:#000;
 		margin:2% 0;
-		padding:3% 5%;	
+		padding:3% 5%;
 		font-size:1.125em;
 		border-radius:10px;
 		font-family:Open Sans;
 	}
-	
+
 	.form_style input[type="submit"] {
 		width:43%;
 		padding:0;
@@ -923,116 +546,53 @@ footer {
 		background:#558b98;
 		font-family:Open Sans;
 	}
-	
+
 	.form_style input[type="submit"]:hover {
 		color:#f9f8f0;
-		transition:.7s;	
+		transition:.7s;
 		background:#000;
 	}
 
 /* ########## FOOTER SECTION ########## */
-	
 
-		
 }
 
 /* =========================================================== */
 /* ======================== TABLET CSS ======================= */
 /* =========================================================== */
 
-@media screen and 
+@media screen and
 	(min-width:768px) and
 	(max-width:1024px) {
-		
+
 /* ########## NAVIGATION SECTION ########## */
-	
-	.nav_name {
-		margin-left:20px;	
-	}
-	
-	nav ul li {
-		padding:20px 10px;
-	}
-	
+	.nav_name {margin-left:20px;}
+	nav ul li {padding:20px 10px;}
+
 /* ########## HEADER SECTION ########## */
-
-	header {
-		background:#222;	
-	}
-
-	.banner_video {
-		height:435px;	
-	}
+	header {background:#222;}
+	.banner_video {height:435px;}
 
 /* ########## SECTION ########## */
 
 /* ########## BIO SECTION ########## */
-
-	.bio {
-		padding:10% 12%;	
-	}
-	
-	.bio_images {
-		width:27%;	
-	}
-	
-	.bio_text {
-		color:#f9f8f0;
-		padding:10% 0;
-		font-size:1.1em;	
-	}
+	.bio {padding:10% 12%;}
+	.bio_images {width:27%;}
+	.bio_text {color:#f9f8f0; padding:10% 0; font-size:1.1em;}
 
 /* ########## SOCIAL MEDIA SECTION ########## */
-
-	.soc_text {
-		color:#f9f8f0;
-		padding:10% 0;
-		font-size:1.1em;	
-	}
-	
-	#icon_wrapper {
-		display:block;
-		margin:0 auto;
-		text-align:center;	
-	}
-	
-	.soc_images {
-		margin:0 1%;	
-	}
+	.soc_text {color:#f9f8f0; padding:10% 0; font-size:1.1em;}
+	#icon_wrapper {display:block; margin:0 auto; text-align:center;}
+	.soc_images {margin:0 1%;}
 
 /* ########## WHAT I DO SECTION ########## */
-
-	.specialty {
-		padding:10%;	
-	}
-	
-	p {
-		padding:10% 0;	
-	}
-	
-	.skill_images {
-		margin:5%;
-	}
+	.specialty {padding:10%;}
+	p {padding:10% 0;}
+	.skill_images {margin:5%;}
 
 /* ########## MY WORK SECTION ########## */
-
-	.portfolio {
-		padding:10%;
-	}
-	
-	h3 {
-		margin:0 0 5% 0;
-		font-size:1.1em;
-		text-align:center;	
-	}
-	
-	.work_container_tablet1 {
-		height:500px;
-		margin:0 auto;
-		display:block;
-		text-align:center;
-	}
-	
+	.portfolio {padding:10%;}
+	h3 {margin:0 0 5% 0; font-size:1.1em; text-align:center;}
 	.work_single {
 		width:45%;
 		float:left;
@@ -1040,195 +600,84 @@ footer {
 		display:block;
 		margin:0 auto;
 		text-align:center;
+		height:485px;
 	}
-	
-	.work_container_tablet2 {
-		height:500px;
-		margin:0 auto;
-		display:block;
-		text-align:center;
-	}
-	
-	.work_container_tablet3 {
-		height:500px;
-		margin:0 auto;
-		display:block;
-		text-align:center;
-	}
-	
-	.work_images {
-		margin:0;
-		height:200px;	
-	}
-	
+
+	.work_images {margin:0; height:200px;}
 	.work_text {
-		padding:0;	
+		padding:0;
 		text-align:left;
 		margin:10% 0 0 0;
 		transform:scale(.9, .9);
 	}
 
-	.clear {
-		clear:both;	
-	}
+	.clear {clear:both;}
 
 /* ########## CONTACT SECTION ########## */
-
-	.contact_sec {
-		padding:10%;
-		background:#f9f8f0;	
-	}
-	
+	.contact_sec {padding:10%; background:#f9f8f0;}
 	.contact_wrapper {
-		width:33%;	
+		width:33%;
 		float:left;
 		display:block;
 		margin:0 auto;
 		padding:0 0 15% 0;
 		text-align:center;
 	}
-	
-	.contact_info {
-		margin:15% 0;	
-	}
-	
-	#email_text {
-		padding:0;	
-	}
-	
-	#contact_number {
-		padding:0;	
-	}
-	
-	.clear {
-		clear:both;	
-	}
-	
-	#contact_header {
-		font-size:1.2em;
-	}
-	
-	.form_style input[type="submit"] {
-		width:45%;
-		height:70px;	
-	}
-	
-	
+
+	.contact_info {margin:15% 0;}
+	#email_text {padding:0;}
+	#contact_number {padding:0;}
+	.clear {clear:both;}
+	#contact_header {font-size:1.2em;}
+	.form_style input[type="submit"] {width:45%; height:70px;}
 
 /* ########## FOOTER SECTION ########## */
-	
-	footer {
-		clear:both;	
-	}
+	footer {clear:both;}
 }
 
 /* =========================================================== */
 /* ================== TABLET LANDSCAPE CSS =================== */
 /* =========================================================== */
 
-@media screen and 
+@media screen and
 	(min-width:1025px) and
 	(max-width:1200px) {
-		
+
 /* ########## NAVIGATION SECTION ########## */
-	
-	.nav_name {
-		margin-left:5%;	
-	}
-	
-	#fill {
-		padding:0;
-		margin:0 3%;	
-	}
-	
+	.nav_name {margin-left:5%;}
+	#fill {padding:0; margin:0 3%;}
 
 /* ########## HEADER SECTION ########## */
-
-	header {
-		background:#222;	
-	}
-	
+	header {background:#222;}
 	.banner_video {
 		width:960px;
 		display:block;
 		margin:0 auto;
 		background:#222;
-		text-align:center;	
+		text-align:center;
 	}
 
 /* ########## SECTION ########## */
 
 /* ########## BIO SECTION ########## */
+	.bio {padding:10% 15%;}
+	.bio_images {width:20%;}
+	.bio_text {color:#f9f8f0; padding:5% 0;}
 
-	.bio {
-		padding:10% 15%;	
-	}
-	
-	.bio_images {
-		width:20%;	
-	}
-	
-	.bio_text {
-		color:#f9f8f0;
-		padding:5% 0;	
-	}
-	
 /* ########## SOCIAL MEDIA SECTION ########## */
-
-	.soc_text {
-		color:#f9f8f0;
-		padding:5% 0;
-		text-align:center;
-	}
-	
-	#icon_wrapper {
-		display:block;
-		margin:0 auto;
-		text-align:center;	
-	}
-	
-	.soc_images {
-		margin:0 2%;	
-	}
+	.soc_text {color:#f9f8f0; padding:5% 0; text-align:center;}
+	#icon_wrapper {display:block; margin:0 auto; text-align:center;}
+	.soc_images {margin:0 2%;}
 
 /* ########## WHAT I DO SECTION ########## */
-
-	.specialty {
-		padding:10% 15%;	
-		background:#f9f8f0;
-	}
-	
-	p {
-		margin:10% 0;	
-	}
-	
-	.skill_images {
-		margin:5%;	
-	}
+	.specialty {padding:10% 15%; background:#f9f8f0;}
+	p {margin:10% 0;}
+	.skill_images {margin:5%;}
 
 /* ########## MY WORK SECTION ########## */
-
-	.portfolio {
-		padding:10% 15%;	
-	}
-	
-	#work_intro {
-		text-align:center;	
-	}
-	
-	h3 {
-		margin:0 0 5% 0;
-		font-size:1.1em;
-		text-align:center;	
-	}
-	
-	.work_container_tablet1 {
-		height:500px;
-		margin:0 auto;
-		display:block;
-		text-align:center;
-	}
-	
+	.portfolio {padding:10% 15%;}
+	#work_intro {text-align:center;}
+	h3 {margin:0 0 5% 0; font-size:1.1em; text-align:center;}
 	.work_single {
 		width:45%;
 		float:left;
@@ -1236,92 +685,41 @@ footer {
 		display:block;
 		margin:0 auto;
 		text-align:center;
+		height:600px;
 	}
-	
-	.work_container_tablet2 {
-		height:500px;
-		margin:0 auto;
-		display:block;
-		text-align:center;
-	}
-	
-	.work_container_tablet3 {
-		height:500px;
-		margin:0 auto;
-		display:block;
-		text-align:center;
-	}
-	
-	.work_images {
-		margin:0;
-		height:200px;	
-	}
-	
+
+	.work_images {margin:0; height:200px;}
 	.work_text {
-		padding:0;	
+		padding:0;
 		text-align:left;
 		margin:10% 0 0 0;
 		transform:scale(.9, .9);
 	}
 
-	.clear {
-		clear:both;	
-	}
+	.clear {clear:both;}
 
 /* ########## CONTACT SECTION ########## */
-
-	.contact_sec {
-		padding:10% 15%;
-		background:#f9f8f0;	
-	}
-	
-	#contact_text {
-		text-align:center;
-	}	
-	
+	.contact_sec {padding:10% 15%; background:#f9f8f0;}
+	#contact_text {text-align:center;}
 	.contact_wrapper {
-		width:33%;	
+		width:33%;
 		float:left;
 		display:block;
 		margin:0 auto;
 		padding:0 0 15% 0;
 		text-align:center;
 	}
-	
-	.contact_info {
-		margin:15% 0;	
-	}
-	
-	#email_text {
-		padding:0;	
-	}
-	
-	#contact_number {
-		padding:0;	
-	}
-	
-	.clear {
-		clear:both;	
-	}
-	
-	#contact_header {
-		font-size:1.2em;
-	}
-	
-	.form_style input[type="submit"] {
-		width:45%;
-		height:70px;	
-	}
+
+	.contact_info {margin:15% 0;}
+	#email_text {padding:0;}
+	#contact_number {padding:0;}
+	.clear {clear:both;}
+	#contact_header {font-size:1.2em;}
+	.form_style input[type="submit"] {width:45%; height:70px;}
 
 /* ########## FOOTER SECTION ########## */
-	footer {
-		clear:both;	
-	}
-	
-	#footer_info {
-		margin:0;
-		padding:10% 0;	
-	}
+	footer {clear:both;}
+	#footer_info {margin:0; padding:10% 0;}
 }
 
 /* =========================================================== */
@@ -1329,177 +727,73 @@ footer {
 /* =========================================================== */
 
 @media screen and
-	(min-width:1201px) and 
+	(min-width:1201px) and
 	(max-width:1600px) {
-		
+
 /* ########## NAVIGATION SECTION ########## */
+	.nav_name {margin-left:10%;}
+	#fill {padding:0 ;margin:0 5%;}
 
-	.nav_name {
-		margin-left:10%;	
-	}
-	
-	#fill {
-		padding:0;
-		margin:0 5%;	
-	}
-	
 /* ########## HEADER SECTION ########## */
-
-	header {
-		background:#222;	
-	}
-	
-	.banner_video {
-		width:960px;
-		background:#222;	
-	}
+	header {background:#222;}
+	.banner_video {width:960px;background:#222;}
 
 /* ########## SECTION ########## */
 
 /* ########## BIO SECTION ########## */
-
-	.bio {
-		padding:10%;	
-	}
-	
-	.bio_images {
-		width:25%;	
-	}
-	
-	.bio_text {
-		color:#f9f8f0;
-		padding:10% 5%;	
-	}
+	.bio {padding:10%;}
+	.bio_images {width:25%;}
+	.bio_text {color:#f9f8f0; padding:10% 5%;}
 
 /* ########## SOCIAL MEDIA SECTION ########## */
-
-	.soc_text {
-		color:#f9f8f0;
-		padding:10% 0;
-		text-align:center;	
-	}
-	
-	#icon_wrapper {
-		display:block;
-		margin:0 auto;
-		text-align:center;	
-	}
-	
-	.soc_images {
-		margin:0 2%;	
-	}
+	.soc_text {color:#f9f8f0; padding:10% 0; text-align:center;}
+	#icon_wrapper {display:block; margin:0 auto; text-align:center;}
+	.soc_images {margin:0 2%;}
 
 /* ########## WHAT I DO SECTION ########## */
-
-	.specialty {
-		padding:10%;
-		background:#f9f8f0;	
-	}
-	
-	p {
-		padding:10%;	
-	}
-	
-	.skill_images {
-		margin:0 5%;	
-	}
+	.specialty {padding:10%; background:#f9f8f0;}
+	p {padding:10%;}
+	.skill_images {margin:0 5%;}
 
 /* ########## MY WORK SECTION ########## */
-
-	.portfolio {
-		padding:10% 5% 2% 5%;	
-	}
-	
-	h3 {
-		margin:0 0 5% 0;	
-	}
-	
-	#work_intro {
-		padding:5%;	
-		text-align:center;
-	}
-	
-	.work_text {
-		text-align:left;	
-	}
-	
+	.portfolio {padding:10% 5% 2% 5%;}
+	h3 {margin:0 0 5% 0;}
+	#work_intro {padding:5%; text-align:center;}
+	.work_text {text-align:left;}
 	.work_single {
 		width:30%;
 		float:left;
 		height:600px;
-		padding:0 1%;		
+		padding:0 1%;
 	}
-	
-	.work_images {
-		margin:0;
-		height:220px;	
-	}
-	
-	.clear {
-		clear:both;	
-	}
+
+	.work_images {margin:0; height:220px;}
+	.clear {clear:both;}
 
 /* ########## CONTACT SECTION ########## */
-
-	.contact_sec {
-		padding:10%;
-		background:#f9f8f0;	
-	}
-	
-	#contact_text {
-		text-align:center;
-	}	
-	
+	.contact_sec {padding:10%; background:#f9f8f0;}
+	#contact_text {text-align:center;}
 	.contact_wrapper {
-		width:33%;	
+		width:33%;
 		float:left;
 		display:block;
 		margin:0 auto;
 		padding:0 0 7% 0;
 		text-align:center;
 	}
-	
-	.contact_info {
-		margin:8% 0;	
-	}
-	
-	#email_text {
-		padding:0;	
-	}
-	
-	#contact_number {
-		padding:0;	
-	}
-	
-	.clear {
-		clear:both;	
-	}
-	
-	#contact_header {
-		margin:0;
-		font-size:1.2em;
-		text-align:center;
-	}
-	
-	.form_style {
-		margin:5% 10%;
-	}
-	
+
+	.contact_info {margin:8% 0;}
+	#email_text {padding:0;}
+	#contact_number {padding:0;}
+	.clear {clear:both;}
+	#contact_header {margin:0; font-size:1.2em; text-align:center;}
+	.form_style {margin:5% 10%;}
 	.form_style input[type="text"],
 	.form_style input[type="email"],
-	.form_style textarea {
-		width:60%;
-		padding:2%;
-		
-	}
-	
-	.form_style input[type="submit"] {
-		width:30%;
-		height:70px;	
-	}
+	.form_style textarea {width:60%; padding:2%;}
+	.form_style input[type="submit"] {width:30%; height:70px;}
 
 /* ########## FOOTER SECTION ########## */
-		
 }
 
 /* =========================================================== */
@@ -1508,189 +802,99 @@ footer {
 
 @media screen and
 	(min-width:1601px) {
-		
-/* ########## NAVIGATION SECTION ########## */
 
-	.nav_name {
-		margin-left:10%;	
-	}
-	
-	#fill {
-		padding:0;
-		margin-right:10%;	
-	}
+/* ########## NAVIGATION SECTION ########## */
+	.nav_name {margin-left:10%;}
+	#fill {padding:0;	margin-right:10%;}
 
 /* ########## HEADER SECTION ########## */
-
-	header {
-		background:#222;	
-	}
-	
-	.banner_video {
-		width:960px;
-		background:#222;	
-	}
+	header {background:#222;}
+	.banner_video {width:960px;	background:#222;}
 
 /* ########## SECTION ########## */
-	
-/* ########## BIO SECTION ########## */
 
-	.bio {
-		padding:5% 10% 10% 10%;	
-	}
-	
-	.img_wrapper {
-		padding-top:5%;	
-	}
-	
-	.bio_images {
-		width:20%;
-		border-radius:250px;	
-	}
-	
-	.bio_text {
-		color:#f9f8f0;
-		margin:7% 20%;	
-		font-size:1.1em;
-	}
+/* ########## BIO SECTION ########## */
+	.bio {padding:5% 10% 10% 10%;}
+	.img_wrapper {padding-top:5%;}
+	.bio_images {width:20%;	border-radius:250px;}
+	.bio_text {color:#f9f8f0;	margin:7% 20%; font-size:1.1em;}
 
 /* ########## SOCIAL MEDIA SECTION ########## */
-
 	.soc_text {
 		margin:7%;
 		color:#f9f8f0;
 		font-size:1.1em;
-		text-align:center;	
+		text-align:center;
 	}
-	
-	#icon_wrapper {
-		display:block;
-		margin:0 auto;
-		text-align:center;	
-	}
-	
-	.soc_images {
-		margin:0 2%;
-	}
+
+	#icon_wrapper {display:block; margin:0 auto;	text-align:center;}
+	.soc_images {margin:0 2%;}
 
 /* ########## WHAT I DO SECTION ########## */
-
-	.specialty {
-		padding:10%;
-		background:#f9f8f0;
-	}
-	
-	p {
-		margin:5% 20%;	
-		font-size:1.1em;
-	}
-	
-	.skill_images {
-		margin:0 5%;	
-	}
+	.specialty {padding:10%;	background:#f9f8f0;}
+	p {margin:5% 20%;	font-size:1.1em;}
+	.skill_images {margin:0 5%;}
 
 /* ########## MY WORK SECTION ########## */
-
-	.portfolio {
-		padding:10% 5% 2% 5%;	
-	}
-	
-	h3 {
-		margin:0 0 7% 0;	
-	}
-	
+	.portfolio {padding:10% 5% 2% 5%;}
+	h3 {margin:0 0 7% 0;}
 	#work_intro {
 		margin:0;
-		padding:7% 0 10% 0;	
+		padding:7% 0 10% 0;
 		font-size:1.1em;
 		text-align:center;
 	}
-	
-	.work_text {
-		width:100%;
-		margin:5% 0;
-		text-align:left;	
-	}
-	
+
+	.work_text {width:100%; margin:5% 0;	text-align:left;}
 	.work_single {
 		width:27%;
 		float:left;
 		height:600px;
-		padding:0 3%;		
+		padding:0 3%;
 	}
-	
-	.work_images {
-		margin:0;
-		height:220px;	
-	}
-	
-	.clear {
-		clear:both;	
-	}
+
+	.work_images {margin:0;	height:220px;}
+	.clear {clear:both;}
 
 /* ########## CONTACT SECTION ########## */
-
-.contact_sec {
-		padding:10% 15%;
-		background:#f9f8f0;	
-	}
-	
-	#contact_text {
-		font-size:1.1em;
-		text-align:center;
-	}	
-	
+	.contact_sec {padding:10% 15%;	background:#f9f8f0;}
+	#contact_text {font-size:1.1em;	text-align:center;}
 	.contact_wrapper {
-		width:33%;	
+		width:33%;
 		float:left;
 		display:block;
 		margin:0 auto;
 		padding:0 0 7% 0;
 		text-align:center;
 	}
-	
-	.contact_info {
-		margin:8% 0;	
-	}
-	
-	#email_text {
-		padding:0;	
-	}
-	
-	#contact_number {
-		padding:0;	
-	}
-	
-	.clear {
-		clear:both;	
-	}
-	
-	#contact_header {
-		margin:0;
-		font-size:1.2em;
-		text-align:center;
-	}
-	
-	.form_style {
-		margin:5% 10%;
-	}
-	
+
+	.contact_info {margin:8% 0;}
+	#email_text {padding:0;}
+	#contact_number {padding:0;}
+	.clear {clear:both;}
+	#contact_header {margin:0; font-size:1.2em;	text-align:center;}
+	.form_style {margin:5% 10%;}
 	.form_style input[type="text"],
 	.form_style input[type="email"],
-	.form_style textarea {
-		width:60%;
-		padding:2%;
-		
-	}
-	
-	.form_style input[type="submit"] {
-		width:30%;
-		height:70px;	
-	}
+	.form_style textarea {width:60%;	padding:2%;}
+	.form_style input[type="submit"] {width:30%;	height:70px;}
 
 /* ########## FOOTER SECTION ########## */
-	#footer_info {
-		margin:0;
-		padding:7% 0;	
-	}
+	#footer_info {margin:0;	padding:7% 0;}
+}
+
+/* =========================================================== */
+/* ================= EXTRA LARGE DESKTOP CSS ================= */
+/* =========================================================== */
+
+@media screen and
+	(min-width:1801px) {
+/* ########## SECTION ########## */
+
+/* ########## BIO SECTION ########## */
+	.bio_images {width:15%;}
+
+/* ########## MY WORK SECTION ########## */
+	#work_intro {padding:2% 0 3% 0;}
+	.work_wrapper {width:70%;}
 }
