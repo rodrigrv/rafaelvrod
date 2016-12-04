@@ -1,0 +1,959 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 	
+
+Author: Rafael Rodriguez
+
+Last Updated: March 4, 2016
+	
+*/	
+
+/* =========================================================== */
+/* ========================= BASE CSS ======================== */
+/* =========================================================== */
+
+		/* ########## BODY ########## */
+
+
+	body {
+		padding:0;
+		margin:0 auto;
+		font-family:'Montserrat', sans-serif;
+	}
+	
+
+		/* ########## NAVIGATION ########## */
+
+
+	/* Used to put my name on nav bar */
+	.name {
+		float:left;	
+	}
+	
+	nav {
+		clear:both;
+		width:100%;
+		background-color:#99cc99;
+	}
+	
+	a {
+		text-decoration:none;
+		color:inherit;
+	}
+	
+	nav ul {
+		margin: 0;
+		padding: 0;
+		color:white;
+		overflow:hidden;
+		text-align:right;	
+		background-color:#43a286;
+		transition:max-height 0.5s;
+	}
+	
+	nav ul li {
+		padding:20px;
+		display:inline-block;
+	}
+	
+	nav ul li:hover {
+		background-color:#399077;
+	}
+	
+	.handle {
+		width:100%;
+		color:white;
+		display:none;
+		cursor:pointer;	
+		text-align:left;
+		padding:15px 10px;
+		background: #005c48;
+		box-sizing: border-box;
+	}
+	
+	.menu {	
+		float:right;
+		display:none;
+		padding-right:10px;
+	}
+
+		/* ########## HEADER ########## */
+
+
+	header {
+		width:100%;	
+		color:white;
+		padding:100px 0;
+		text-align:center;
+		background:#e6e6dc;
+	}
+	
+	.banner {
+		max-width:100%;	
+	}
+	
+
+
+		/* ########## SECTION ########## */
+
+	
+	.button {
+		color:#000;
+		height:30px;
+		width:120px;
+		display:block;	
+		background:#7df;
+		text-align:center;
+		border:2px solid #000;	
+	}
+	
+	a.button {
+		opacity:1;	
+		border-radius:20px;
+		text-decoration:none;
+		transform:scale(.95,.95);
+	}
+	
+	a.button:hover {
+		color:#eee;
+		transition:.2s;
+		background:#222;
+		transform:scale(1,1);
+	}	
+	
+	h2 {
+		font-size:30px;	
+		text-align:center;
+	}	
+	
+	section {
+		clear:both;
+		width:100%;
+		margin:0 auto;
+		padding:40px;
+		font-size:0.9em;
+		line-height:1.5em;
+	}
+
+		/* ########## BIO SECTION ########## */
+
+	
+	.main-image {
+		border-radius:15px;
+		border:10px double #8a9;	
+	}
+
+
+		/* ########## WORK SECTION ########## */
+	
+	
+	@-moz-document url-prefix() {
+		table {
+			margin-left:-200px;
+		}
+		.project-works {
+			max-width:100%;
+		}
+	}
+	
+	table {
+		text-align:center;
+		margin-bottom:50px;		
+	}
+	
+	table td {
+		padding-bottom:50px;
+	}
+	
+	.project-works {
+		padding:0;
+		display:block;
+		margin:0 auto;
+		max-width:100%;
+		text-align:center;	
+		transform: scale(.9, .9);
+	}
+	
+	.project-works:hover {
+		opacity:.8;
+		transition:1s;	
+		transform: scale(1,1);
+	}
+	
+
+		/* ########## CONTACT SECTION ########## */
+
+
+	.cta {
+		height:30px;
+		width:120px;
+		margin:0 auto;
+		display:block;
+		text-align:center;
+		border:2px solid #000;	
+	}
+	
+	a.cta {
+		border-radius:5px;
+		text-decoration:none;
+		transform:scale(.95,.95);
+	}
+	
+	a.cta:hover {
+		color:#fff;
+		transition:.3s;
+		background:#000;
+		transform:scale(1,1);	
+	}
+	
+	.contact-section {
+		font-size:1.1em;	
+	}
+	
+	.form-style {
+		margin:10% 0;
+		padding:0;
+		border-radius:10px;
+		font-family: Merriweather, Franklin Gothic, serif;
+	}
+	
+	.form-style h3 {
+		padding:2% 0;
+		margin:0 23%;
+		border-radius:10px;	
+	}
+	
+	.form-style input[type="text"],
+	.form-style input[type="email"],
+	.form-style textarea
+	{
+		color:#000;
+		width:50%;
+		margin:1% 0;
+		outline:none;
+		padding:1% 2%;
+		font-size:20px;
+		background:#eee;
+		text-align:left;
+		border-radius:10px;
+		font-family: Merriweather, Franklin Gothic, serif;
+	}
+	
+	.form-style input[type="submit"] {
+		width:30%;
+		padding:2%;
+		display:block;
+		margin:0 auto;
+		cursor:pointer;
+		font-size:20px;
+		background:#7df;
+		text-align:center;
+		border-radius:5px;
+		font-family: Merriweather, Franklin Gothic, serif;
+	}
+	
+	.form-style input[type="text"]:focus,
+	.form-style input[type="email"]:focus,
+	.form-style textarea:focus
+	{
+		background:#fff;
+	}
+	
+	.form-style input[type="submit"]:hover {
+		transition:.7s;
+		background:#d60;
+	}
+	
+	.form-style input[type="submit"]:active {
+		background:#ddd;
+	}
+	
+	
+		/* ########## FOOTER ########## */
+
+
+	footer {
+		padding:0 2px;
+		background:#8a9;
+	}
+
+
+/* =========================================================== */
+/* ====================== MOBILE MEDIA ======================= */
+/* =========================================================== */
+
+@media screen 
+	and (max-width: 580px) {
+		
+		/* ########## BODY ########## */
+		
+		
+	body {
+		padding:0;
+		margin:0 auto;
+	}
+	
+		/* ########## NAVIGATION ########## */
+		
+	
+	.name {
+		display:none;	
+	}
+	
+	nav {
+		width:102%;
+	}
+	
+	nav ul {
+		max-height:0;
+		display:block;
+		border:1px #000 solid;
+	}
+	
+	.showing {
+		max-height:15em;	
+	}
+	
+	nav ul li {
+		width:100%;
+		text-align:left;
+		border:1px #000 solid;
+		box-sizing: border-box;
+		padding:15px 0 15px 40px;
+	}
+	
+	.handle {
+		display:block;	
+		padding-left:20px;
+	}		
+		
+	.menu {
+		display:block;	
+	}
+			
+		/* ########## HEADER ########## */
+		
+			
+	header {
+		margin:0;
+		padding:5px;
+	}
+
+		/* ########## SECTION ########## */
+		
+			
+	.button {
+		color:#000;
+		height:30px;
+		width:120px;	
+		display:block;
+		background:#6df;
+		text-align:center;
+		border:2px solid #000;
+	}
+	
+	a.button {
+		opacity:1;
+		border-radius:20px;
+		text-decoration:none;	
+		box-shadow:0 3px #1b838b;
+		transform:scale(.95,.95);
+	}
+	
+	a.button:hover {
+		color:#eee;
+		transition:.2s;
+		background:#222;
+		transform:scale(1,1);
+	}
+	
+	h2 {
+		padding-top:20px;	
+	}
+		
+	img.flair {
+		display:block;
+		margin:0 auto;
+		text-align:center;	
+		padding-bottom:20px;
+	}
+		
+	section {
+		padding:0;	
+		width:100%;
+		margin:0 auto;
+	}
+	
+	
+		/* ########## BIO SECTION ########## */	
+	
+	
+	.bio-section {
+		padding:50px;
+	}
+	
+	img.main-image {
+		display:block;
+		margin:0 auto;
+		max-width:100%;
+		text-align:center;
+		border-radius:30px;
+		border:10px double #8a9;	
+	}
+	
+	
+		/* ########## WORK SECTION ########## */
+		
+		
+	.work-section {
+		padding:50px;
+		background-color:#8a9;
+	}
+	
+	table {
+		width:100%;
+		text-align:center;
+		margin-bottom:50px;	
+		
+	}
+	
+	table th {
+		font-size:25px;
+		padding:20px 0;			
+	}
+	
+	table td {
+		text-align:left;
+		padding-bottom:50px;
+	}
+	
+		/* ########## CONTACT SECTION ########## */
+
+
+	.contact-section {
+		padding:50px;
+		text-align:center;	
+	}
+	
+	.form-style {
+		margin:10% 0 40% 0;
+	}
+	
+	.form-style h3 {
+		padding:3% 0;
+		margin:5% 10%;	
+	}
+	
+	.form-style input[type="text"],
+	.form-style input[type="email"],
+	.form-style textarea
+	{
+		width:90%;
+		margin:2% 0;
+	}
+	
+	.form-style input[type="submit"] {
+		font-size:1em;	
+	}
+	
+	
+		/* ########## FOOTER ########## */
+	
+	ul {
+		text-align:center;
+		padding-right:40px;
+			
+	}
+	
+	ul li {
+		padding:0 5px;
+		max-width:100%;
+		display:inline;
+		list-style-type:none;
+	}
+	
+	footer {
+		color:#fff;
+		padding:50px;
+		text-align:left;
+		background-color:#8a9;
+	}
+}
+
+/* =========================================================== */
+/* ====================== TABLET MEDIA ======================= */
+/* =========================================================== */
+
+@media screen 
+	and (min-width: 581px) 
+	and (max-width: 767px) {
+		
+		/* ########## NAVIGATION ########## */
+		
+			
+	nav ul li {
+		padding:15px;
+		font-size:.8em;
+	}
+	
+		/* ########## SECTION ########## */
+		
+			
+	.flair {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		padding-bottom:30px;	
+	}
+	
+	.button {
+		color:#000;
+		height:30px;
+		width:120px;	
+		display:block;
+		background:#6df;
+		text-align:center;
+		border:2px solid #000;
+	}
+	
+	a.button {
+		opacity:1;
+		border-radius:20px;	
+		text-decoration:none;
+		box-shadow:0 3px #1b838b;
+		transform:scale(.95,.95);
+	}
+	
+	a.button:hover {
+		color:#eee;
+		transition:.2s;
+		background:#222;
+		transform:scale(1,1);
+	}
+	
+	section {
+		padding:0;
+		margin:0 auto;
+	}
+	
+	.main-image {
+		display:block;
+		margin:0 auto;
+		text-align:center;	
+	}
+
+		/* ########## BIO SECTION ########## */	
+
+	.bio-section {
+		padding:30px 100px;	
+	}
+	
+		/* ########## WORK SECTION ########## */
+
+	.work-section {
+		background:#8a9;
+		padding:30px 100px;	
+	}
+	
+	table th {
+		font-size:1.2em;	
+	}
+	
+	
+		/* ########## CONTACT SECTION ########## */
+	
+	.contact-section {
+		text-align:center;	
+		padding:30px 100px;
+	}
+	
+	.form-style {
+		margin:10% 0 40% 0;	
+	}
+	
+	.form-style h3 {
+		margin:3% 0;
+	}
+	
+	.form-style input[type="text"],
+	.form-style input[type="email"],
+	.form-style textarea
+	{
+		width:90%;
+		margin:2% 0;
+	}
+	
+		/* ########## FOOTER ########## */
+
+	ul {
+		padding-top:30px;
+		text-align:center;	
+		padding-right:40px;
+	}
+	
+	ul li {
+		padding:0 5px;
+		max-width:100%;
+		display:inline;
+		list-style-type:none;
+	}
+		
+	footer {
+		color:#fff;		
+		font-size:1.1em;
+		padding:30px 100px;
+		background:#8a9;
+	}
+}
+
+/* =========================================================== */
+/* ================ MOBILE MEDIA (LANDSCAPE) ================= */
+/* =========================================================== */
+
+@media screen 
+	and (min-width: 768px) 
+	and (max-width: 1200px) {
+		
+		/* ########## NAVIGATION ########## */
+	
+	.name {
+		margin-left:50px;	
+	}
+	
+	nav ul {
+		padding-right:20px;	
+	}
+
+		/* ########## SECTION ########## */
+	
+	.flair {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		padding-bottom:30px;	
+	}
+		
+	.button {
+		width:120px;
+		margin:50px 0;	
+	}
+	
+	section {
+		padding:0;
+		margin:0 auto;		
+	}
+
+		/* ########## BIO SECTION ########## */
+	
+	.main-image {
+		display:block;
+		margin:0 auto;
+		text-align:center;	
+	}
+
+	.bio-section {
+		font-size:1.1em;
+		margin:40px 200px;	
+	}
+
+		/* ########## WORK SECTION ########## */
+	
+	.work-section {
+		font-size:1.1em;
+		background:#8a9;
+		padding:40px 200px;	
+	}
+	
+	table th {
+		padding:50px 0;
+		font-size:1.3em;
+	}
+
+		/* ########## CONTACT SECTION ########## */
+	
+	.contact-section {
+		margin:40px 200px;	
+		text-align:center;
+	}
+	
+	.form-style {
+		margin:10% 0 40% 0;
+	}
+	
+	.form-style h3 {
+		margin:3% 0;
+		font-size:1.5em;
+	}
+	
+	.form-style input[type="text"],
+	.form-style input[type="email"],
+	.form-style textarea
+	{
+		width:70%;
+		margin:2% 0;	
+	}
+	
+
+		/* ########## FOOTER ########## */
+	
+	ul {
+		padding-top:30px;
+		text-align:center;
+		padding-right:40px;	
+	}
+	
+	ul li {
+		padding:0 5px;
+		max-width:100%;
+		display:inline;
+		list-style-type:none;
+	}
+	
+	footer {
+		color:#fff;
+		font-size:1.1em;
+		padding:40px 200px;
+		background:#8a9;
+	}
+}
+
+/* =========================================================== */
+/* ====================== DESKTOP MEDIA ====================== */
+/* =========================================================== */
+
+@media screen 
+	and (min-width: 1201px) 
+	and (max-width: 1600px) {
+
+		/* ########## BODY ########## */
+	
+	body {
+		padding:0;
+		margin:0 auto;
+	}
+
+
+		/* ########## NAVIGATION ########## */	
+		
+		
+	.name {
+		margin-left:100px;	
+	}
+	
+	nav ul {
+		padding-right:100px;	
+	}
+	
+		/* ########## SECTION ########## */
+	
+	.flair {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		padding-bottom:30px;
+	}
+	
+	section {
+		padding:0;
+		margin:0 auto;
+	}
+	
+	.button {
+		margin:50px 0;	
+	}
+	
+		/* ########## BIO SECTION ########## */
+	
+	.main-image {
+		display:block;
+		margin:0 auto;
+		text-align:center;	
+	}
+	
+	.bio-section {
+		margin:40px 300px;	
+	}
+	
+		/* ########## WORK SECTION ########## */
+	
+	.work-section {
+		background:#8a9;
+		margin:0 0 0 -50px;	
+		padding:40px 350px;
+	}
+	
+	table th {
+		font-size:2em;
+		padding-bottom:5%;	
+	}
+	
+	table td {
+		font-size:1.2em;
+		text-align:left;	
+	}
+	
+		/* ########## CONTACT SECTION ########## */
+	
+	.contact-section {
+		margin:40px 350px;
+		text-align:center;	
+	}
+	
+	.form-style {
+		margin:10% 0 40% 0;
+	}
+	
+	.form-style h3 {
+		margin:2% 0;
+		font-size:1.5em;
+	}
+	
+	.form-style input[type="text"],
+	.form-style input[type="email"],
+	.form-style textarea
+	{
+		width:400px;
+	}
+	
+	
+		/* ########## FOOTER ########## */
+	
+	p {
+		font-size:1.3em;	
+	}
+	
+	ul {
+		padding-top:30px;
+		text-align:center;
+		padding-right:40px;	
+	}
+	
+	ul li {
+		padding:0 5px;
+		max-width:100%;
+		display:inline;
+		list-style-type:none;
+	}
+	
+	footer {
+		color:#fff;
+		padding:40px 400px;
+		background:#8a9;
+	}
+
+}
+
+
+/* =========================================================== */
+/* ==================== LARGE SCREEN MEDIA =================== */
+/* =========================================================== */
+
+@media screen 
+	and (min-width: 1601px) {
+
+		/* ########## BODY ########## */
+	
+	body {
+		padding:0;
+		margin:0 auto;
+	}
+	
+		/* ########## NAVIGATION ########## */
+	
+	.name {
+		margin-left:200px;	
+	}
+	
+	nav ul {
+		padding-right:100px;	
+	}
+	
+		/* ########## SECTION ########## */
+	
+	.flair {
+		display:block;
+		margin:0 auto;
+		text-align:center;	
+		padding-bottom:20px;	
+	}
+	
+	section {
+		padding:0;
+		margin:0 auto;
+		font-size:1.2em;
+	}
+	
+	.button {
+		width:130px;
+		margin:50px 0;
+	}
+	
+		/* ########## BIO SECTION ########## */
+	
+	img.main-image {
+		display:block;
+		max-width:100%;
+		text-align:center;
+		border-radius:30px;
+		margin:50px auto 0 auto;
+		border:10px double #8a9;	
+	}
+	
+	.bio-section {
+		margin:40px 500px;	
+		
+	}
+
+		/* ########## WORK SECTION ########## */
+	
+	.work-section {
+		background:#8a9;
+		margin:0 0 0 -50px;
+		padding:40px 550px;
+	}
+	
+	table th {
+		padding:5% 0;	
+		font-size:1.5em;
+	}
+	
+	table td {
+		text-align:left;	
+	}
+	
+		/* ########## CONTACT SECTION ########## */
+	
+	.contact-section {
+		margin:40px 500px;
+		text-align:center;	
+	}
+	
+	.form-style input[type="submit"] {
+		width:20%;	
+	}
+	
+
+		/* ########## FOOTER ########## */
+	
+	ul {
+		padding-top:30px;
+		text-align:center;
+		padding-right:40px;			
+	}
+	
+	ul li {
+		padding:0 5px;
+		max-width:100%;
+		display:inline;
+		list-style-type:none;
+	}
+	
+	footer {
+		color:#fff;
+		font-size:1.2em;
+		padding: 40px 500px;
+		text-align:left;
+		background-color:#8a9;
+	}
+}
