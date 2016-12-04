@@ -1,0 +1,83 @@
+CSS
+
+H1 {font-style: italic; color: red}
+
+H1 is selector
+
+Font-style is property:value
+
+Where to place CSS rules
+
+Inline
+- Is discouraged because it's harder to navigate and edit.
+- Has highest priority.
+
+Embedded in the document
+- Within the head section.
+- Apply "style" to start.
+- Don't confuse head and header. Head contains all meta information and keywords.
+  Header is the beginning of content in the body section.		
+
+External CSS File
+- Link is more favored over import.
+- Link vs Import: Link will be rendered quick.
+- @import, browser wait until all links are caught up.
+
+
+Selectors
+- Universal selector: *
+
+- Type selectors: HTML element type (h1, span, p)
+
+- Class selector: used for multiple elements. Has period (.)
+
+- ID selector: used for only 1 element. Has asterisk (#)
+
+- Combinators: combines multiple selectors.
+	- Descendent combinator	
+		- Everything is separated by space.
+		- (Ex. div.main ul li b {font-size: 12px}
+		- As long as your included inside the div.
+
+	- Child combinator
+		- Selecting children only.	
+		- Only selects the children and not grandchildren.
+		- No need to add HTML code to add class attribute.
+
+	- Sibing combinator
+	
+- Attribute selectors:
+- Pseudo-selectors:
+- Pseudo-class:
+	- a:link
+	- a:visited
+	- a:hover
+	- a:active
+
+	-:focus
+	-:first-child
+	-:last-child
+	-:nth-child(n)
+	-:first-of-type
+	-:last-of-type
+	-:nth-of-type(n) (can select whatever number of paragraph)
+
+Determining the Cascade Order
+	!important
+		-Ex. body {color: black !important;}
+	Inline > embedded > imported
+	Specificity: rules with more points win
+		-HTML selector: 1 pt
+		-Class: 10 pt
+		-ID: 100 pt
+		Ex.. main ul li b {...} 13 pts
+	Last one wins
+	Inherited properties apply unless overridden
+
+Style Sheet strategies
+	Use external CSS if possible
+	Have a global.css for default styles of your site
+
+CSS Element Control
+	Margin - spacing between elements
+
