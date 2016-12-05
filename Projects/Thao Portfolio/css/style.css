@@ -1,0 +1,174 @@
+/*
+Author: Thao Ha
+Last Updated: December 4, 2016
+*/
+
+/* =========================================================== */
+/* ========================= BASE CSS ======================== */
+/* =========================================================== */
+
+/* ########## ALL ELEMENTS ########## */
+/* Gives everything a 0 default and sets all font the same */
+* {margin:0; padding:0; font-family:"ff-tisa-web-pro", sans-serif;}
+
+/* Hides the display on desktop/tablet */
+.mobile {display:none;}
+
+/* ########## NAVIGATION ########## */
+nav {
+  width:100%;
+  background-color:#f47a5d;
+  display:inline-block;
+  position:fixed;
+  height:85px;
+  z-index:10;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow:hidden;
+  text-align: right;
+}
+
+.nav-icon {
+  float:left;
+  width:10%;
+  padding:1%;
+  display:block;
+  text-align:left;
+}
+
+/* Gives the image a set width */
+.nav-icon img{width:50px;}
+
+.nav-titles {display:inline; margin:0 50px 0 0;}
+.nav-menu {display:inline-block; font-size:20px;}
+.nav-menu a {
+  color:#f9f8f0;
+  text-decoration:none;
+  display:block;
+  padding:27px;
+  font-weight: bold;
+  font-family: "jaf-domus";
+  font-size:26px;
+}
+
+.nav-menu a:hover {
+  color:#f47a5d;
+  background:#f9f8f0;
+  transition:.7s;
+}
+
+/* Clears all floats */
+.clearfix {clear:both;}
+
+/* ########## HEADER ########## */
+/* Gives default padding since nav is fixed. */
+header {padding:85px 0 0 0;}
+
+/* Makes the text able to go inside the image */
+.header-wrapper {width:100%; position: relative;}
+.header-wrapper img {width:100%; display:block; border:0;}
+
+/* Positions the text inside the quote bubble */
+.header-text-wrapper {
+  position: absolute;
+  top:25%;
+  left:17%;
+  width:35%;
+}
+
+/* Color and font size */
+.header-title {
+  color: #f9f8f7;
+  font-size:6vw;
+  font-family:"jaf-domus";
+}
+
+.header-text {
+  font-size: 1.7vw;
+  width: 90%;
+  margin:4% 0 0 0;
+  color:#f9f8f7;
+}
+
+/* ########## PORTFOLIO SECTION ########## */
+.portfolio-section {padding:85px 0 0 0;}
+.portfolio-heading {
+  margin: 2% 0;
+  padding: 20px 20px 20px 150px;
+  width: 180px;
+  font-size: 30px;
+  background-color: #f47a5d;
+  color: #f9f8f7;
+}
+
+.portfolio-title {font-family:"jaf-domus";}
+.portfolio-work-wrapper {
+  margin:70px auto 0 auto;
+  width:80%;
+  overflow:hidden;
+}
+.portfolio-piece {
+  width: 43.5%;
+  margin: 3%;
+  float: left;
+}
+
+.portfolio-piece img {width:100%; display:block; border:0;}
+
+/* ########## CONTACT SECTION ########## */
+.contact-section {padding:85px 0 0 0;}
+.contact-heading {
+  margin: 2% 0;
+  padding: 20px 20px 20px 150px;
+  width: 180px;
+  font-size: 30px;
+  background-color: #f47a5d;
+  color: #f9f8f7;
+}
+
+.contact-title {font-family:"jaf-domus";}
+.contact-wrapper {margin:0 auto;width:80%;}
+.contact-text {color:#f47a5d; font-size:25px;}
+.contact-form-wrapper {width:80%; margin:30px auto 0 auto;}
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style textarea {
+  width:93%;
+  color:#f47a5d;
+  margin:2% 0;
+  padding:3%;
+  font-size:20px;
+  font-family:"ff-tisa-web-pro";
+  border:2px solid #f47a5d;
+}
+
+.form-style input[type="submit"] {
+  padding:15px 25px;
+  color:#f47a5d;
+  display:block;
+  margin:5% 0 5% auto;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  background:#fff;
+  font-family:"ff-tisa-web-pro";
+  border:2px solid #f47a5d;
+}
+
+.form-style input[type="submit"]:hover {
+  color:#f9f8f7;
+  transition:.7s;
+  background:#f47a5d;
+}
+
+/* ########## CONTACT SECTION ########## */
+footer {height:105px; width:100%; background-color: #f47a5d;}
+.footer-text {
+  text-align:center;
+  color:#f9f8f7;
+  font-size:14px;
+  padding:33px 0;
+}

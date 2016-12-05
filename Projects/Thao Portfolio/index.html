@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Thao Ha | Graphic Designer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <script src="https://use.typekit.net/iww8nri.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- ==================== Navigation ==================== -->
+  <nav>
+    <ul>
+      <li class="nav-icon">
+        <a href="#home"><img src="images/icon.png" alt="Icon Here" /></a>
+      </li>
+      <div class="nav-titles">
+        <li class="nav-menu"><a href="#about">About</a></li>
+        <li class="nav-menu"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-menu"><a href="#contact">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="clearfix"></div><div id="home"></div>
+  <!-- ==================== End Navigation ==================== -->
+  <!-- ==================== Header ==================== -->
+  <header id="about">
+    <div class="header-wrapper desktop">
+      <img src="images/headerimgdesktop.png" alt="Header Image Desktop" />
+      <div class="header-text-wrapper">
+        <h2 class="header-title">Hi There,</h2>
+          <p class="header-text">My name is Thao and I am a graphic designer who likes to bring the whimsical to ordinary things. When I'm not designing, I collect random objects that peak my interest and try to be a gardener to my many cacti.</p>
+      </div>
+    </div>
+    <div class="header-wrapper mobile">
+      <img src="images/headerimgmobile.png" alt="Header Image Mobile" />
+        <h2 class="header-title">Hi There,</h2>
+        <p class="header-text">My name is Thao and I am a graphic designer who likes to bring the whimsical to ordinary things. When I'm not designing, I collect random objects that peak my interest and try to be a gardener to my many cacti.</p>
+    </div>
+  </header>
+  <!-- ==================== End Header ==================== -->
+
+  <!-- ==================== Content ==================== -->
+  <!-- ==================== Portfolio ==================== -->
+  <div id="portfolio" class="portfolio-section desktop">
+    <div class="portfolio-heading">
+      <h3 class="portfolio-title">Portfolio</h3>
+    </div>
+    <div class="portfolio-work-wrapper">
+      <div class="portfolio-piece">
+        <img src="http://placehold.it/648x416">
+      </div>
+      <div class="portfolio-piece">
+        <img src="http://placehold.it/648x416">
+      </div>
+      <div class="portfolio-piece">
+        <img src="http://placehold.it/648x416">
+      </div>
+      <div class="portfolio-piece">
+        <img src="http://placehold.it/648x416">
+      </div>
+      <div class="portfolio-piece">
+        <img src="http://placehold.it/648x416">
+      </div>
+      <div class="portfolio-piece">
+        <img src="http://placehold.it/648x416">
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+    <!-- ==================== End Portfolio ==================== -->
+
+  <!-- ==================== Contact ==================== -->
+  <div id="contact" class="contact-section">
+    <div class="contact-heading">
+        <h3 class="contact-title">Contact</h3>
+    </div>
+    <div class="contact-wrapper">
+      <p class="contact-text">Feel free to contact me.</p>
+        <div class="contact-form-wrapper">
+          <div class="form-style">
+            <form action="" method="post">
+              <label>
+                <input type="text" placeholder="Name">
+              </label>
+              <label>
+                <input type="email" placeholder="Email">
+              </label>
+              <label>
+                <textarea rows="8" cols="50" placeholder="Message"></textarea>
+              </label>
+              <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== End Contact ==================== -->
+  <!-- ==================== End Content ==================== -->
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <p class="footer-text">&copy; Thao Ha 2016<br/>Last Updated: December 2016</p>
+  </footer>
+  <!-- ==================== End Footer ==================== -->
+
+  <!-- SHORT JQUERY SCRIPT FOR NAV ANIMATION -->
+  <script>
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+              return false;
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
