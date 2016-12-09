@@ -26,7 +26,6 @@
 <?php else : ?>
 <?php endif; ?>
 
-
 <!-- ==================== Navigation ==================== -->
 <nav>
   <ul>
@@ -69,57 +68,86 @@
     <h3 class="portfolio-title">Portfolio</h3>
   </div>
   <div class="portfolio-work-wrapper desktop">
-    <div class="portfolio-piece">
-      <img id="imgtin" src="images/tin.jpg">
-    </div>
-    <div class="portfolio-piece">
-      <img id="imgcactus" src="images/cactus.jpg">
-    </div>
-    <div class="portfolio-piece">
-      <img id="imghomeless" src="images/homeless.jpg">
-    </div>
-    <div class="portfolio-piece">
-      <img id="imgphillips" src="images/phillips.jpg">
-    </div>
-    <div class="portfolio-piece">
-      <img id="imgastros" src="images/astros.jpg">
-    </div>
-    <div class="portfolio-piece">
-      <img id="imgtrinket" src="images/trinket.jpg">
+    <div class="thumbnails">
+      <div class="portfolio-piece">
+        <a href="images/tin.jpg" data-title="Tin-Man Alphabet" data-text="Taking inspiration from a interplanetary space explorer tin toy in the 1960s, I created an alphabet set from the shapes and color that I see in the toy. I used green as the main color for the alphabet and added the prominent blocky feet to the typeface to match the tin toy.">
+          <img id="imgtin" src="images/tin.jpg">
+        </a>
+      </div>
+      <div class="portfolio-piece">
+        <a href="images/cactus.jpg" data-title="Rolling Cactus" data-text="Branding a local gardening shop, I wanted to target the youth that have no experience in gardening, specifically succulents and cacti. I used bold colors and strokes for an energetic feel.">
+          <img id="imgcactus" src="images/cactus.jpg">
+        </a>
+      </div>
+      <div class="portfolio-piece">
+        <a href="images/homeless.jpg" data-title="Homelessness Poster" data-text="I chose shelter, home, and food as the theme to relate to our basic survival instincts. The concrete background relates to the environment and harsh living conditions that the homeless have to live through every day.">
+          <img id="imghomeless" src="images/homeless.jpg">
+        </a>
+      </div>
+      <div class="portfolio-piece">
+        <a href="images/phillips.jpg" data-title="Captain Phillips" data-text="Taking inspiration from the movie, Captain Phillips, I created icons that represent the main events that happened in the movie. The blue and yellow I chose were ship's colors.">
+          <img id="imgphillips" src="images/phillips.jpg">
+        </a>
+      </div>
+      <div class="portfolio-piece">
+        <a href="images/astros.jpg" data-title="Astros" data-text="Astros is a RPG style mobile game that follows the storyline of the hero going into the forest to defeat the monsters that took over the forest. I wanted to play off the 'dark forest' theme, so I contrasted dark hues of purple with an bright earth tone palette.">
+          <img id="imgastros" src="images/astros.jpg">
+        </a>
+      </div>
+      <div class="portfolio-piece">
+        <a href="images/trinket.jpg" data-title="Trinket Magazine" data-text="Trinket is a DIY magazine that focuses on interior design. This particular issue centers on how succulents can be incorporated into every day decorations.">
+          <img id="imgtrinket" src="images/trinket.jpg">
+        </a>
+      </div>
     </div>
   </div>
+  <!-- ==================== Lightbox for Desktop / Tablet ==================== -->
+  <div class="lightbox" data-state="hidden">
+    <div class="lightbox-container">
+      <button class="btn-close">X</button>
+      <div class="lightbox-content">
+        <img class="lightbox-img" alt="">
+          <h2 class="lightbox-heading"></h2>
+          <p class="lightbox-text"></p>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== End Lightbox ==================== -->
+
+  <!-- ==================== Mobile Version of Portfolio Here ==================== -->
   <div class="portfolio-work-wrapper mobile">
     <div class="portfolio-piece">
       <h3 class="img-title">Tin-Man Alphabet</h3>
         <img id="imgtin-m" src="images/tin.jpg">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="img-text">Taking inspiration from a interplanetary space explorer tin toy in the 1960s, I created an alphabet set from the shapes and color that I see in the toy. I used green as the main color for the alphabet and added the prominent blocky feet to the typeface to match the tin toy.</p>
     </div>
     <div class="portfolio-piece">
       <h3 class="img-title">Rolling Cactus</h3>
         <img id="imgcactus-m" src="images/cactus.jpg">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="img-text">Branding a local gardening shop, I wanted to target the youth that have no experience in gardening, specifically succulents and cacti. I used bold colors and strokes for an energetic feel.</p>
     </div>
     <div class="portfolio-piece">
       <h3 class="img-title">Homelessness Poster</h3>
         <img id="imghomeless-m" src="images/homeless.jpg">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="img-text">I chose shelter, home, and food as the theme to relate to our basic survival instincts. The concrete background relates to the environment and harsh living conditions that the homeless have to live through every day.</p>
     </div>
     <div class="portfolio-piece">
       <h3 class="img-title">Captain Phillips</h3>
         <img id="imgphillips-m" src="images/phillips.jpg">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="img-text">Taking inspiration from the movie, Captain Phillips, I created icons that represent the main events that happened in the movie. The blue and yellow I chose were ship's colors.</p>
     </div>
     <div class="portfolio-piece">
       <h3 class="img-title">Astros</h3>
         <img id="imgastros-m" src="images/astros.jpg">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="img-text">Astros is a RPG style mobile game that follows the storyline of the hero going into the forest to defeat the monsters that took over the forest. I wanted to play off the "dark forest" theme, so I contrasted dark hues of purple with an bright earth tone palette.</p>
     </div>
     <div class="portfolio-piece">
       <h3 class="img-title">Trinket Magazine</h3>
         <img id="imgtrinket-m" src="images/trinket.jpg">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="img-text">Trinket is a DIY magazine that focuses on interior design. This particular issue centers on how succulents can be incorporated into every day decorations.</p>
     </div>
   </div>
+  <!-- ==================== End Mobile Version ==================== -->
 </div>
 <div class="clearfix"></div>
   <!-- ==================== End Portfolio ==================== -->

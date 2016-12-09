@@ -1,6 +1,6 @@
 /*
 Author: Thao Ha
-Last Updated: December 4, 2016
+Last Updated: December 9, 2016
 */
 
 /* =========================================================== */
@@ -255,7 +255,7 @@ footer {width:100%; background-color: #f47a5d;}
 /* =========================================================== */
 
 @media screen and
-(max-width:767px) {
+(max-width:768px) {
   /* ########## NAVIGATION ########## */
   nav {height:15vw;}
   .nav-icon {padding:3.2vw;}
