@@ -170,6 +170,29 @@ header {padding:85px 0 0 0;}
   border:0;
 }
 
+/* Styling for left and right buttons */
+.btn-left {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  z-index: 100;
+  background: #fff;
+  border: 0;
+  color: #f47d5a;
+  font-size: 3.2em;
+}
+
+.btn-right {
+  position: absolute;
+  top: 45%;
+  right: 3%;
+  z-index: 100;
+  background: #fff;
+  border: 0;
+  color: #f47d5a;
+  font-size: 3.2em;
+}
+
 .lightbox-content {
   position:absolute;
   top:50%;
@@ -207,7 +230,9 @@ header {padding:85px 0 0 0;}
 
 .contact-title {font-family:"jaf-domus";}
 .contact-wrapper {margin:0 auto;width:80%;}
-.contact-text {color:#f47a5d; font-size:25px;}
+.contact-text {color:#9d9e9f; font-size:25px; margin:10% 0;}
+.new-line a {color:#f47a5d; cursor:pointer; text-decoration: none;}
+
 .contact-form-wrapper {width:80%; margin:30px auto 0 auto;}
 .form-style input[type="text"],
 .form-style input[type="email"],
@@ -241,7 +266,7 @@ header {padding:85px 0 0 0;}
   background:#f47a5d;
 }
 
-/* ########## CONTACT SECTION ########## */
+/* ########## FOOTER SECTION ########## */
 footer {width:100%; background-color: #f47a5d;}
 .footer-text {
   text-align:center;
@@ -290,7 +315,7 @@ footer {width:100%; background-color: #f47a5d;}
 
   .img-text {
     font-family: "ff-tisa-web-pro";
-    color:#b5b7b7;
+    color:#9d9e9f;
     margin:4vw 0 7vw 0;
   }
 
@@ -305,7 +330,7 @@ footer {width:100%; background-color: #f47a5d;}
     font-size:7vw;
   }
 
-  .contact-text {font-size:6vw;margin:5%;}
+  .contact-text {font-size:3vw;}
   .contact-form-wrapper {margin:30px auto 10vw auto; width:100%;}
 
 }

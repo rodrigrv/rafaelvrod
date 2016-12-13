@@ -9,6 +9,11 @@ Author URI: http://104.238.72.106/~thao
 
 /*
 Author: Thao Ha
+Last Updated: December 13, 2016
+*/
+
+/*
+Author: Thao Ha
 Last Updated: December 9, 2016
 */
 
@@ -41,8 +46,8 @@ nav ul {
 
 .nav-icon {
   float:left;
-  width:5%;
-  padding:.6% 2%;
+  width:10%;
+  padding:1%;
   display:block;
   text-align:left;
 }
@@ -179,6 +184,29 @@ header {padding:85px 0 0 0;}
   border:0;
 }
 
+/* Styling for left and right buttons */
+.btn-left {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  z-index: 100;
+  background: #fff;
+  border: 0;
+  color: #f47d5a;
+  font-size: 3.2em;
+}
+
+.btn-right {
+  position: absolute;
+  top: 45%;
+  right: 3%;
+  z-index: 100;
+  background: #fff;
+  border: 0;
+  color: #f47d5a;
+  font-size: 3.2em;
+}
+
 .lightbox-content {
   position:absolute;
   top:50%;
@@ -216,7 +244,9 @@ header {padding:85px 0 0 0;}
 
 .contact-title {font-family:"jaf-domus";}
 .contact-wrapper {margin:0 auto;width:80%;}
-.contact-text {color:#f47a5d; font-size:25px;}
+.contact-text {color:#9d9e9f; font-size:25px; margin:10% 0;}
+.new-line a {color:#f47a5d; cursor:pointer; text-decoration: none;}
+
 .contact-form-wrapper {width:80%; margin:30px auto 0 auto;}
 .form-style input[type="text"],
 .form-style input[type="email"],
@@ -250,7 +280,7 @@ header {padding:85px 0 0 0;}
   background:#f47a5d;
 }
 
-/* ########## CONTACT SECTION ########## */
+/* ########## FOOTER SECTION ########## */
 footer {width:100%; background-color: #f47a5d;}
 .footer-text {
   text-align:center;
@@ -270,7 +300,7 @@ footer {width:100%; background-color: #f47a5d;}
   .nav-icon {padding:3.2vw;}
   .nav-icon img {width:7vw;}
   .nav-titles {margin:0 5vw 0 0;}
-  .nav-menu a {padding:4.6vw 3vw; font-size:5vw;}
+  .nav-menu a {padding:4.5vw 3vw; font-size:5vw;}
 
   /* ########## HEADER ########## */
   header {padding:15vw 0 0 0;}
@@ -294,12 +324,12 @@ footer {width:100%; background-color: #f47a5d;}
     font-family:"jaf-domus";
     color:#f47a5d;
     margin: 0 0 3vw 0;
-    font-size:5vw;
+    font-size:4vw;
   }
 
   .img-text {
     font-family: "ff-tisa-web-pro";
-    color:#b5b7b7;
+    color:#9d9e9f;
     margin:4vw 0 7vw 0;
   }
 
@@ -314,19 +344,7 @@ footer {width:100%; background-color: #f47a5d;}
     font-size:7vw;
   }
 
-  .contact-text {font-size:6vw;margin:5%;}
+  .contact-text {font-size:3vw;}
   .contact-form-wrapper {margin:30px auto 10vw auto; width:100%;}
+
 }
-
-@media screen and
-  (min-width:600px) and
-  (max-width:767px) {
-    /* ########## NAVIGATION SECTION ########## */
-    nav {height:10vw;}
-    .nav-icon {padding:1.6vw;}
-    .nav-icon img {width:5.5vw;}
-    .nav-menu a {padding:2.65vw 3vw; font-size:4vw;}
-
-    /* ########## HEADER SECTION ########## */
-    header {padding:10vw 0 0 0;}
-  }

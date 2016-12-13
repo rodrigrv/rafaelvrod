@@ -93,6 +93,8 @@
     <div class="lightbox" data-state="hidden">
       <div class="lightbox-container">
         <button class="btn-close">X</button>
+        <!--<button class="btn-left">&lt;</button>
+        <button class="btn-right">&gt;</button> -->
         <div class="lightbox-content">
           <img class="lightbox-img" alt="">
             <h2 class="lightbox-heading"></h2>
@@ -146,7 +148,11 @@
         <h3 class="contact-title">Contact</h3>
     </div>
     <div class="contact-wrapper">
-      <p class="contact-text">Feel free to contact me.</p>
+      <p class="contact-text">Feel free to contact me at
+        <span class="new-line"><a href="mailto:thao_ha@outlook.com" target="_blank">thao_ha@outlook.com</a></span>
+      </p>
+
+        <!-- Commenting out until we can get it to work
         <div class="contact-form-wrapper">
           <div class="form-style">
             <form action="" method="post">
@@ -163,6 +169,8 @@
           </form>
         </div>
       </div>
+      -->
+
     </div>
   </div>
   <!-- ==================== End Contact ==================== -->
@@ -197,8 +205,12 @@
     var lbImg = $('.lightbox-img');
     var lb = $('.lightbox');
     var btnClose = $('.btn-close');
+    /*var btnRight = $(.'btn-right');
+    var btnLeft = $(.'btn-left');*/
     var lbHeading = $('.lightbox-heading');
     var lbText = $('.lightbox-text');
+    var imageCount = 1;
+    var total = 6;
 
     thumbs.on('click', 'a', function (e) {
       e.preventDefault();
@@ -212,6 +224,27 @@
     btnClose.on('click', function (){
       lb.attr('data-state', 'hidden');
     });
+
+/*
+    btnRight.on('click', function () {
+      slide(-1);
+    })
+
+    btnLeft.on('click', function () {
+      slide(1);
+    })
+
+    function slide(x) {
+      var image = document.getElementsByClassName('lightbox-img');
+      imageCount = imageCount + x;
+      if (imageCount > total) {
+        imageCount = 1;
+      }
+      if (imageCount < 1) {
+        imageCount = total;
+      }
+      image.src ="images1/"+ imageCount +".jpg";
+    }*/
   </script>
 </body>
 </html>
