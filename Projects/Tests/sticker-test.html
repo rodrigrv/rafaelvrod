@@ -1,34 +1,149 @@
 <!DOCTYPE html>
 <html>
+<style>
+/* Inherit Styling */
+* {
+    margin:0;
+    padding:0;
+    font-family:'Open Sans', serif;
+}
 
+/* Body Styling */
+.body-wrapper {
+  width:80%;
+  margin:10% auto;
+  background: #add8e6;
+  padding:10%;
+}
+
+h2 {margin:2em 0;}
+
+/* Horizontal Sticker */
+/* Sticker Styling */
+.sticker-sale {
+  text-transform: uppercase;
+  width:46%;
+  text-align: center;
+  padding:.5em;
+  background:rgba(255,255,255,.8);
+}
+
+/* Left side of sticker */
+.sticker-left-side {
+  display:inline-block;
+  width:36%;
+  text-align: left;
+  /* Use this if copy is one line */
+  /*vertical-align: top;
+  margin:1em 0 0 0;*/
+}
+
+.sticker-number {font-size:5em; font-family: serif;}
+.sticker-percent-wrapper {display:inline-block;}
+.sticker-percent {font-size:2.5em; font-family: serif;}
+.sticker-off {display:block; font-family:serif; font-size:1em;}
+
+/* Right side of sticker */
+.sticker-right-side {
+  display: inline-block;
+  width:47%;
+  border-left:1px solid #515151;
+  margin:1em 0;
+  text-align: left;
+  padding:0 0 0 1em;
+}
+
+/* Vertical Sticker */
+.sticker-vert {
+  text-transform: uppercase;
+  background: rgba(255,255,255,.8);
+  padding: .5em;
+  display: block;
+  text-align: center;
+  width: 21%;
+}
+
+/* Top Side */
+.top-side {line-height: .8;}
+.up-to-text {
+  font-family: serif;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.5em 0 0 0;
+  line-height: 1;
+}
+
+.new-line.up-to-text {display:block; margin:0;}
+.top-number {
+  display:inline-block;
+  font-size: 5em;
+  font-family: serif;
+}
+
+.percent-off-wrapper {display:inline-block; line-height: 1;}
+.left-percent {
+  display: block;
+  font-size: 2.5em;
+  font-family: serif;
+}
+
+.off-text {font-family: serif;}
+
+
+
+/* CTA Styling */
+.cta {font-weight:bold; display: block;}
+
+.cta::after {
+  font-size: 1.65em;
+  line-height: 0.75em;
+  margin-left: 0.2em;
+  content: '\203A';
+  vertical-align: baseline;
+  vertical-align: -0.045em;
+}
+</style>
 <head>
   <meta charset="utf-8">
   <title>Test Environment</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
   <div class="body-wrapper">
     <h1>Let's make a sticker.</h1>
+    <h2>Horizontal Sticker</h2>
     <div class="sticker-wrapper">
-      <div class="sticker-1">
+      <div class="sticker-sale">
         <div class="sticker-left-side">
-          <p>
             <span class="sticker-number">20</span>
             <span class="sticker-percent-wrapper">
-              <span class="sticker-percent">%
-                <span class="sticker-off">off</span>
-              </span>
-
+              <span class="sticker-percent">%</span>
+              <span class="sticker-off">off</span>
             </span>
-          </p>
         </div>
         <div class="sticker-right-side">
-            <p>All Metal &amp; copper drinkware</p>
-            <p class="cta">Shop Now</p>
-          </div>
+            <span class="sticker-copy">All Metal &amp; copper drinkware</span>
+            <span class="cta">Shop Now</span>
         </div>
       </div>
+    </div>
+    <h2>Vertical Sticker</h2>
+    <div class="sticker-wrapper">
+      <div class="sticker-vert">
+        <div class="top-side">
+          <span class="up-to-text">up<span class="new-line up-to-text">to</span></span>
+          <span class="top-number">20</span>
+          <div class="percent-off-wrapper">
+            <span class="left-percent">%</span>
+            <span class="off-text">off</span>
+          </div>
+        </div>
+        <div class="bottom-side">
+          <span class="sticker-right-text">All metal &amp; copper drinkware</span>
+          <span class="cta">shop now</span>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
