@@ -93,8 +93,8 @@
     <div class="lightbox" data-state="hidden">
       <div class="lightbox-container">
         <button class="btn-close">X</button>
-        <!-- <button class="btn-left" id="left">&lt;</button>
-        <button class="btn-right" id="right">&gt;</button> -->
+        <button class="btn-left" id="left">&lt;</button>
+        <button class="btn-right" id="right">&gt;</button>
         <div class="lightbox-content" id="imgContainer">
           <img class="lightbox-img" alt="">
             <h2 class="lightbox-heading"></h2>
@@ -207,6 +207,9 @@
     var btnClose = $('.btn-close');
     var lbHeading = $('.lightbox-heading');
     var lbText = $('.lightbox-text');
+    var leftBtn = $('.btn-left');
+    var rightBtn = $('.btn-right');
+    var lbContent = $('.lightbox-content');
 
     thumbs.on('click', 'a', function (e) {
       e.preventDefault();
@@ -215,48 +218,12 @@
       lb.attr('data-state', 'visible');
       lbHeading.html($(this).attr('data-title'));
       lbText.html($(this).attr('data-text'));
-
     });
 
     btnClose.on('click', function (){
       lb.attr('data-state', 'hidden');
     });
 
-    // function init () {
-    //   document.getElementById('img1').onclick = function openModal(1){};
-    //   document.getElementById('img2').onclick = function openModal(2){};
-    //   document.getElementById('img3').onclick = function openModal(3){};
-    //   document.getElementById('img4').onclick = function openModal(4){};
-    //   document.getElementById('img5').onclick = function openModal(5){};
-    //   document.getElementById('img6').onclick = function openModal(6){};
-    //   document.getElementById('left'). onclick = function showSlides(-1){};
-    //   document.getElementById('right'). onclick = function showSlides(1){};
-    // }
-    //
-    // var slideIndex = 1;
-    // showSlides(slideIndex);
-    //
-    // function plusSlides(n) {
-    //   showSlides(slideIndex += n);
-    // }
-    //
-    // function currentSlide(n) {
-    //   showSlides(slideIndex = n)
-    // }
-    //
-    // function showSlides(n) {
-    //   var i;
-    //   var slides = document.getElementsByClassName('portfolio-piece');
-    //   if (n > slides.length) {slideIndex = 1}
-    //   if (n < 1) {slideIndex = slides.length}
-    //   for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.display = "none";
-    //   }
-    //
-    //   slides[slideIndex-1].style.display = "block";
-    // }
-    //
-    // window.onload = init;
   </script>
 </body>
 </html>

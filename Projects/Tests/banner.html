@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+<style>
+.gold-text {color:#d6b25f;}
+.red-text {color:#e00029;}
+.reg-text {color:#515151;}
+.new-line {display: block;}
+.gold-text.inline.cta {font-size: 1em;}
+.new-year-wrapper {border-bottom:1px solid #515151;}
+.word-container {padding:.5em;text-align: center;font-size: .9em;}
+.word-container-mobile {padding:.5em;text-align: center;font-size: .9em;}
+
+.pt_storefront .new-year-wrapper {display: none;} /* Hides both banners from homepage */
+.word-container-mobile.hide-in-tablet {display:none;} /* Hides mobile version from desktop/tablet view */
+.mobile .word-container.hide-in-mobile {display: none;} /* Hides desktop/tablet version from mobile view */
+.mobile .word-container-mobile.hide-in-tablet {display:block;} /* Shows mobile version in mobile view */
+
+
+</style>
+<div class="new-year-wrapper">
+  <a href="http://staging.realm1.pier1.demandware.net/s/pier1_us/pier-one-coupons?icid=3097" onclick="s_objectID=&quot;http://staging.realm1.pier1.demandware.net/s/pier1_us/pier-one-coupons?icid=3097_1&quot;;return this.s_oc?this.s_oc(e):true">
+    <div class="word-container hide-in-mobile">
+      <span class="gold-text bold big-text">new year</span>
+      <span class="red-text bold big-text">new room
+        <span class="reg-text">•</span> 20<sup>%</sup> off
+      </span>
+      <span class="reg-text big-text">all living room seating, living room tables, chests &amp; storage,
+        <span class="new-line">tv &amp; media stands, bedroom furniture, dining storage and rugs •
+          <span class="gold-text inline cta">shop now</span>
+        </span>
+      </span>
+    </div>
+  </a>
+
+  <a href="http://staging.realm1.pier1.demandware.net/s/pier1_us/pier-one-coupons?icid=3097" onclick="s_objectID=&quot;http://staging.realm1.pier1.demandware.net/s/pier1_us/pier-one-coupons?icid=3097_2&quot;;return this.s_oc?this.s_oc(e):true">
+    <div class="word-container-mobile hide-in-tablet">
+      <span class="gold-text big-text bold">new year</span>
+      <span class="red-text big-text bold">new room
+        <span class="reg-text">•</span> 20<sup>%</sup> off
+      </span>
+      <span class="reg-text big-text">select categories •</span>
+      <span class="gold-text inline cta">shop now</span>
+    </div>
+  </a>
+</div>
+
+<div class="hp-hero-wrapper">
+  <div class="hp-hero-upper">
+    <a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/savings-clearance?icid=3099" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/savings-clearance?icid=3099_1&quot;;return this.s_oc?this.s_oc(e):true">
+      <img src="https://staging.realm1.pier1.demandware.net/on/demandware.static/-/Library-Sites-pier1_shared/default/dwcf73f9af/homepage/main/hp-main-161225-obsc.jpg" alt="Pier 1 Imports One Big Sale and Clearance" title="Pier 1 Imports One Big Sale and Clearance">
+    </a>
+  </div>
+  <div class="hp-hero-lower">
+    <a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/christmas?icid=3011" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/christmas?icid=3011_1&quot;;return this.s_oc?this.s_oc(e):true">
+      <img src="https://staging.realm1.pier1.demandware.net/on/demandware.static/-/Library-Sites-pier1_shared/default/dw6e967bfd/homepage/main/hp-main-161225-christmas.jpg" alt="Christmas Clearance 50% Off" title="Christmas Clearance 50% Off">
+    </a>
+  </div>
+
+  <style>
+.hp-hero-lower img {margin-top:-6px;}
+
+/* CTA's Links */
+.cta-wrapper {
+  position: absolute;
+  top:16%;
+  right:4%;
+  text-align: center;
+  z-index:200;
+  cursor:pointer;
+}
+
+.cta-upper a {font-weight:400;}
+.cta-left {float:left;}
+.cta-right {float:right;}
+.clear-cta {border:1px solid #f9f8f0; margin:1.3em .5em;}
+.clear-cta a {margin:.3em .5em; color:#f9f8f0; font-weight:400;}
+.cta-lower {clear:both; width:96.5%; text-align: center; margin:0 auto;}
+.filled-cta {background:#f9f8f0; margin:1.3em 0;}
+.filled-cta a {color:#c30e2e; padding:.3em 0;}
+
+/* FS49 Banner */
+#fs49-banner {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin:1.5rem 0;
+}
+
+#fs49-banner h1 {font-size: 1.8em; color: #dd0330; margin: 0;}
+
+#fs49-banner p {margin: 0;}
+#fs49-banner .details {text-decoration: underline;}
+
+@media screen and (max-width:1024px) {
+  .hp-hero-wrapper img {width:100%;}
+  .hp-hero-lower {margin-top:0px;}
+  .cta-wrapper {top:17%; right:6%;}
+}
+
+@media screen and (max-width:768px) {
+  .cta-wrapper {top:17%; right:0%;}
+  .clear-cta {margin:1em .5em;}
+  .clear-cta a {font-size:.9em; margin:.3em .5em;}
+  .filled-cta {margin:1em 0; font-size: .9em;}
+}
+
+@media screen and (max-width:760px) {
+  .cta-wrapper {top:19%; right:7%}
+  .clear-cta {font-size: initial;}
+  .filled-cta {font-size: initial;}
+}
+</style>
+  <div class="cta-wrapper">
+    <div class="cta-upper">
+      <div class="cta-left">
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/furniture?icid=3100" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/furniture?icid=3100_1&quot;;return this.s_oc?this.s_oc(e):true">Furniture</a></p>
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/rugs-curtains?icid=3101" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/rugs-curtains?icid=3101_1&quot;;return this.s_oc?this.s_oc(e):true">Rugs &amp; Curtains</a></p>
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/pillows-cushions?icid=3102" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/pillows-cushions?icid=3102_1&quot;;return this.s_oc?this.s_oc(e):true">Pillows &amp; Cushions</a></p>
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/dining_entertaining?icid=3103" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/dining_entertaining?icid=3103_1&quot;;return this.s_oc?this.s_oc(e):true">Dining &amp; Entertaining</a></p>
+      </div>
+      <div class="cta-right">
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/bedroom-bathroom?icid=3104" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/bedroom-bathroom?icid=3104_1&quot;;return this.s_oc?this.s_oc(e):true">Bed &amp; Bath</a></p>
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/home-decor?icid=3105" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/home-decor?icid=3105_1&quot;;return this.s_oc?this.s_oc(e):true">Decor</a></p>
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/lighting-candles?icid=3106" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/lighting-candles?icid=3106_1&quot;;return this.s_oc?this.s_oc(e):true">Lighting &amp; Candles</a></p>
+        <p class="clear-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/holiday-seasonal?icid=3107" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/holiday-seasonal?icid=3107_1&quot;;return this.s_oc?this.s_oc(e):true">Seasonal</a></p>
+      </div>
+    </div>
+    <div class="cta-lower">
+      <p class="filled-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/christmas?icid=3108" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/christmas?icid=3108_1&quot;;return this.s_oc?this.s_oc(e):true">All Christmas 50<sup>%</sup> off</a></p>
+      <p class="filled-cta"><a href="https://staging.realm1.pier1.demandware.net/s/pier1_us/savings-clearance?icid=3109" class="cta" onclick="s_objectID=&quot;https://staging.realm1.pier1.demandware.net/s/pier1_us/savings-clearance?icid=3109_1&quot;;return this.s_oc?this.s_oc(e):true">Shop Entire Sale</a></p>
+    </div>
+  </div>
+</div>
