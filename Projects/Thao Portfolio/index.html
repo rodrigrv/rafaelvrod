@@ -2,15 +2,19 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <title>Thao Ha | Graphic Designer</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/png" href="images/logocolor.png" />
-    <script src="https://use.typekit.net/iww8nri.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0" />
+<title>Thao Ha | Graphic Designer</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="icon" type="image/png" href="images/logocolor.png" />
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+  crossorigin="anonymous">
+  </script>
 </head>
 
 <body>
@@ -57,32 +61,32 @@
     </div>
     <div class="portfolio-work-wrapper desktop">
       <div class="thumbnails">
-        <div class="portfolio-piece" id="img1">
+        <div class="portfolio-piece images-d" id="img1" >
           <a href="images/tin.jpg" data-title="Tin-Man Alphabet" data-text="Taking inspiration from a interplanetary space explorer tin toy in the 1960s, I created an alphabet set from the shapes and color that I see in the toy. I used green as the main color for the alphabet and added the prominent blocky feet to the typeface to match the tin toy.">
             <img id="imgtin" src="images/tin.jpg">
           </a>
         </div>
-        <div class="portfolio-piece" id="img2">
+        <div class="portfolio-piece images-d" id="img2">
           <a href="images/cactus.jpg" data-title="Rolling Cactus" data-text="Branding a local gardening shop, I wanted to target the youth that have no experience in gardening, specifically succulents and cacti. I used bold colors and strokes for an energetic feel.">
             <img id="imgcactus" src="images/cactus.jpg">
           </a>
         </div>
-        <div class="portfolio-piece" id="img3">
+        <div class="portfolio-piece images-d" id="img3">
           <a href="images/homeless.jpg" data-title="Homelessness Poster" data-text="I chose shelter, home, and food as the theme to relate to our basic survival instincts. The concrete background relates to the environment and harsh living conditions that the homeless have to live through every day.">
             <img id="imghomeless" src="images/homeless.jpg">
           </a>
         </div>
-        <div class="portfolio-piece" id="img4">
+        <div class="portfolio-piece images-d" id="img4">
           <a href="images/phillips.jpg" data-title="Captain Phillips" data-text="Taking inspiration from the movie, Captain Phillips, I created icons that represent the main events that happened in the movie. The blue and yellow I chose were ship's colors.">
             <img id="imgphillips" src="images/phillips.jpg">
           </a>
         </div>
-        <div class="portfolio-piece" id="img5">
+        <div class="portfolio-piece images-d" id="img5">
           <a href="images/astros.jpg" data-title="Astros" data-text="Astros is a RPG style mobile game that follows the storyline of the hero going into the forest to defeat the monsters that took over the forest. I wanted to play off the 'dark forest' theme, so I contrasted dark hues of purple with an bright earth tone palette.">
             <img id="imgastros" src="images/astros.jpg">
           </a>
         </div>
-        <div class="portfolio-piece" id="img6">
+        <div class="portfolio-piece images-d" id="img6">
           <a href="images/trinket.jpg" data-title="Trinket Magazine" data-text="Trinket is a DIY magazine that focuses on interior design. This particular issue centers on how succulents can be incorporated into every day decorations.">
             <img id="imgtrinket" src="images/trinket.jpg">
           </a>
@@ -210,6 +214,9 @@
     var leftBtn = $('.btn-left');
     var rightBtn = $('.btn-right');
     var lbContent = $('.lightbox-content');
+    var images = $('.images-d');
+    var lastImg = images.length - 1;
+    var noImg = 0;
 
     thumbs.on('click', 'a', function (e) {
       e.preventDefault();
@@ -224,6 +231,23 @@
       lb.attr('data-state', 'hidden');
     });
 
+    leftBtn.on('click', function() {
+      if (noImg === 0) {
+        lbContent.show(lastImg);
+      } else {
+        noImg--;
+      }
+      console.log(lastImg);
+    });
+
+    rightBtn.on('click', function() {
+      if (noImg === lastImg) {
+        noImg = 0;
+      } else {
+        noImg++;
+      }
+      console.log(lastImg);
+    });
   </script>
 </body>
 </html>
