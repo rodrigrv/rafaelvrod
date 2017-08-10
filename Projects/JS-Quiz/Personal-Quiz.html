@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<style>
+body {background:lightblue; margin:0;}
+.quiz-container {
+  background:#f0ffff;
+  font-family: 'Open Sans';
+  margin:0 auto;
+  padding:10em 1em;
+  width: 80%;
+}
+
+.quiz-greeting {text-align: center;}
+.quiz-question-wrap {margin:3rem 0;}
+.quiz-title {font-weight:bold;}
+#q1q {color:red; font-weight: bold; text-decoration: none;}
+#q1q:hover,
+#q1q:visited {color:red; font-weight: bold; text-decoration: underline;}
+.q2q-wrap {text-align: center; width:50%;}
+.q2color {
+  background: #cd5c5c;
+  border-radius: 10px;
+  color:#8b0000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 .5em;
+  padding:.5em;
+  width:20%;
+}
+.q2color.color2 {background:#8fbc8f; color:#006400;}
+.q2color.color3 {background:#1e90ff; color:#00008b;}
+</style>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    var colorRed = document.getElementById('q2r');
+    var colorGreen = document.getElementById('q2g');
+    var colorBlue = document.getElementById('q2b');
+    function init() {
+      document.getElementById('q1q').onclick = function() {saveDate()};
+      document.getElementById('q2r').onclick = function() {color1()};
+      document.getElementById('q2g').onclick = function() {color2()};
+      document.getElementById('q2b').onclick = function() {color3()};
+    }
+
+    function saveDate () {
+      var getAnswer1 = document.getElementById('q1a');
+      var date = "10/19/2012";
+      var q1q = prompt("What is our anniversary date? Please answer MM/DD/YYYY","");
+      if (q1q == date) {
+        getAnswer1.innerHTML = (" Very Good!! Our anniversary is October 19, 2012. Continue to question 2.");
+      } else if (q1q === null) {
+        getAnswer1.innerHTML = (" Don't hit cancel. Next time try and answer at least.");
+      } else if (q1q === "") {
+        getAnswer1.innerHTML = (" Really? Leaving it blank huh. Well, your loss...");
+      } else {
+        getAnswer1.innerHTML = (" Sorry, I don't think that's correct. Maybe another time.");
+      }
+    }
+
+    function color1() {
+      var getAnswer2 = document.getElementById('q2a');
+      if (colorRed && colorGreen !== true || colorBlue !== true) {
+        alert("Hey, Nice!! You guessed correct.");
+        getAnswer2.innerHTML = (" You guessed right with the color red. Onto question 3.")
+      }
+    }
+
+    function color2() {
+      var getAnswer2 = document.getElementById('q2a');
+      if (colorGreen && colorRed !== true || colorBlue !== true) {
+        alert("Close, but I like red more.")
+        getAnswer2.innerHTML = (" You guessed <span style='font-weight:bold;'>wrong</span> with the color green. Onto question 3.");
+      }
+    }
+
+    function color3() {
+      var getAnswer2 = document.getElementById('q2a');
+      if (colorBlue && colorRed !== true || colorGreen !== true) {
+        alert("Blue is nice, but red is better!")
+        getAnswer2.innerHTML = (" You guessed incorrect. Onto question 3.");
+      }
+    }
+
+    window.onload = init;
+    </script>
+  </head>
+  <body>
+  <div class="quiz-container">
+    <h1 class="quiz-greeting">Welcome to my quiz!!</h1>
+    <h3 class="quiz-intro-copy">This quiz is designed to see how well you know me and us.<br>Let's see what you know.</h3>
+
+    <div class="quiz-question-wrap">
+      <p class="quiz-question"><span class="quiz-title">Question 1:</span><br/>What is our anniversary date? Click <a id="q1q" href="#">here</a> to answer.</p>
+      <p class="quiz-answer"><span class="quiz-title">Your Answer:</span><span id="q1a"> No answer yet.</span></p>
+    </div>
+
+    <div class="quiz-question-wrap">
+      <p class="quiz-question"><span class="quiz-title">Question 2:</span><br/>What is my favorite color? Pick from the following.
+        <div class="q2q-wrap">
+          <span id="q2r" class="q2color">Red</span>
+          <span id="q2g" class="q2color color2">Green</span>
+          <span id="q2b" class="q2color color3">Blue</span>
+        </div>
+      </p>
+      <p class="quiz-answer"><span class="quiz-title">Your Answer:</span><span id="q2a"></span></p>
+    </div>
+
+    <div class="quiz-question-wrap">
+      <p class="quiz-question"><span class="quiz-title">Question 3:</span><br/>Who are my biological parents?
+
+      </p>
+      <p class="quiz-answer"><span class="quiz-title">Your Answer:</span></p>
+    </div>
+
+  </div>
+  </body>
+</html>
