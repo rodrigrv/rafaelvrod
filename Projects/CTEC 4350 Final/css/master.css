@@ -22,7 +22,7 @@ Last Updated: May 3rd, 2016
 
 body {
 	margin:0;
-	padding:0;	
+	padding:0;
 	background:#f9f8f0;
 	box-sizing:border-box;
 }
@@ -30,35 +30,24 @@ body {
 a {
 	text-decoration: none;
 	color:#004c70;
-	font-weight:bold;	
+	font-weight:bold;
 }
 
-a:hover {
-	text-decoration:underline;	
-}
-
-p {
-	line-height:2.25em;	
-}
-
-.asterisk {
-	color:#f00;	
-}
-
-.errMsg {
-	color: #ff6600;
-}
+a:hover {text-decoration:underline;	}
+p {line-height:2.25em;}
+.asterisk {color:#f00;}
+.errMsg {color: #ff6600;}
 
 /* ########## HEADER ABOVE NAV ########## */
 
 header {
 	width:80%;
-	margin:0 auto;	
+	margin:0 auto;
 }
 
 .above_nav {
 	padding:1% 0 0 0;
-	background:#f9f8f0;	
+	background:#f9f8f0;
 	display:block;
 	margin:0 auto;
 	text-align:center;
@@ -67,11 +56,11 @@ header {
 .header_img {
 	width:15%;
 	float:left;
-	text-align:left;	
+	text-align:left;
 }
 
 .image1 {
-	width:80%;	
+	width:80%;
 }
 
 .header_title {
@@ -88,7 +77,7 @@ header {
 	float:left;
 	width:13%;
 	margin:5% 0 0 1%;
-	font-family:Open Sans;	
+	font-family:Open Sans;
 	font-weight:bold;
 	font-size:18px;
 	text-align:right;
@@ -99,24 +88,13 @@ header {
 	text-decoration:none;
 }
 
-.user a:visited {
-	color:#004c70;
-}
-
-.user a:hover {
-	text-decoration:underline;
-}
-
-.clear_float {
-	clear:both;	
-}
+.user a:visited {color:#004c70;}
+.user a:hover {text-decoration:underline;}
+.clear_float {clear:both;}
 
 /* ########## NAVIGATION ########## */
 
-.btn_menu {
-	display:none;	
-}
-
+.btn_menu {display:none;}
 nav {
 	background:#0093d1;
 	z-index:1000;
@@ -129,7 +107,7 @@ nav {
 nav ul {
 	margin:0;
 	padding:0;
-	list-style-type:none;	
+	list-style-type:none;
 }
 
 nav ul li {
@@ -152,35 +130,20 @@ nav ul li {
 	text-decoration:none;
 }
 
-nav ul li:hover .children {
-	display:block;	
-}
-
-#account {
-	display:none;	
-}
-
-#donation {
-	background:#004c70;	
-}
-
-#donation:hover {
-	background:#e0a025;	
-}
-
+nav ul li:hover .children {display:block;}
+#account {display:none;}
+#donation {background:#004c70;}
+#donation:hover {background:#e0a025;}
 nav ul li .children {
 	display:none;
 	background:#011826;
-	position:absolute;	
+	position:absolute;
 	width:150%;
 	z-index:9999;
 }
 
-nav ul li .children ul {
-	list-style-type:none;	
-}
-
-nav ul li .children li { 
+nav ul li .children ul {list-style-type:none;	}
+nav ul li .children li {
 	display:block;
 	overflow:hidden;
 	border-bottom:1px solid #fff;
@@ -193,7 +156,7 @@ nav ul li .children li:hover {
 	transition:.5s;
 }
 
-nav ul li .children li a { 
+nav ul li .children li a {
 	display:block;
 	text-decoration:none;
 	color:#fff;
@@ -205,24 +168,22 @@ nav ul li .children li a {
 	position:relative;
 	top:3px;
 	margin:0 0 0 10px;
-	padding:0 0 10px 0;	
+	padding:0 0 10px 0;
 }
 
-.arrow_up {
-	transform: rotate(180deg);	
-}
+.arrow_up {transform: rotate(180deg);	}
 
 /* ########## HEADER BELOW NAV ########## */
 
 .below_nav {
 	font-family:Merriweather;
-	width:100%;	
+	width:100%;
 	position:relative;
 	z-index:500;
 }
 
 .img_slider {
-	max-width:100%;	
+	max-width:100%;
 	z-index:10;
 }
 
@@ -263,7 +224,7 @@ nav ul li .children li a {
 	bottom:50px;
 	text-align:center;
 	z-index:9999;
-	cursor:pointer;	
+	cursor:pointer;
 }
 
 .cycle-pager span {
@@ -274,18 +235,15 @@ nav ul li .children li a {
 	border-radius:50%;
 	margin:0 10px;
 	text-indent:100%;
-	white-space:nowrap;	
+	white-space:nowrap;
 }
 
-.cycle-pager .cycle-pager-active {
-	background:#f9f8f0;	
-}
-
+.cycle-pager .cycle-pager-active {background:#f9f8f0;	}
 
 /* ########## SECTION ########## */
 
 section {
-	width:80%;	
+	width:80%;
 	margin:0 auto;
 	background:#f9f8f0;
 	font-family:Open Sans;
@@ -293,40 +251,33 @@ section {
 
 article {
 	width:60%;
-	float:left;	
+	float:left;
 	margin:2% 0 0 0;
 	padding:0 2% 0 0;
 }
 
 h2 {
 	margin:0;
-	padding:5% 0 1% 5%;	
+	padding:5% 0 1% 5%;
 }
 
-.intro_text {
-	padding:0 0 0 5%;	
-}
-
+.intro_text {padding:0 0 0 5%;}
 .featured_image {
 	width:20%;
 	float:left;
-	margin:2% 3% 0 5%;	
+	margin:2% 3% 0 5%;
 }
-
 
 /* ########## ASIDE ########## */
 
-
 aside {
 	width:30%;
-	float:left;	
+	float:left;
 	margin:5% 0 0 3%;
 	padding:0 0 0 2%;
 }
 
-.home_aside_title {
-	text-align:center;	
-}
+.home_aside_title {text-align:center;	}
 
 /* ########## FOOTER ########## */
 
@@ -334,20 +285,17 @@ footer {
 	width:100%;
 	background:#555;
 	font-family:Open Sans;
-	color:#f9f8f0;	
+	color:#f9f8f0;
 	padding:2% 0 0 0;
 	margin:5% 0 0 0;
 }
 
 .footer_wrapper {
 	width:80%;
-	margin:0 auto;	
+	margin:0 auto;
 }
 
-h4 {
-	font-size:1.15em;	
-}
-
+h4 {font-size:1.15em;	}
 .footer_links {
 	float:left;
 	width:32%;
@@ -355,7 +303,7 @@ h4 {
 }
 
 .quick_links {
-	list-style-type:none;	
+	list-style-type:none;
 }
 
 .quick_links li {
@@ -366,7 +314,7 @@ h4 {
 .quick_links li a {
 	text-decoration:none;
 	color:#f9f8f0;
-	display:block;	
+	display:block;
 }
 
 .quick_links li a:hover {
@@ -376,13 +324,13 @@ h4 {
 
 .footer_media {
 	float:left;
-	width:32%;	
+	width:32%;
 	text-align:center;
 }
 
 .footer_donate {
 	float:left;
-	width:32%;	
+	width:32%;
 	text-align:center;
 }
 
@@ -390,7 +338,7 @@ h4 {
 	color:#f9f8f0;
 	text-align:center;
 	padding:0 0 2% 0;
-	margin:5% 0 0 0;	
+	margin:5% 0 0 0;
 }
 
 input.footer_submit {
@@ -413,7 +361,7 @@ input[type="submit"]:hover {
 
 .donate_info {
 	text-align:left;
-	margin:3% 0 3% 35%;	
+	margin:3% 0 3% 35%;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -422,10 +370,7 @@ input[type="submit"]:hover {
 
 /* ########## LOGIN SECTION ########## */
 
-.login_page {
-	margin:0 auto;	
-}
-
+.login_page {margin:0 auto;	}
 .page_title {
 	text-align:center;
 	padding:5% 0;
@@ -436,12 +381,12 @@ input[type="submit"]:hover {
 	width:40%;
 	margin:0 auto;
 	border:2px solid #dcdcdc;
-	border-radius:10px;	
+	border-radius:10px;
 	padding:2% 0 5% 0;
 }
 
 .login_title {
-	text-align:center;	
+	text-align:center;
 }
 
 .login_form {
@@ -450,26 +395,26 @@ input[type="submit"]:hover {
 
 .login_email {
 	margin:0 0 5% 0;
-	padding:2% 0;	
+	padding:2% 0;
 	font-family:Open Sans;
 	width:80%;
 }
 
 input.login_email {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .login_pass {
 	margin:0 0 5% 0;
-	padding:2% 0;	
+	padding:2% 0;
 	font-family:Open Sans;
 	width:80%;
 }
 
 input.login_pass {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .login_link {
@@ -482,33 +427,25 @@ input.login_submit {
 	padding:2%;
 	width:15%;
 	font-family:Open Sans;
-	font-weight:bold;	
+	font-weight:bold;
 }
 
-.login_link:hover {
-	text-decoration:underline;
-}
-
+.login_link:hover {text-decoration:underline;}
 .login_new_user {
 	width:70%;
 	text-align:center;
 	padding:5% 0 0 0;
 	margin:5% auto 0 auto;
-	border-top:1px solid #dcdcdc;	
+	border-top:1px solid #dcdcdc;
 }
 
-.login_user_text {
-	margin:5% 0 0 15%;	
-}
-
+.login_user_text {margin:5% 0 0 15%;	}
 .login_user_text a {
 	color:#004c70;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
-.login_user_text a:hover {
-	text-decoration:underline;	
-}
+.login_user_text a:hover {text-decoration:underline;}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* %%%%%%% REGISTER PAGE %%%%%%%% */
@@ -521,71 +458,68 @@ input.login_submit {
 	margin:0 auto 10% auto;
 	padding:5%;
 	border:2px solid #dcdcdc;
-	border-radius:10px;	
+	border-radius:10px;
 }
 
 .register_form_title {
 	text-align:center;
-	margin:0 0 5% 0;	
+	margin:0 0 5% 0;
 }
 
-.register_form_text {
-	margin:0 0 5% 0;	
-}
-
+.register_form_text {margin:0 0 5% 0;	}
 .register_email {
 	width:100%;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.register_email {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .register_fname {
 	width:100%;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.register_fname {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .register_lname {
 	width:100%;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.register_lname {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .register_pass {
 	width:100%;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.register_pass {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .register_confirm_pass {
 	width:100%;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.register_confirm_pass {
 	font-family:Open Sans;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.register_submit {
 	padding:2%;
-	margin:5% auto 0 auto;	
+	margin:5% auto 0 auto;
 	display:block;
 }
 
@@ -597,39 +531,33 @@ input.register_submit {
 
 .admin_wrapper {
 	float:left;
-	width:100%;	
+	width:100%;
 	margin:0 auto 0 10%;
 }
 
 .admin_aside {
 	float:right;
-	width:20%;	
+	width:20%;
 	margin:0 20% 0 auto;
 	padding:0;
 }
 
-.aside_title {
-	display:none;	
-}
-
+.aside_title {display:none;	}
 .admin_table_title {
-	text-align:center;	
+	text-align:center;
 }
 
 .admin_show {
 	width:40%;
-	margin:5% 2%;	
+	margin:5% 2%;
 }
 
 table {
 	font-weight:bold;
-	margin:0 20%;	
+	margin:0 20%;
 }
 
-table tr:nth-of-type(odd) {
-	background:#efefef;	
-}
-
+table tr:nth-of-type(odd) {background:#efefef;}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* %%%%%%% NEW USER PAGE %%%%%%%% */
@@ -639,9 +567,8 @@ table tr:nth-of-type(odd) {
 
 .user_info {
 	width:45%;
-	float:left;	
+	float:left;
 }
-
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* %%%%% ORGANIZATION PAGE %%%%%% */
@@ -649,34 +576,28 @@ table tr:nth-of-type(odd) {
 
 /* ########## ORGANIZATION SECTION ########## */
 
-.org_title {
-	padding:0 0 1% 0;
-}
-
+.org_title {padding:0 0 1% 0;}
 .org_text {
 	float:left;
 	width:50%;
-	line-height:2.25em;	
+	line-height:2.25em;
 }
 
 .org_image {
 	float:left;
 	width:40%;
 	height:350px;
-	margin:1% 0 3% 5%;	
+	margin:1% 0 3% 5%;
 }
 
 .org_placeholder {
 	top:50%;
 	position:relative;
 	text-align:center;
-	transform:translateY(-50%);	
+	transform:translateY(-50%);
 }
 
-.org_images {
-	width:90%;	
-}
-
+.org_images {width:90%;	}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* %%%%%% ORG MEMBERS PAGE %%%%%% */
@@ -686,13 +607,13 @@ table tr:nth-of-type(odd) {
 
 .display_member_wrapper {
 	width:80%;
-	margin:5% auto 0 auto;	
+	margin:5% auto 0 auto;
 }
 
 .single_member_wrapper {
 	float:left;
 	width:45%;
-	margin:0 2% 5% 2%;	
+	margin:0 2% 5% 2%;
 }
 
 .member_image {
@@ -700,27 +621,22 @@ table tr:nth-of-type(odd) {
 	margin:0 auto;
 }
 
-.board_images {
-	width:100%;	
-}
-
+.board_images {width:100%;}
 #board_pic1 {
 	wdith:90%;
 	height:270px;
 	margin:0 auto;
-	border:3px solid #dcdcdc;		
+	border:3px solid #dcdcdc;
 }
 
 #board_pic2 {
 	width:90%;
 	height:270px;
 	margin:0 auto;
-	border:3px solid #dcdcdc;		
+	border:3px solid #dcdcdc;
 }
 
-.member_bio_text {
-	width:100%;	
-}
+.member_bio_text {width:100%;	}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* %%%%%%%% SPONSOR PAGE %%%%%%%% */
@@ -729,24 +645,15 @@ table tr:nth-of-type(odd) {
 
 /* ########## SPONSOR SECTION ########## */
 
-.sponsor_intro_wrapper {
-	margin:0 20%;	
-}
-
+.sponsor_intro_wrapper {margin:0 20%;	}
 .sponsor_form_wrapper {
 	margin:5% 10%;
 	border:2px solid #dcdcdc;
-	border-radius:10px;	
+	border-radius:10px;
 }
 
-.sponsor_form_title {
-	text-align:center;	
-}
-
-.sponsor_current_title {
-	text-align:center;	
-}
-
+.sponsor_form_title {text-align:center;}
+.sponsor_current_title {text-align:center;}
 .sponsor_image_wrapper {
 	width:80%;
 	display:block;
@@ -754,89 +661,86 @@ table tr:nth-of-type(odd) {
 	text-align:center;
 	height:300px;
 	border:2px solid #dcdcdc;
-	border-radius:10px;	
+	border-radius:10px;
 }
 
 /* ########## SPONSOR FORM SECTION ########## */
 
-.sponsor_form {
-	padding:5%;	
-}
-
+.sponsor_form {padding:5%;}
 input.sponsor_name {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.sponsor_business {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.sponsor_address {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.sponsor_city {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 select.sponsor_state {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.sponsor_zip {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.sponsor_num {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 input.sponsor_email {
 	width:100%;
 	font-family:Open Sans;
 	padding:2% 0;
-	font-size:1.1em;	
+	font-size:1.1em;
 }
 
 .sponsor_form_split1 {
 	float:left;
 	width:45%;
-	margin:0 2%;	
+	margin:0 2%;
 }
 
 .sponsor_form_split2 {
 	float:left;
-	width:45%;	
+	width:45%;
 	margin:0 2%;
 }
 
 .sponsor_question_length {
-	margin:5% 0 0 0;	
+	margin:5% 0 0 0;
 }
 
 input.sponsor_submit {
-	padding:2%;	
+	padding:2%;
 }
 
 
@@ -854,7 +758,7 @@ input.sponsor_submit {
 .volunteer_image_container {
 	display:block;
 	text-align:center;
-	margin:0 auto;	
+	margin:0 auto;
 }
 
 .volunteer_image_wrapper {
@@ -870,28 +774,28 @@ input.sponsor_submit {
 /* ########## VOLUNTEER FORM SECTION ########## */
 
 .volunteer_form_wrapper {
-	margin:5% 0;	
+	margin:5% 0;
 	border:2px solid #dcdcdc;
 	border-radius:10px;
 	padding:10%;
 }
 
 .volunteer_form_title {
-	text-align:center;	
+	text-align:center;
 }
 
 input.volunteer_name {
 	width:100%;
 	padding:2% 0;
 	font-size:1.1em;
-	font-family:Open Sans;	
+	font-family:Open Sans;
 }
 
 input.volunteer_num {
 	width:100%;
 	padding:2% 0;
 	font-size:1.1em;
-	font-family:Open Sans;	
+	font-family:Open Sans;
 }
 
 input.volunteer_email {
@@ -901,7 +805,7 @@ input.volunteer_email {
 	font-family:Open Sans;
 }
 
-input.volunteer_submit {	
+input.volunteer_submit {
 	padding:2%;
 	margin:10% 0 0 0;
 }
@@ -927,13 +831,13 @@ input.volunteer_submit {
 
 .event_nav {
 	text-decoration:none;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 .event_nav li {
 	display:inline;
 	padding:0 3%;
-	font-size:1.2em;	
+	font-size:1.2em;
 }
 
 
@@ -941,16 +845,16 @@ input.volunteer_submit {
 
 .event_wrapper {
 	width:65%;
-	margin:0 auto;	
+	margin:0 auto;
 }
 
 .event_image_wrapper {
-	width:100%;	
+	width:100%;
 }
 
 .event_wrap {
 	padding:0 0 5% 0;
-	border-bottom:2px solid #888;	
+	border-bottom:2px solid #888;
 }
 
 .event_container {
@@ -959,7 +863,7 @@ input.volunteer_submit {
 	margin:0 2%;
 	height:250px;
 	border:2px solid #dcdcdc;
-	border-radius:10px;	
+	border-radius:10px;
 }
 
 
@@ -971,15 +875,15 @@ input.volunteer_submit {
 
 .faq_wrapper {
 	width:60%;
-	margin:0 auto;	
+	margin:0 auto;
 }
 
 .faq_intro_text {
-	margin:0 0 10% 0;	
+	margin:0 0 10% 0;
 }
 
 .faq_text_links {
-	margin:0 0 15% 0;	
+	margin:0 0 15% 0;
 }
 
 
@@ -990,7 +894,7 @@ input.volunteer_submit {
 /* ########## CONTACT SECTION ########## */
 
 .contact_intro_wrapper {
-	margin:0 15%;	
+	margin:0 15%;
 }
 
 /* ########## CONTACT FORM SECTION ########## */
@@ -999,44 +903,44 @@ input.volunteer_submit {
 	margin:7% 20%;
 	border:2px solid #dcdcdc;
 	border-radius:10px;
-	padding:10%;	
+	padding:10%;
 }
 
 .contact_form_intro {
 	text-align:center;
-	margin:0 0 10% 0;	
+	margin:0 0 10% 0;
 }
 
 input.contact_name {
 	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 .contact_num {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 .contact_email {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 .contact_msg {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 input.contact_submit {
-	padding:2%;	
+	padding:2%;
 }
 
 
@@ -1049,26 +953,26 @@ input.contact_submit {
 
 donation_page {
 	width:80%;
-	margin:0 auto;	
+	margin:0 auto;
 }
 
 .donate_section {
-	margin:0 auto;	
+	margin:0 auto;
 	width:60%;
 }
 
 .donate_intro_text {
-	margin:2% 20%;	
+	margin:2% 20%;
 }
 
 .donate_wrapper {
 	border:2px solid #dcdcdc;
 	padding:5%;
-	border-radius:10px;	
+	border-radius:10px;
 }
 
 .donate_title {
-	text-align:center;	
+	text-align:center;
 }
 
 /* ########## DONATE FORM SECTION ########## */
@@ -1080,38 +984,38 @@ donation_page {
 }
 
 input.donate_name {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.donate_address {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.donate_city {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 select.donate_state {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 input.donate_zip {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
-	padding:2% 0;	
+	padding:2% 0;
 }
 
 .donate_payment_wrap {
@@ -1121,38 +1025,38 @@ input.donate_zip {
 }
 
 input.donation_amount {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 input.donate_card {
-	width:100%;	
+	width:100%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 select.donate_month {
-	width:49%;	
+	width:49%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 select.donate_year {
-	width:49%;	
+	width:49%;
 	font-family:Open Sans;
 	font-size:1.1em;
 	padding:2% 0;
 }
 
 input.donate_submit {
-	padding:2%;	
+	padding:2%;
 	margin:5% 0 0 0;
 	font-family:Open Sans;
-	font-size:1.05em;	
+	font-size:1.05em;
 }
 
 
@@ -1162,41 +1066,41 @@ input.donate_submit {
 
 
 @media screen and (max-width:500px) {
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% INDEX PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ALL PAGE ELEMENTS ########## */
-	
+
 	section {
 		margin:25% 5% 0 5%;
 	}
-	
+
 	/* ########## HEADER ABOVE NAV ########## */
-	
+
 	.make_fixed {
 		position:fixed;
 		top:0;
 		width:100%;
 		z-index:501;
 	}
-	
+
 	.above_nav {
-		font-size:.5em;	
+		font-size:.5em;
 		display:none;
 	}
-	
+
 	/* ########## NAVIGATION ########## */
-	
+
 	.menu-bar {
 		display:block;
 		width:100%;
 		overflow:hidden;
 	}
-	
+
 	.btn_menu {
-		display:block;	
+		display:block;
 		padding:20px;
 		color:#fff;
 		overflow:hidden;
@@ -1207,33 +1111,33 @@ input.donate_submit {
 		text-align:center;
 		font-family:Merriweather;
 	}
-	
+
 	btn_menu a {
-		padding:5% 2%;	
+		padding:5% 2%;
 	}
-	
+
 	btn_menu span a:hover {
-		text-decoration:none;	
+		text-decoration:none;
 	}
-	
-	
+
+
 	.h_icon {
-		font-size:25px;	
+		font-size:25px;
 	}
-	
+
 	.btn_menu .h_icon {
 		float:left;
-		margin:0 0 0 10px;	
+		margin:0 0 0 10px;
 	}
-	
+
 	.arrow {
-		float:right;	
+		float:right;
 	}
-	
+
 	#account {
-		display:block;	
+		display:block;
 	}
-	
+
 	nav {
 		width:80%;
 		position:fixed;
@@ -1241,382 +1145,382 @@ input.donate_submit {
 		margin:0;
 		overflow:hidden;
 		max-height:200em;
-		z-index:999;	
+		z-index:999;
 	}
-	
+
 	nav ul {
 		text-align:left;
 		margin:0;
 		z-index:999;
-		overflow:hidden;	
+		overflow:hidden;
 	}
-	
+
 	nav ul li {
 		display:block;
-		border-bottom:1px solid #fff;	
+		border-bottom:1px solid #fff;
 		z-index:9999;
 	}
-	
+
 	nav ul li a {
 		display:block;
-		z-index:9999;	
-	}
-	
-	nav ul li .children {
-		width:100%;
-		position:relative;	
 		z-index:9999;
 	}
-	
-	nav ul li:hover .children {
-		display:none;	
+
+	nav ul li .children {
+		width:100%;
+		position:relative;
+		z-index:9999;
 	}
-	
+
+	nav ul li:hover .children {
+		display:none;
+	}
+
 	a.mobile_login {
 		color:#fff;
-		font-weight:100;	
+		font-weight:100;
 		border-bottom:1px solid #fff;
 		display:block;
 		padding:6%;
 	}
-	
+
 	nav ul li .children li {
 		padding:6%;
-		z-index:9999;	
+		z-index:9999;
 	}
-	
+
 	/* ########## HEADER BELOW NAV ########## */
-	
+
 	.below_nav {
 		margin-top:120px;
 	}
-	
+
 	.cycle-slideshow {
 		height:	200px;
 		z-index:200;
 	}
-	
+
 	.cycle-pager {
-		bottom:20px;	
+		bottom:20px;
 	}
-	
+
 	.cycle-prev, .cycle-next {
 		font-size:350%;
 	}
 
 	/* ########## SECTION ########## */
-	
+
 	section {
 		float:none;
-		margin:0;	
+		margin:0;
 		width:90%;
 	}
-	
+
 	article {
-		float:none;	
+		float:none;
 		margin:5% 0;
 		width:100%;
 		padding:0 0 5% 0;
 	}
-	
+
 	.intro_title {
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.featured_image {
 		float:none;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	/* ########## ASIDE ########## */
-	
+
 	aside {
-		float:none;	
+		float:none;
 		padding:5%;
 		margin:5% 0 0 0;
 		width:100%;
 		border-top:5px dashed #888;
 	}
-	
+
 	.aside_title {
 		padding:5% 0;
 	}
-	
+
 	/* ########## FOOTER ########## */
-	
+
 	footer {
-		margin:20% 0 0 0;	
+		margin:20% 0 0 0;
 	}
-	
+
 	.quick_links {
-		padding:0;	
+		padding:0;
 	}
-	
+
 	.quick_links li {
-		margin:0 0 0 10%;	
+		margin:0 0 0 10%;
 	}
-	
+
 	.donate_info {
-		margin:0 0 15% 5%;	
+		margin:0 0 15% 5%;
 	}
-	
+
 	input[type="submit"] {
-		padding:9%;	
+		padding:9%;
 	}
-	
+
 	.copy_info {
-		margin:20% 0 0 0;	
+		margin:20% 0 0 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% DESIGN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## DESIGN SECTION ########## */
-	
+
 	.journal_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% ADMIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ADMIN SECTION ########## */
-	
+
 	.admin_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.admin_aside {
-		border:none;	
+		border:none;
 	}
-	
+
 	.aside_title {
 		display:block;
 		margin:0 auto;
 		text-align:center;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.admin_show {
 		width:10%;
 		margin:5% 20% 0 0;
 	}
-	
+
 	.admin_table_title {
-		width:100%;	
+		width:100%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% NEW USER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## NEW USER SECTION ########## */
-	
+
 	.user_section {
-		margin:25% 0 0 0;	
+		margin:25% 0 0 0;
 	}
-	
+
 	.user_wrapper {
 		width:95%;
-		margin:0 10% 0 0;	
+		margin:0 10% 0 0;
 	}
-	
+
 	.user_info {
 		width:30%;
-		float:none;	
+		float:none;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% LOGIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
-	
+
+
 	/* ########## LOGIN SECTION ########## */
-	
+
 	.login_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.login_wrapper {
 		width:90%;
-		margin:15% auto;	
+		margin:15% auto;
 	}
-	
+
 	input.login_submit {
 		width:30%;
-		padding:5% 0;	
+		padding:5% 0;
 	}
-	
+
 	.login_user_text {
-		margin-right:15%;	
+		margin-right:15%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% REGISTER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## REGISTER FORM SECTION ########## */
-	
+
 	.register_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.register_form_wrapper {
 		width:80%;
 		margin:15% auto;
 		padding:5%;
 		border:2px solid #dcdcdc;
-		border-radius:10px;	
+		border-radius:10px;
 	}
-	
+
 	input.register_submit {
-		padding:3%;	
+		padding:3%;
 	}
-		
-	
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%% ORGANIZATION PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ORGANIZATION SECTION ########## */
-	
+
 	.org_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.org_wrapper {
 		padding:0;
-		margin:0 0 15% 0;	
+		margin:0 0 15% 0;
 	}
-	
+
 	.org_title {
-		padding:5% 0;	
+		padding:5% 0;
 	}
-	
+
 	.org_text {
 		float:none;
 		width:100%;
-		margin:0;	
+		margin:0;
 	}
-	
+
 	.org_image {
 		float:none;
 		width:100%;
-		margin:0 0 10% 0;	
+		margin:0 0 10% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%% OUR MEMBERS PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## MEMBERS SECTION ########## */
-	
+
 	.about_members_page {
 		margin:25% 5% 0 5%;
 	}
-	
+
 	.single_member_wrapper {
 		float:none;
-		width:100%;	
+		width:100%;
 		padding:0 0 15% 0;
 		border-top:2px solid #dcdcdc;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%% SPONSORSHIP PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## SPONSORSHIP SECTION ########## */
-	
+
 	.sponsor_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.sponsor_intro_wrapper {
 		width:100%;
-		margin:0;	
+		margin:0;
 	}
-	
+
 	.sponsor_form_wrapper {
-		margin:15% 0;	
+		margin:15% 0;
 	}
-	
+
 	.sponsor_form_split1 {
 		float:none;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.sponsor_form_split2 {
 		float:none;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.sponsor_question_length {
-		margin:10% 0;	
+		margin:10% 0;
 	}
-	
+
 	input.sponsor_submit {
 		margin:10% auto;
-		padding:2%;	
+		padding:2%;
 	}
-	
+
 	.sponsor_image_wrapper {
 		margin:0;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% VOLUNTEER PAGE %%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## VOLUNTEER SECTION ########## */
-	
+
 	.volunteer_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.volunteer_intro_wrapper {
 		margin:0;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.volunteer_image_wrapper {
 		float:none;
-		width:90%;	
+		width:90%;
 		margin:10% auto;
 	}
-	
-	/* ########## VOLUNTEER FORM SECTION ########## */	
-	
+
+	/* ########## VOLUNTEER FORM SECTION ########## */
+
 	.volunteer_form_wrapper {
-		margin:10% 0;	
+		margin:10% 0;
 	}
-	
+
 	input.volunteer_submit {
 		padding:3%;
-		margin:15% 0 0 0;	
+		margin:15% 0 0 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% EVENTS PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## EVENTS SECTION ########## */
-	
+
 	.events_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.event_wrapper {
-		width:90%;	
+		width:90%;
 	}
-	
+
 	.event_container {
 		float:none;
 		width:100%;
-		margin:5% 0;	
+		margin:5% 0;
 	}
 
 	/* ########## EVENTS NAV SECTION ########## */
@@ -1630,114 +1534,114 @@ input.donate_submit {
 		display:block;
 		margin:2% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%%% FAQ PAGE %%%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## FAQ SECTION ########## */
-	
+
 	.faq_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.faq_wrapper {
-		width:95%;	
+		width:95%;
 		margin:0 auto;
 	}
-	
+
 	.faq_intro_text {
-		margin:0 0 20% 0;	
+		margin:0 0 20% 0;
 	}
-	
+
 	.faq_text_links {
-		margin:0 0 50% 0;	
+		margin:0 0 50% 0;
 	}
-	
-	
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% CONTACT PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## CONTACT SECTION ########## */
-	
+
 	.contact_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.contact_intro_wrapper {
-		width:95%;	
+		width:95%;
 		margin:0 auto;
 	}
-	
+
 	/* ########## CONTACT FORM SECTION ########## */
-	
+
 	.contact_form_wrapper {
 		width:90%;
 		margin:20% auto;
 		border:2px solid #dcdcdc;
 		border-radius:10px;
-		padding:5%;	
+		padding:5%;
 	}
 
 	.contact_num {
-		width:100%;	
+		width:100%;
 	}
-	
+
 	input.contact_submit {
-		padding:5%;	
+		padding:5%;
 	}
-	
-	
-		
+
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% DONATE PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## MEMBERS SECTION ########## */
-	
+
 	.donation_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.donate_section {
 		float:none;
-		width:90%;	
+		width:90%;
 		margin:0 auto;
 	}
-	
+
 	.donate_intro_text {
-		margin:5% 5% 15% 5%;	
+		margin:5% 5% 15% 5%;
 	}
-	
+
 	.donate_wrapper {
 		width:90%;
-		margin:0 auto;	
+		margin:0 auto;
 	}
-	
+
 	.donate_info_wrap {
 		float:none;
-		width:95%;	
+		width:95%;
 	}
-	
+
 	.donate_payment_wrap {
 		float:none;
-		width:95%;	
+		width:95%;
 	}
-	
+
 	input.donate_submit {
-		padding:5%;	
+		padding:5%;
 		margin:0 auto;
 		display:block;
 		text-align:center;
 	}
-	
+
 	.donation_amounts {
 		float:none;
-		width:90%;	
+		width:90%;
 		margin:10% 5%;
 	}
-	
+
 }
 
 /* ======================================== ######################################## */
@@ -1749,36 +1653,36 @@ input.donate_submit {
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% INDEX PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ALL PAGE ELEMENTS ########## */
-	
+
 	section {
 		margin:25% 5% 0 5%;
 	}
-	
+
 	/* ########## HEADER ABOVE NAV ########## */
-	
+
 	.make_fixed {
 		position:fixed;
 		top:0;
 		width:100%;
 		z-index:501;
 	}
-	
+
 	.above_nav {
-		font-size:.5em;	
+		font-size:.5em;
 		display:none;
 	}
-	
+
 	/* ########## NAVIGATION ########## */
-	
+
 	.menu-bar {
 		display:block;
 		width:100%;
 	}
-	
+
 	.btn_menu {
-		display:block;	
+		display:block;
 		padding:20px;
 		color:#fff;
 		overflow:hidden;
@@ -1789,33 +1693,33 @@ input.donate_submit {
 		text-align:center;
 		font-family:Merriweather;
 	}
-	
+
 	btn_menu a {
-		padding:5% 2%;	
+		padding:5% 2%;
 	}
-	
+
 	btn_menu span a:hover {
-		text-decoration:none;	
+		text-decoration:none;
 	}
-	
-	
+
+
 	.h_icon {
-		font-size:25px;	
+		font-size:25px;
 	}
-	
+
 	.btn_menu .h_icon {
 		float:left;
-		margin:0 0 0 10px;	
+		margin:0 0 0 10px;
 	}
-	
+
 	.arrow {
-		float:right;	
+		float:right;
 	}
-	
+
 	#account {
-		display:block;	
+		display:block;
 	}
-	
+
 	nav {
 		width:70%;
 		position:fixed;
@@ -1823,353 +1727,353 @@ input.donate_submit {
 		margin:0;
 		overflow:hidden;
 		max-height:200em;
-		z-index:999;	
+		z-index:999;
 	}
-	
+
 	nav ul {
 		text-align:left;
 		margin:0;
-		z-index:999;	
+		z-index:999;
 	}
-	
+
 	nav ul li {
 		display:block;
-		border-bottom:1px solid #fff;	
+		border-bottom:1px solid #fff;
 		z-index:9999;
 	}
-	
+
 	nav ul li a {
 		display:block;
-		z-index:9999;	
-	}
-	
-	nav ul li .children {
-		width:100%;
-		position:relative;	
 		z-index:9999;
 	}
-	
-	nav ul li:hover .children {
-		display:none;	
+
+	nav ul li .children {
+		width:100%;
+		position:relative;
+		z-index:9999;
 	}
-	
+
+	nav ul li:hover .children {
+		display:none;
+	}
+
 	a.mobile_login {
 		color:#fff;
-		font-weight:100;	
+		font-weight:100;
 		border-bottom:1px solid #fff;
 		display:block;
 		padding:6%;
 	}
-	
+
 	nav ul li .children li {
 		padding:0;
-		z-index:9999;	
+		z-index:9999;
 	}
-	
+
 	nav ul li .children li a {
-		padding: 6%;	
+		padding: 6%;
 	}
-	
+
 	/* ########## HEADER BELOW NAV ########## */
-	
+
 	.below_nav {
 		margin-top:120px;
 	}
-	
+
 	.cycle-slideshow {
 		height:	250px;
 		z-index:200;
 	}
-	
+
 	.cycle-pager {
-		bottom:20px;	
+		bottom:20px;
 	}
-	
+
 	.cycle-prev, .cycle-next {
 		font-size:350%;
 	}
 
 	/* ########## SECTION ########## */
-	
+
 	section {
 		float:none;
-		margin:0;	
+		margin:0;
 		width:90%;
 	}
-	
+
 	article {
-		float:none;	
+		float:none;
 		margin:5% 0;
 		width:100%;
 		padding:0 0 5% 0;
 	}
-	
+
 	.intro_title {
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.featured_image {
 		float:none;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	/* ########## ASIDE ########## */
-	
+
 	aside {
-		float:none;	
+		float:none;
 		padding:5%;
 		margin:5% 0 0 0;
 		width:100%;
 		border-top:5px dashed #888;
 	}
-	
+
 	.aside_title {
 		padding:5% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% DESIGN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## DESIGN SECTION ########## */
-	
+
 	.journal_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% ADMIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ADMIN SECTION ########## */
-	
+
 	.admin_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.admin_wrapper {
 		margin:0;
-	}	
-	
+	}
+
 	.admin_aside {
 		width:100%;
-		float:none;	
+		float:none;
 	}
-	
+
 	.aside_title {
 		display:block;
 		margin:0 auto;
-		text-align:center;	
+		text-align:center;
 	}
-	
+
 	.admin_intro_title {
-		display:none;	
+		display:none;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% NEW USER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## NEW USER SECTION ########## */
-	
+
 	.user_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.user_info {
 		width:100%;
-		float:none;	
+		float:none;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% LOGIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
-	
+
+
 	/* ########## LOGIN SECTION ########## */
-	
+
 	.login_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.login_wrapper {
 		width:90%;
-		margin:15% auto;	
+		margin:15% auto;
 	}
-	
+
 	input.login_submit {
 		width:30%;
-		padding:5% 0;	
+		padding:5% 0;
 	}
-	
+
 	.login_user_text {
-		margin-right:15%;	
+		margin-right:15%;
 	}
 
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% REGISTER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## REGISTER FORM SECTION ########## */
-	
+
 	.register_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.register_form_wrapper {
 		width:80%;
 		margin:0 auto;
 		padding:5%;
 		border:2px solid #dcdcdc;
-		border-radius:10px;	
+		border-radius:10px;
 	}
-	
+
 	input.register_submit {
-		padding:3%;	
+		padding:3%;
 	}
-		
-	
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%% ORGANIZATION PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ORGANIZATION SECTION ########## */
-	
+
 	.org_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.org_wrapper {
 		padding:0;
-		margin:0 0 15% 0;	
+		margin:0 0 15% 0;
 	}
-	
+
 	.org_title {
-		padding:5% 0;	
+		padding:5% 0;
 	}
-	
+
 	.org_text {
 		float:none;
 		width:100%;
-		margin:0;	
+		margin:0;
 	}
-	
+
 	.org_image {
 		float:none;
 		width:100%;
-		margin:0 0 10% 0;	
+		margin:0 0 10% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%% OUR MEMBERS PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## MEMBERS SECTION ########## */
-	
+
 	.about_members_page {
 		margin:25% 5% 0 5%;
 	}
-	
+
 	.single_member_wrapper {
 		float:none;
-		width:100%;	
+		width:100%;
 		padding:0 0 15% 0;
 		border-top:2px solid #dcdcdc;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%% SPONSORSHIP PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## SPONSORSHIP SECTION ########## */
-	
+
 	.sponsor_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.sponsor_intro_wrapper {
 		width:100%;
-		margin:0;	
+		margin:0;
 	}
-	
+
 	.sponsor_form_wrapper {
-		margin:15% 0;	
+		margin:15% 0;
 	}
-	
+
 	.sponsor_form_split1 {
 		float:none;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.sponsor_form_split2 {
 		float:none;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.sponsor_question_length {
-		margin:10% 0;	
+		margin:10% 0;
 	}
-	
+
 	input.sponsor_submit {
 		margin:10% auto;
-		padding:2%;	
+		padding:2%;
 	}
-	
+
 	.sponsor_image_wrapper {
 		margin:0;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% VOLUNTEER PAGE %%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## VOLUNTEER SECTION ########## */
-	
+
 	.volunteer_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.volunteer_intro_wrapper {
 		margin:0;
-		width:100%;	
+		width:100%;
 	}
-	
+
 	.volunteer_image_wrapper {
 		float:none;
-		width:90%;	
+		width:90%;
 		margin:10% auto;
 	}
-	
-	/* ########## VOLUNTEER FORM SECTION ########## */	
-	
+
+	/* ########## VOLUNTEER FORM SECTION ########## */
+
 	.volunteer_form_wrapper {
-		margin:10% 0;	
+		margin:10% 0;
 	}
-	
+
 	input.volunteer_submit {
 		padding:3%;
-		margin:15% 0 0 0;	
+		margin:15% 0 0 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% EVENTS PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## EVENTS SECTION ########## */
-	
+
 	.events_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.event_wrapper {
-		width:90%;	
+		width:90%;
 	}
-	
+
 	.event_container {
 		float:none;
 		width:100%;
-		margin:5% 0;	
+		margin:5% 0;
 	}
 
 	/* ########## EVENTS NAV SECTION ########## */
@@ -2183,111 +2087,111 @@ input.donate_submit {
 		display:block;
 		margin:2% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%%% FAQ PAGE %%%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## FAQ SECTION ########## */
-	
+
 	.faq_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.faq_wrapper {
-		width:95%;	
+		width:95%;
 		margin:0 auto;
 	}
-	
+
 	.faq_intro_text {
-		margin:0 0 20% 0;	
+		margin:0 0 20% 0;
 	}
-	
+
 	.faq_text_links {
-		margin:0 0 50% 0;	
+		margin:0 0 50% 0;
 	}
-	
-	
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% CONTACT PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## CONTACT SECTION ########## */
-	
+
 	.contact_section {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.contact_intro_wrapper {
-		width:95%;	
+		width:95%;
 		margin:0 auto;
 	}
-	
+
 	/* ########## CONTACT FORM SECTION ########## */
-	
+
 	.contact_form_wrapper {
 		width:90%;
 		margin:20% auto;
 		border:2px solid #dcdcdc;
 		border-radius:10px;
-		padding:5%;	
+		padding:5%;
 	}
 
 	.contact_num {
-		width:100%;	
+		width:100%;
 	}
-	
+
 	input.contact_submit {
-		padding:5%;	
+		padding:5%;
 	}
-	
-	
-		
+
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% DONATE PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## DONATE SECTION ########## */
-	
+
 	.donation_page {
-		margin:25% 5% 0 5%;	
+		margin:25% 5% 0 5%;
 	}
-	
+
 	.donate_section {
 		float:none;
-		width:90%;	
+		width:90%;
 		margin:0 auto;
 	}
-	
+
 	.donate_intro_text {
-		margin:5% 5% 15% 5%;	
+		margin:5% 5% 15% 5%;
 	}
-	
+
 	.donate_wrapper {
 		width:90%;
-		margin:0 auto;	
+		margin:0 auto;
 	}
-	
+
 	.donate_info_wrap {
 		float:none;
-		width:95%;	
+		width:95%;
 	}
-	
+
 	.donate_payment_wrap {
 		float:none;
-		width:95%;	
+		width:95%;
 	}
-	
+
 	input.donate_submit {
-		padding:5%;	
+		padding:5%;
 		margin:0 auto;
 		display:block;
 		text-align:center;
 	}
-	
+
 	.donation_amounts {
 		float:none;
-		width:90%;	
+		width:90%;
 		margin:10% 5%;
 	}
 }
@@ -2299,153 +2203,153 @@ input.donate_submit {
 
 
 @media screen and (min-width:768px) and (max-width:1280px) {
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% INDEX PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## NAV ABOVE HEADER ########## */
-	
+
 	header {
 		width:90%;
 	}
-	
+
 	.header_title {
 		float:left;
 		width:50%;
 		margin:5% 0 0 11%;
 	}
-	
+
 	.user {
 		width:20%;
 		margin:8% 0 0 0;
 	}
-	
-	
+
+
 	/* ########## SECTION ########## */
-	
+
 	.featured_image {
 		width:98%;
-		float:left;	
+		float:left;
 		margin:0 0 5% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% ADMIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ADMIN SECTION ########## */
-	
-	.admin_wrapper {	
+
+	.admin_wrapper {
 		margin:0 auto;
 		width:100%;
 	}
-	
+
 	.admin_aside {
-		float:right;	
+		float:right;
 		padding:0;
 		margin:0 0 0 5%;
 	}
-	
-	
+
+
 	.admin_intro_text {
-		margin:0 30% 0 0;	
+		margin:0 30% 0 0;
 	}
-	
+
 	.admin_table_title {
-		text-align:center;	
+		text-align:center;
 	}
-	
+
 	.admin_show {
 		width:40%;
-		margin:5% 2%;	
+		margin:5% 2%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% NEW USER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## NEW USER SECTION ########## */
-	
+
 	.user_info {
 		width:100%;
-		float:none;	
+		float:none;
 	}
-	
-	
+
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% LOGIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## LOGIN SECTION ########## */
-	
+
 	.login_wrapper {
-		width:65%;	
+		width:65%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% REGISTER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## REGISTER SECTION ########## */
-	
+
 	.register_form_wrapper {
-		width:55%;	
+		width:55%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%% ORGANIZATION PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## ORGANIZATION SECTION ########## */
-	
+
 	.org_text {
-		width:80%;	
+		width:80%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%% ABOUT MEMBER PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## MEMBER SECTION ########## */
-	
+
 	.single_member_wrapper {
-		width:95%;	
+		width:95%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%% SPONSORSHIP PAGE %%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## SPONSORSHIP SECTION ########## */
-	
+
 	.sponsor_form_wrapper {
-		margin:5%;	
+		margin:5%;
 	}
-	
+
 	.sponsor_form_split1 {
 		float:left;
-		width:45%;	
+		width:45%;
 	}
-	
+
 	.sponsor_form_split2 {
 		float:left;
-		width:45%;	
+		width:45%;
 	}
-	
+
 	.sponsor_question_length {
-		margin:0;	
+		margin:0;
 	}
-	
+
 	input.sponsor_submit {
 		margin:10% auto;
-		padding:2%;	
+		padding:2%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% EVENTS PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## EVENTS NAV SECTION ########## */
 
 	.event_nav {
@@ -2457,45 +2361,45 @@ input.donate_submit {
 		display:block;
 		margin:2% 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%% CONTACT PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## CONTACT FORM SECTION ########## */
 
 	.contact_form_wrapper {
 		margin:7% 15%;
-		padding:10%;	
+		padding:10%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% DONATE PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## DONATE SECTION ########## */
-	
+
 	.donate_intro_text {
-		margin:10% 0;	
+		margin:10% 0;
 	}
-	
+
 	.donate_section {
-		width:70%;	
+		width:70%;
 	}
-	
+
 	/* ########## DONATE FORM SECTION ########## */
-	
+
 	.donate_info_wrap {
 		float:none;
-		width:80%;	
+		width:80%;
 	}
-	
+
 	.donate_payment_wrap {
 		float:none;
-		width:80%;	
+		width:80%;
 	}
-	
-	
+
+
 }
 
 /* ======================================== ######################################## */
@@ -2504,72 +2408,72 @@ input.donate_submit {
 
 
 @media screen and (min-width:1281px) {
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% LOGIN PAGE %%%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## LOGIN SECTION ########## */
-	
+
 	.login_wrapper {
-		width:55%;	
+		width:55%;
 	}
-	
+
 	.user {
 		width:20%;
-		margin:5% 0 0 0;	
+		margin:5% 0 0 0;
 	}
-	
+
 	.header_title {
 		width:55%;
-		margin:3% 0 0 5%;	
+		margin:3% 0 0 5%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% REGISTER PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
+
 	/* ########## REGISTER SECTION ########## */
-	
+
 	.register_form_wrapper {
-		width:45%;	
+		width:45%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%% VOLUNTEER PAGE %%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
-	
+
+
 	/* ########## VOLUNTEER SECTION ########## */
-	
+
 	.volunteer_form_wrapper {
-		margin:5% 10%;	
+		margin:5% 10%;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% EVENTS PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
-	
+
+
 	/* ########## EVENTS SECTION ########## */
-	
+
 	.event_text {
 		margin:0 25% 0 0;
 	}
-	
+
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* %%%%%%%%% DONATE PAGE %%%%%%%% */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-	
-	
+
+
 	/* ########## DONATE SECTION ########## */
-	
+
 	.donate_intro_text {
-		margin:5% 0;	
+		margin:5% 0;
 	}
-	
+
 	.donate_section {
-		width:70%;	
+		width:70%;
 	}
-	
+
 }
