@@ -61,32 +61,32 @@
     </div>
     <div class="portfolio-work-wrapper desktop">
       <div class="thumbnails">
-        <div class="portfolio-piece images-d" id="img1" >
+        <div class="portfolio-piece images-d" id="img1" data-slide="1">
           <a href="images/tin.jpg" data-title="Tin-Man Alphabet" data-text="Taking inspiration from a interplanetary space explorer tin toy in the 1960s, I created an alphabet set from the shapes and color that I see in the toy. I used green as the main color for the alphabet and added the prominent blocky feet to the typeface to match the tin toy.">
             <img id="imgtin" src="images/tin.jpg">
           </a>
         </div>
-        <div class="portfolio-piece images-d" id="img2">
+        <div class="portfolio-piece images-d" id="img2" data-slide="2">
           <a href="images/cactus.jpg" data-title="Rolling Cactus" data-text="Branding a local gardening shop, I wanted to target the youth that have no experience in gardening, specifically succulents and cacti. I used bold colors and strokes for an energetic feel.">
             <img id="imgcactus" src="images/cactus.jpg">
           </a>
         </div>
-        <div class="portfolio-piece images-d" id="img3">
+        <div class="portfolio-piece images-d" id="img3" data-slide="3">
           <a href="images/homeless.jpg" data-title="Homelessness Poster" data-text="I chose shelter, home, and food as the theme to relate to our basic survival instincts. The concrete background relates to the environment and harsh living conditions that the homeless have to live through every day.">
             <img id="imghomeless" src="images/homeless.jpg">
           </a>
         </div>
-        <div class="portfolio-piece images-d" id="img4">
+        <div class="portfolio-piece images-d" id="img4" data-slide="4">
           <a href="images/phillips.jpg" data-title="Captain Phillips" data-text="Taking inspiration from the movie, Captain Phillips, I created icons that represent the main events that happened in the movie. The blue and yellow I chose were ship's colors.">
             <img id="imgphillips" src="images/phillips.jpg">
           </a>
         </div>
-        <div class="portfolio-piece images-d" id="img5">
+        <div class="portfolio-piece images-d" id="img5" data-slide="5">
           <a href="images/astros.jpg" data-title="Astros" data-text="Astros is a RPG style mobile game that follows the storyline of the hero going into the forest to defeat the monsters that took over the forest. I wanted to play off the 'dark forest' theme, so I contrasted dark hues of purple with an bright earth tone palette.">
             <img id="imgastros" src="images/astros.jpg">
           </a>
         </div>
-        <div class="portfolio-piece images-d" id="img6">
+        <div class="portfolio-piece images-d" id="img6" data-slide="6">
           <a href="images/trinket.jpg" data-title="Trinket Magazine" data-text="Trinket is a DIY magazine that focuses on interior design. This particular issue centers on how succulents can be incorporated into every day decorations.">
             <img id="imgtrinket" src="images/trinket.jpg">
           </a>
@@ -97,8 +97,8 @@
     <div class="lightbox" data-state="hidden">
       <div class="lightbox-container">
         <button class="btn-close">X</button>
-        <button class="btn-left" id="left">&lt;</button>
-        <button class="btn-right" id="right">&gt;</button>
+        <!-- <button class="btn-left" id="left">&lt;</button>
+        <button class="btn-right" id="right">&gt;</button> -->
         <div class="lightbox-content" id="imgContainer">
           <img class="lightbox-img" alt="">
             <h2 class="lightbox-heading"></h2>
@@ -215,7 +215,7 @@
     var rightBtn = $('.btn-right');
     var lbContent = $('.lightbox-content');
     var images = $('.images-d');
-    var lastImg = images.length - 1;
+    var lastImg = images.length;
     var noImg = 0;
 
     thumbs.on('click', 'a', function (e) {
@@ -233,11 +233,11 @@
 
     leftBtn.on('click', function() {
       if (noImg === 0) {
-        lbContent.show(lastImg);
+        lbContent.html(thumbs);
       } else {
         noImg--;
       }
-      console.log(lastImg);
+      console.log(thumbs);
     });
 
     rightBtn.on('click', function() {
