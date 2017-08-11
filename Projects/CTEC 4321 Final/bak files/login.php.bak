@@ -1,0 +1,51 @@
+<?php 
+include 'core/init.php';
+include 'includes/overall/header.php'; 
+?>
+
+	<!-- Main -->
+	<section class="wrapper style1">
+		<div class="container">
+
+	<!-- Content -->
+        <div id="sidebar1">
+		<h3>New User?</h3>
+			<p>No problem. Register below to create a free account.</p>
+			<footer>
+				<form action="newuser1.php" method="post">
+					Create Username:<br>
+    				<input type="text" name="username"><br>
+    				Create Password:<br>
+    				<input type="password" name="password"><br>
+    				Re-enter Password:<br>
+    				<input type="password" name="confirm_pass"><br>
+    				Email:<br>
+    				<input type="email" name="email"><br>
+    				<input type="submit" value="Register">
+				</form>
+			</footer>
+        </div>
+        <div id="sidebar2">
+        <?php
+		if (logged_in() === true) {
+			echo 'Logged in.';
+		} else {
+		?>
+		<h3>Already a member?</h3>
+			<p>Enter your username and password below.</p>
+			<footer>
+				<form action="success.php" method="post">
+				Username:<br>
+				<input type="text" name="username"><br>
+   				 Password:<br>
+    			<input type="password" name="password"><br>
+   				<input type="submit" value="Login"> 
+                </form>
+			</footer>
+         </div>
+         <div id="clear"></div>
+		</div>
+	</section>
+    <?php }
+    ?>
+<?php include 'includes/overall/footer.php'; ?>

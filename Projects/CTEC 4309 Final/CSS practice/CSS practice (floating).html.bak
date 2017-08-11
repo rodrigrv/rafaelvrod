@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> New Document </title>
+
+  <style>
+    body {width: 30em}
+	header, section, footer {margin: 2%;}
+	header {background-color: green; width: 100%; height: 7em}
+	section {background-color: yellow; width: 46%; height: 15em; float:left}
+	footer {background-color: green; width: 100%; height: 5em; clear: both}
+  </style>
+  <script></script>
+ </head>
+
+ <body>
+	<header>Page Header</header>
+
+	<section>1st Column</section>
+
+	<section>2nd Column</section>
+
+	<footer>Footer</footer>
+
+
+  
+ </body>
+</html>
