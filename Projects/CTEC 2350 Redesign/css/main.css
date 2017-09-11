@@ -1,5 +1,4 @@
 * {
-  display: block;
   padding:0;
   margin:0;
   font-family:Cambria, Baskerville, Serif;
@@ -8,7 +7,7 @@
 
 title {display: none;}
 body {background:#e6e6dc;}
-main {margin:0 auto; width:80%; box-shadow: 0 0 25px 5px; max-width: 1650px;}
+main {margin:0 auto; width:80%; box-shadow: 0 0 25px 5px; max-width: 1500px;}
 header {
   text-align: center;
   margin:0 auto;
@@ -21,8 +20,7 @@ header {
 img {max-width: 100%;}
 h1 {font-size: 3em; color:#fff;}
 h2 {font-size: 2rem;}
-strong {display: inline-block;}
-nav {background:#369; margin:0 auto; text-align: center; width:100%;}
+nav {background:#369; margin:0 auto; padding:2em 0; text-align: center; width:100%;}
 nav ul li {display: inline-block;}
 nav ul li a:hover {color:#000; transition:.5s}
 nav ul li a:visited {color:#fff; transition: .5s}
@@ -62,6 +60,23 @@ section:nth-child(2) {background:#e6e6dc;}
 .main-img {float:right; margin:0 0 0 1em; width:40%;}
 .img-bottom {float:left; margin:0 1em 0 0; width:45%;}
 
+/* Right Section */
+.right-content-wrap {margin:2em; padding:3em 0 0;}
+.right-content-top {margin: 0 0 2em;}
+.right-heading {
+  background:#e6e6dc;
+  border:5px solid #369;
+  font-size: 1.2rem;
+  margin:0 auto 1em;
+  padding:5px;
+  text-align: center;
+  width:80%;
+}
 
+.right-text, .right-list {color:#e6e6dc;}
+.right-text {margin:0 0 .5em;}
+.right-list {margin:0 0 0 1em;}
 
-footer {clear:both;}
+footer {background:#222; border-top: 5px solid #369; clear:both; padding:1.5em 0;}
+.footer-text {color:#e6e6dc; font-size: .8rem; line-height: 1; text-align: center;}
+.footer-text span {display: block; font-size: .8rem;}
