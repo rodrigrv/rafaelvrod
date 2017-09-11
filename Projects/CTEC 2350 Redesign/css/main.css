@@ -22,8 +22,8 @@ h1 {font-size: 3em; color:#fff;}
 h2 {font-size: 2rem;}
 nav {background:#369; margin:0 auto; padding:2em 0; text-align: center; width:100%;}
 nav ul li {display: inline-block;}
-nav ul li a:hover {color:#000; transition:.5s}
 nav ul li a:visited {color:#fff; transition: .5s}
+nav ul li a:hover {color:#000; transition:.5s}
 nav ul li a {
   color:#fff;
   font-size: 1.7rem;
@@ -32,12 +32,16 @@ nav ul li a {
   transition:.5s;
 }
 
+.nav-mobile-only {display: none;}
+
+/* ******************** Home Page ******************** */
+
 /* Left Section */
 .body-wrapper {margin:0 auto; width:100%;}
 .left-content, .main-content, .right-content {
   background:#222222;
   float:left;
-  height:650px;
+  height:750px;
   position:relative;
 }
 
@@ -76,7 +80,56 @@ section:nth-child(2) {background:#e6e6dc;}
 .right-text, .right-list {color:#e6e6dc;}
 .right-text {margin:0 0 .5em;}
 .right-list {margin:0 0 0 1em;}
+.left-content-mobile {
+  display: none;
+  background:#e6e6dc;
+  float:left;
+  height:750px;
+  position:relative;
+}
 
+.clearfix {clear:both;}
 footer {background:#222; border-top: 5px solid #369; clear:both; padding:1.5em 0;}
 .footer-text {color:#e6e6dc; font-size: .8rem; line-height: 1; text-align: center;}
 .footer-text span {display: block; font-size: .8rem;}
+
+/* ******************** Media Queries ******************** */
+@media screen and (max-width:1330px) {.right-content-wrap {margin:1em;}}
+@media screen and (max-width:1060px) {nav ul li a {font-size: 2.5vw;}}
+@media screen and (max-width:980px) {
+  nav {padding:1.5em 0;}
+  .left-content {display: none;}
+  .left-content-mobile {display: block; height:auto; width:100%;}
+  .left-content, .right-content, .main-content {height: auto; padding:0 0 2rem; width: 100%;}
+  .right-heading {width: 50%;}
+  .right-text {margin:0 auto; width:50%;}
+  .right-list {margin:1em auto; width:50%;}
+  .left-img {width:50%;}
+  .left-copy {color:#222222;}
+  .hours {padding:0;}
+}
+
+@media screen and (max-width:800px) {
+  .right-heading {width:65%;}
+  .right-text {width:65%;}
+  .right-list {width:65%;}
+  .left-img {width:65%;}
+}
+
+@media screen and (max-width:640px) {
+  .nav-mobile-only {display: block;}
+  nav {padding:0;}
+  nav ul li {display: block;}
+  nav ul li a {
+    background: #369;
+    border: 2px solid #000;
+    float:left;
+    font-size: 3vw;
+    padding: .5em .834em;
+    width:26.3%;
+  }
+
+  nav ul li a:visited {border:2px solid #fff;}
+  nav ul li a:hover {border:2px solid #ede6dc;}
+
+}
